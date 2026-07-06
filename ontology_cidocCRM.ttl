@@ -61,29 +61,11 @@ ga:Expedition_EWA76_Afghanistan
     crm:P14_carried_out_by ga:PoznanEthnography ;
     crm:P7_took_place_at ga:Afghanistan ;
     crm:P4_has_time-span ga:TimeSpan_EWA76 ;
-    crm:P9_consists_of ga:Expedition_EWA76_Herat_Visit ,
-                       ga:Expedition_EWA76_Herat_to_Kandahar_Visit ,
-                       ga:Expedition_EWA76_Kandahar_Visit ,
-                       ga:Expedition_EWA76_Ghazni_Visit ,
-                       ga:Expedition_EWA76_Kabul_Visit ,
-                       ga:Expedition_EWA76_Nayak_Visit ,
-                       ga:Expedition_EWA76_TalaOBarfak_Visit ,
-                       ga:Expedition_EWA76_Dawlatabad_Visit ,
-                       ga:Expedition_EWA76_Qaysar_Visit ,
-                       ga:Expedition_EWA76_MazarSharif_Visit ,
-                       ga:Expedition_EWA76_Jalalabad_Visit .
+    crm:P9_consists_of ga:Expedition_EWA76_Qaysar_Visit .
 
 ga:Expedition_EWA76_Afghanistan_Name
     a crm:E41_Appellation ;
     crm:P190_has_symbolic_content "Polish Ethnological Asian Expedition 1976 (EWA-76)" .
-
-ga:Afghanistan
-    a crm:E53_Place ;
-    crm:P1_is_identified_by ga:Afghanistan_Name .
-
-ga:Afghanistan_Name
-    a crm:E44_Place_Appellation ;
-    crm:P190_has_symbolic_content "Afghanistan" .
 
 ga:TimeSpan_EWA76
     a crm:E52_Time-Span ;
@@ -122,87 +104,32 @@ ga:EWA76_Collection_Name
 # ======================================================
 # Places
 # ======================================================
+ga:Afghanistan
+    a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Afghanistan_Name .
 
-ga:Herat a crm:E53_Place ; crm:P1_is_identified_by ga:Herat_Name .
-ga:Herat_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Herat" .
+ga:Afghanistan_Name
+    a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Afghanistan" .
 
-ga:Kandahar a crm:E53_Place ; crm:P1_is_identified_by ga:Kandahar_Name .
-ga:Kandahar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Kandahar" .
+ga:Qaysar a crm:E53_Place ;
+          crm:P1_is_identified_by ga:Qaysar_Name .
+ga:Qaysar_Name a crm:E44_Place_Appellation ;
+          crm:P190_has_symbolic_content "Qaysar" .
 
-ga:Ghazni a crm:E53_Place ; crm:P1_is_identified_by ga:Ghazni_Name .
-ga:Ghazni_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Ghazni" .
-
-ga:Kabul a crm:E53_Place ; crm:P1_is_identified_by ga:Kabul_Name .
-ga:Kabul_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Kabul" .
-
-ga:Nayak a crm:E53_Place ; crm:P1_is_identified_by ga:Nayak_Name .
-ga:Nayak_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Nayak" .
-
-ga:TalaOBarfak a crm:E53_Place ; crm:P1_is_identified_by ga:TalaOBarfak_Name .
-ga:TalaOBarfak_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Tala o Barfak" .
-
-ga:Dawlatabad a crm:E53_Place ; crm:P1_is_identified_by ga:Dawlatabad_Name .
-ga:Dawlatabad_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Dawlatabad" .
-
-ga:Qaysar a crm:E53_Place ; crm:P1_is_identified_by ga:Qaysar_Name .
-ga:Qaysar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Qaysar" .
-
-ga:MazarSharif a crm:E53_Place ; crm:P1_is_identified_by ga:MazarSharif_Name .
-ga:MazarSharif_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Mazar-e-Sharif" .
-
-ga:Jalalabad a crm:E53_Place ; crm:P1_is_identified_by ga:Jalalabad_Name .
-ga:Jalalabad_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Jalalabad" .
-
-ga:Almar a crm:E53_Place ; crm:P1_is_identified_by ga:Almar_Name .
-ga:Almar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Almar" .
+ga:Almar a crm:E53_Place ;
+        crm:P1_is_identified_by ga:Almar_Name .
+ga:Almar_Name a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Almar" .
 
 # ======================================================
 # Time-Spans for Sub-Activities
 # ======================================================
 
-ga:TimeSpan_EWA76_Herat a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-03"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-03"^^xsd:date .
-
-ga:TimeSpan_EWA76_Herat_to_Kandahar a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-04"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-04"^^xsd:date .
-
-ga:TimeSpan_EWA76_Kandahar a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-05"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-05"^^xsd:date .
-
-ga:TimeSpan_EWA76_Ghazni a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-06"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-06"^^xsd:date .
-
-ga:TimeSpan_EWA76_Kabul a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-07"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-17"^^xsd:date .
-
-ga:TimeSpan_EWA76_Nayak a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-06-20"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-06-30"^^xsd:date .
-
-ga:TimeSpan_EWA76_TalaOBarfak a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-07-01"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-07-19"^^xsd:date .
-
-ga:TimeSpan_EWA76_Dawlatabad a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-07-22"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-08-06"^^xsd:date .
 
 ga:TimeSpan_EWA76_Qaysar a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
     crm:P82b_end_of_the_end "1976-08-21"^^xsd:date .
-
-ga:TimeSpan_EWA76_MazarSharif a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-08-22"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-08-22"^^xsd:date .
-
-ga:TimeSpan_EWA76_Jalalabad a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin "1976-09-03"^^xsd:date ;
-    crm:P82b_end_of_the_end "1976-09-03"^^xsd:date .
 
 ga:TimeSpan_EWA76_Almar a crm:E52_Time-Span ;
     crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
@@ -211,86 +138,6 @@ ga:TimeSpan_EWA76_Almar a crm:E52_Time-Span ;
 # ======================================================
 # Expedition Sub-Activities
 # ======================================================
-
-ga:Expedition_EWA76_Herat_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Herat_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Herat ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Herat .
-
-ga:Expedition_EWA76_Herat_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Herat" .
-
-ga:Expedition_EWA76_Herat_to_Kandahar_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Herat_to_Kandahar_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Herat , ga:Kandahar ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Herat_to_Kandahar .
-
-ga:Expedition_EWA76_Herat_to_Kandahar_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 journey from Herat to Kandahar" .
-
-ga:Expedition_EWA76_Kandahar_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Kandahar_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Kandahar ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Kandahar .
-
-ga:Expedition_EWA76_Kandahar_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Kandahar" .
-
-ga:Expedition_EWA76_Ghazni_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Ghazni_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Ghazni ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Ghazni .
-
-ga:Expedition_EWA76_Ghazni_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Ghazni" .
-
-ga:Expedition_EWA76_Kabul_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Kabul_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Kabul ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Kabul .
-
-ga:Expedition_EWA76_Kabul_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Kabul" .
-
-ga:Expedition_EWA76_Nayak_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Nayak_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Nayak ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Nayak .
-
-ga:Expedition_EWA76_Nayak_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Nayak village" .
-
-ga:Expedition_EWA76_TalaOBarfak_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_TalaOBarfak_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:TalaOBarfak ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_TalaOBarfak .
-
-ga:Expedition_EWA76_TalaOBarfak_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Tala o Barfak villages" .
-
-ga:Expedition_EWA76_Dawlatabad_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Dawlatabad_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Dawlatabad ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Dawlatabad .
-
-ga:Expedition_EWA76_Dawlatabad_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Dawlatabad" .
 
 ga:Expedition_EWA76_Qaysar_Visit
     a crm:E7_Activity ;
@@ -301,26 +148,6 @@ ga:Expedition_EWA76_Qaysar_Visit
 
 ga:Expedition_EWA76_Qaysar_Visit_Name a crm:E41_Appellation ;
     crm:P190_has_symbolic_content "EWA-76 visit to Qaysar" .
-
-ga:Expedition_EWA76_MazarSharif_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_MazarSharif_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:MazarSharif ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_MazarSharif .
-
-ga:Expedition_EWA76_MazarSharif_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Mazar-e-Sharif" .
-
-ga:Expedition_EWA76_Jalalabad_Visit
-    a crm:E7_Activity ;
-    crm:P1_is_identified_by ga:Expedition_EWA76_Jalalabad_Visit_Name ;
-    crm:P14_carried_out_by ga:PoznanEthnography ;
-    crm:P7_took_place_at ga:Jalalabad ;
-    crm:P4_has_time-span ga:TimeSpan_EWA76_Jalalabad .
-
-ga:Expedition_EWA76_Jalalabad_Visit_Name a crm:E41_Appellation ;
-    crm:P190_has_symbolic_content "EWA-76 visit to Jalalabad" .
 
 # ======================================================
 # Production Context: Photo-taking
