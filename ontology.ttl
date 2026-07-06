@@ -1,0 +1,472 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix : <http://www.graphAfghanica.org/ontology/> .
+
+# ==========================================
+# Classes
+# ==========================================
+
+:Image
+    a rdfs:Class ;
+    rdfs:subClassOf crm:E36_Visual_Item .
+:Person
+    a rdfs:Class ;
+    rdfs:subClassOf crm:E21_Person ;
+    owl:equivalentClass foaf:Person .
+
+:AI_Model
+    a rdfs:Class ;
+    rdfs:label "An AI model" .
+
+# ==========================================
+# Properties
+# ==========================================
+
+:classification
+    a rdf:Property ;
+    rdfs:domain :Image ;
+    rdfs:range skos:Concept .
+
+:description
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P3_has_note ;
+    rdfs:domain :Image .
+
+:hasDigitalRepresentation
+    a rdf:Property ;
+    rdfs:domain :Image ;
+    rdfs:range xsd:anyURI .
+
+:belongsTo
+    a rdf:Property ;
+    rdfs:comment "Connects an image to its curated collection" ;
+    rdfs:domain :Image ;
+    rdfs:range crm:E78_Curated_Holding .
+
+:model
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range :AI_Model ;
+    rdfs:label "AI model used"@en .
+
+:confidence
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range xsd:decimal .
+
+:creator
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:label "creator"@en ;
+    rdfs:comment "Annotates a statement with its creator" .
+
+# ==========================================
+# Resources & Instances
+# ==========================================
+
+:ImageTaxonomy
+    a skos:ConceptScheme ;
+    skos:hasTopConcept :People , :Landscape , :Urban .
+
+:People a skos:Concept ;
+    skos:inScheme :ImageTaxonomy ;
+    skos:prefLabel "People"@en ;
+    skos:narrower :Women .
+
+:Women a skos:Concept ;
+    skos:inScheme :ImageTaxonomy ;
+    skos:prefLabel "Women"@en ;
+    skos:broader :People .
+
+:Landscape a skos:Concept ;
+    skos:inScheme :ImageTaxonomy ;
+    skos:prefLabel "Landscape"@en .
+
+:Urban a skos:Concept ;
+    skos:inScheme :ImageTaxonomy ;
+    skos:prefLabel "Urban"@en .
+
+# --- Expedition Context ---
+
+:Expedition_EWA76_Afghanistan
+    a crm:E7_Activity ;
+    rdfs:label "Polish Ethnological Asian Expedition 1976 (EWA-76)" ;
+    crm:P14_carried_out_by :PoznanEthnography ;
+    crm:P7_took_place_at :Afghanistan ;
+    crm:P4_has_time-span :TimeSpan_EWA76 ;
+    crm:P9_consists_of :Expedition_EWA76_Herat_Visit ,
+                       :Expedition_EWA76_Herat_to_Kandahar_Visit ,
+                       :Expedition_EWA76_Kandahar_Visit ,
+                       :Expedition_EWA76_Ghazni_Visit ,
+                       :Expedition_EWA76_Kabul_Visit ,
+                       :Expedition_EWA76_Nayak_Visit ,
+                       :Expedition_EWA76_TalaOBarfak_Visit ,
+                       :Expedition_EWA76_Dawlatabad_Visit ,
+                       :Expedition_EWA76_Qaysar_Visit ,
+                       :Expedition_EWA76_MazarSharif_Visit ,
+                       :Expedition_EWA76_Jalalabad_Visit .
+
+:Afghanistan
+    a crm:E53_Place ;
+    crm:P1_is_identified_by :Afghanistan_name ;
+    owl:sameAs wdt:Q889 .
+
+:Afghanistan_name
+    a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Afghanistan" .
+
+:TimeSpan_EWA76
+    a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-05-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-10-03"^^xsd:date .
+
+:MarekGawecki
+    a :Person ;
+    schema:givenName "Mark" ;
+    schema:familyName "Gawęcki" ;
+    schema:name "Mark Gawęcki" .
+
+:PoznanEthnography
+    a crm:E74_Group ;
+    rdfs:label "Poznan Ethnology Department" ;
+    crm:P107_has_current_or_former_member :MarekGawecki .
+
+# --- Collection Context ---
+
+:EWA76_Collection
+   a crm:E78_Curated_Holding ;
+   crm:P1_is_identified_by "EWA76 Photo Collection" .
+
+# --- Sub-Activity: The Herat Visit ---
+
+:Herat
+      a crm:E53_Place ;
+      crm:P1_is_identified_by :Herat_name ;
+      owl:sameAs wdt:Q45313 .
+
+:Herat_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Harat" .
+
+:TimeSpan_EWA76_Herat
+          a crm:E52_Time-Span ;
+          crm:P82a_begin_of_the_begin "1976-06-03"^^xsd:date ;
+          crm:P82b_end_of_the_end "1976-06-03"^^xsd:date .
+
+:Expedition_EWA76_Herat_Visit
+  a crm:E7_Activity ;
+  rdfs:label "EWA-76 visit to Harat" ;
+  crm:P14_carried_out_by :PoznanEthnography ;
+  crm:P7_took_place_at :Herat ;
+  crm:P4_has_time-span :TimeSpan_EWA76_Herat .
+
+# --- Sub-Activity: The Herat to Kandahar Visit ---
+
+:Kandahar
+        a crm:E53_Place ;
+        crm:P1_is_identified_by :Kandahar_name ;
+        owl:sameAs wdt:Q45604 .
+
+:Kandahar_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Kandahar" .
+
+:TimeSpan_EWA76_Herat_to_Kandahar
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-06-04"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-06-04"^^xsd:date .
+
+:Expedition_EWA76_Herat_to_Kandahar_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Harat to Kandahar" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :Kandahar , :Herat ;
+            crm:P4_has_time-span :TimeSpan_EWA76_Herat_to_Kandahar .
+
+# --- Sub-Activity: The Kandahar Visit ---
+
+:TimeSpan_EWA76_Kandahar
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-06-05"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-06-05"^^xsd:date .
+
+:Expedition_EWA76_Kandahar_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Visit to Kandahar" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :Kandahar;
+            crm:P4_has_time-span :TimeSpan_EWA76_Kandahar .
+
+# --- Sub-Activity: The Ghazni Visit ---
+:Ghazni a crm:E53_Place ;
+        crm:P1_is_identified_by :Ghazni_name ;
+        owl:sameAs wdt:Q173731 .
+
+:Ghazni_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Ghazni" .
+
+:TimeSpan_EWA76_Ghazni
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-06-06"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-06-06"^^xsd:date .
+
+:Expedition_EWA76_Ghazni_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Visit to Ghazni" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :Ghazni ;
+            crm:P4_has_time-span :TimeSpan_EWA76_Ghazni .
+
+# --- Sub-Activity: The Kabul Visit ---
+:Kabul a crm:E53_Place ;
+        crm:P1_is_identified_by :Kabul_name ;
+        owl:sameAs wdt:Q5838 .
+
+:Kabul_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Kabul" .
+
+:TimeSpan_EWA76_Kabul
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-06-07"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-06-17"^^xsd:date .
+
+:Expedition_EWA76_Kabul_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Visit to Kabul" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :Kabul ;
+            crm:P4_has_time-span :TimeSpan_EWA76_Kabul .
+
+# --- Sub-Activity: The Nayak Visit ---
+:Nayak a crm:E53_Place ;
+        crm:P1_is_identified_by :Nayak_name ;
+        owl:sameAs wdt:Q5745635 .
+
+:Nayak_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Nayak" .
+
+:TimeSpan_EWA76_Nayak
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-06-20"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-06-30"^^xsd:date .
+
+:Expedition_EWA76_Nayak_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Visit to Nayak village" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :Nayak ;
+            crm:P4_has_time-span :TimeSpan_EWA76_Nayak .
+
+# --- Sub-Activity: The Tala o Barfak Visit ---
+:TalaOBarfak a crm:E53_Place ;
+        crm:P1_is_identified_by :TalaOBarfak_name ;
+        owl:sameAs wdt:Q3694424 .
+
+:TalaOBarfak_name
+        a crm:E44_Place_Appellation ;
+        crm:P190_has_symbolic_content "Tala o Barfak" .
+
+:TimeSpan_EWA76_TalaOBarfak
+        a crm:E52_Time-Span ;
+        crm:P82a_begin_of_the_begin "1976-07-01"^^xsd:date ;
+        crm:P82b_end_of_the_end "1976-07-19"^^xsd:date .
+
+:Expedition_EWA76_TalaOBarfak_Visit
+            a crm:E7_Activity ;
+            rdfs:label "EWA-76 Visit to Tala o Barfak villages" ;
+            crm:P14_carried_out_by :PoznanEthnography ;
+            crm:P7_took_place_at  :TalaOBarfak ;
+            crm:P4_has_time-span :TimeSpan_EWA76_TalaOBarfak .
+
+# --- Sub-Activity: The Dawlatabad Visit ---
+
+:Dawlatabad
+   a crm:E53_Place ;
+   crm:P1_is_identified_by :Dawlatabad_name ;
+   owl:sameAs wdt:Q960735 .
+
+:Dawlatabad_name
+   a crm:E44_Place_Appellation ;
+   crm:P190_has_symbolic_content "Dawlatabad" .
+
+:TimeSpan_EWA76_Dawlatabad
+   a crm:E52_Time-Span ;
+   crm:P82a_begin_of_the_begin "1976-07-22"^^xsd:date ;
+   crm:P82b_end_of_the_end "1976-08-06"^^xsd:date .
+
+:Expedition_EWA76_Dawlatabad_Visit
+   a crm:E7_Activity ;
+   rdfs:label "EWA-76 visit to Dawlatabad" ;
+   crm:P14_carried_out_by :PoznanEthnography ;
+   crm:P7_took_place_at :Dawlatabad ;
+   crm:P4_has_time-span :TimeSpan_EWA76_Dawlatabad .
+
+
+# --- Sub-Activity: The Qaysar Visit ---
+
+:Qaysar
+   a crm:E53_Place ;
+   crm:P1_is_identified_by :Qaysar_name ;
+   owl:sameAs wdt:Q3694278 .
+
+:Qaysar_name
+   a crm:E44_Place_Appellation ;
+   crm:P190_has_symbolic_content "Qaysar" .
+
+:TimeSpan_EWA76_Qaysar
+   a crm:E52_Time-Span ;
+   crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+   crm:P82b_end_of_the_end "1976-08-21"^^xsd:date .
+
+:Expedition_EWA76_Qaysar_Visit
+   a crm:E7_Activity ;
+   rdfs:label "EWA-76 visit to Qaysar" ;
+   crm:P14_carried_out_by :PoznanEthnography ;
+   crm:P7_took_place_at :Qaysar ;
+   crm:P4_has_time-span :TimeSpan_EWA76_Qaysar .
+
+# --- Sub-Activity: The Mazar-e-Sharif Visit ---
+
+:MazarSharif
+  a crm:E53_Place ;
+  crm:P1_is_identified_by :MazarSharif_name ;
+  owl:sameAs wdt:Q130469 .
+
+:MazarSharif_name
+  a crm:E44_Place_Appellation ;
+  crm:P190_has_symbolic_content "Mazar-e-Sharif" .
+
+:TimeSpan_EWA76_MazarSharif
+  a crm:E52_Time-Span ;
+  crm:P82a_begin_of_the_begin "1976-08-22"^^xsd:date ;
+  crm:P82b_end_of_the_end "1976-08-22"^^xsd:date .
+
+:Expedition_EWA76_MazarSharif_Visit
+  a crm:E7_Activity ;
+  rdfs:label "EWA-76 visit to Mazar-e-Sharif" ;
+  crm:P14_carried_out_by :PoznanEthnography ;
+  crm:P7_took_place_at :MazarSharif ;
+  crm:P4_has_time-span :TimeSpan_EWA76_MazarSharif .
+
+# --- Sub-Activity: The Jalalabad Visit ---
+
+:Jalalabad
+  a crm:E53_Place ;
+  crm:P1_is_identified_by :Jalalabad_name ;
+  owl:sameAs wdt:Q183303 .
+
+:Jalalabad_name
+  a crm:E44_Place_Appellation ;
+  crm:P190_has_symbolic_content "Jalalabad" .
+
+:TimeSpan_EWA76_Jalalabad
+  a crm:E52_Time-Span ;
+  crm:P82a_begin_of_the_begin "1976-09-03"^^xsd:date ;
+  crm:P82b_end_of_the_end "1976-09-03"^^xsd:date .
+
+:Expedition_EWA76_Jalalabad_Visit
+  a crm:E7_Activity ;
+  rdfs:label "EWA-76 visit to Jalalabad" ;
+  crm:P14_carried_out_by :PoznanEthnography ;
+  crm:P7_took_place_at :Jalalabad ;
+  crm:P4_has_time-span :TimeSpan_EWA76_Jalalabad .
+
+# --- Production Context (The Photo-taking) ---
+
+:EWA76_Production_Herat
+  a crm:E12_Production ;
+  crm:P14_carried_out_by :MarekGawecki ;
+  crm:P9i_forms_part_of :Expedition_EWA76_Herat_Visit ;
+  crm:P7_took_place_at  :Herat ;
+  crm:P4_has_time-span :TimeSpan_EWA76_Herat .
+
+:EWA76_Production_Herat_to_Kandahar
+  a crm:E12_Production ;
+  crm:P14_carried_out_by :MarekGawecki ;
+  crm:P9i_forms_part_of :Expedition_EWA76_Herat_to_Kandahar_Visit ;
+  crm:P7_took_place_at  :Kandahar , :Herat ;
+  crm:P4_has_time-span :TimeSpan_EWA76_Herat_to_Kandahar .
+
+:EWA76_Production_Kandahar
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_Kandahar_Visit ;
+    crm:P7_took_place_at  :Kandahar ;
+    crm:P4_has_time-span :TimeSpan_EWA76_Kandahar .
+
+:EWA76_Production_Ghazni
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_Ghazni_Visit ;
+    crm:P7_took_place_at  :Ghazni ;
+    crm:P4_has_time-span :TimeSpan_EWA76_Ghazni .
+
+:EWA76_Production_Kabul
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_Kabul_Visit ;
+    crm:P7_took_place_at  :Kabul ;
+    crm:P4_has_time-span :TimeSpan_EWA76_Kabul .
+
+:EWA76_Production_Nayak
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_Nayak_Visit ;
+    crm:P7_took_place_at  :Nayak ;
+    crm:P4_has_time-span :TimeSpan_EWA76_Nayak .
+
+:EWA76_Production_TalaOBarfak
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_TalaOBarfak_Visit ;
+    crm:P7_took_place_at  :TalaOBarfak ;
+    crm:P4_has_time-span :TimeSpan_EWA76_TalaOBarfak .
+
+:EWA76_Production_Dawlatabad
+    a crm:E12_Production ;
+    crm:P14_carried_out_by :MarekGawecki ;
+    crm:P9i_forms_part_of :Expedition_EWA76_Dawlatabad_Visit ;
+    crm:P7_took_place_at  :Dawlatabad ;
+    crm:P4_has_time-span :TimeSpan_EWA76_Dawlatabad .
+
+:EWA76_Production_Qayser
+   a crm:E12_Production ;
+   crm:P14_carried_out_by :MarekGawecki ;
+   crm:P9i_forms_part_of :Expedition_EWA76_Qaysar_Visit ;
+   crm:P7_took_place_at  :Qaysar ;
+   crm:P4_has_time-span :TimeSpan_EWA76_Qaysar .
+
+
+# --- The Resulting Object ---
+
+:EWA76_MG65
+    a :Image ;
+    :classification :Women ;
+    :hasDigitalRepresentation <https://example.org/images/photo1.jpg> ;
+    :belongsTo :EWA76_Collection ;
+    crm:P108i_was_produced_by :EWA76_Production_Qayser ;
+    :description "Near the concrete pillars for the new bazaar, other farmers are offering their sheep's wool fleeces..."@en .
+
+# --- AI & Provenance Meta-modeling via RDF-star ---
+
+:PyTorch_custom_model
+    a :AI_Model ;
+    rdfs:label "PyTorch model" .
+
+<< :EWA76_MG65 :description "Near the concrete pillars for the new bazaar, other farmers are offering their sheep's wool fleeces..."@en >>
+      :creator :MarekGawecki ;
+      :confidence "1.0"^^xsd:decimal .
+
+<< :EWA76_MG65 :classification :Women >>
+      :model :PyTorch_custom_model ;
+      :confidence "0.89"^^xsd:decimal .
