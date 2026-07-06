@@ -1,0 +1,437 @@
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix ga:   <http://www.graphAfghanica.org/data/> .
+
+# ======================================================
+# Strict CIDOC CRM version
+# Only CIDOC CRM classes/properties are used for modeling.
+# ======================================================
+
+# ======================================================
+# Types and Units
+# ======================================================
+
+ga:Photograph_Type
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "photograph" .
+
+ga:Urban
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Urban" .
+
+ga:Women
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Women" .
+
+ga:Artificial_Intelligence_Model
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Artificial intelligence model" .
+
+ga:Confidence
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Confidence score" .
+
+ga:Image_Quality
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Image quality" .
+
+ga:Width
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "width" .
+
+ga:Height
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "height" .
+
+ga:Millimeters
+    a crm:E58_Measurement_Unit ;
+    crm:P190_has_symbolic_content "millimeters" .
+
+ga:Probability_Unit
+    a crm:E58_Measurement_Unit ;
+    crm:P190_has_symbolic_content "probability value between 0 and 1" .
+
+# ======================================================
+# Expedition Context
+# ======================================================
+
+ga:Expedition_EWA76_Afghanistan
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Afghanistan_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Afghanistan ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76 ;
+    crm:P9_consists_of ga:Expedition_EWA76_Herat_Visit ,
+                       ga:Expedition_EWA76_Herat_to_Kandahar_Visit ,
+                       ga:Expedition_EWA76_Kandahar_Visit ,
+                       ga:Expedition_EWA76_Ghazni_Visit ,
+                       ga:Expedition_EWA76_Kabul_Visit ,
+                       ga:Expedition_EWA76_Nayak_Visit ,
+                       ga:Expedition_EWA76_TalaOBarfak_Visit ,
+                       ga:Expedition_EWA76_Dawlatabad_Visit ,
+                       ga:Expedition_EWA76_Qaysar_Visit ,
+                       ga:Expedition_EWA76_MazarSharif_Visit ,
+                       ga:Expedition_EWA76_Jalalabad_Visit .
+
+ga:Expedition_EWA76_Afghanistan_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Polish Ethnological Asian Expedition 1976 (EWA-76)" .
+
+ga:Afghanistan
+    a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Afghanistan_Name .
+
+ga:Afghanistan_Name
+    a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Afghanistan" .
+
+ga:TimeSpan_EWA76
+    a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-05-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-10-03"^^xsd:date .
+
+ga:MarekGawecki
+    a crm:E21_Person ;
+    crm:P1_is_identified_by ga:MarekGawecki_Name .
+
+ga:MarekGawecki_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Marek Gawęcki" .
+
+ga:PoznanEthnography
+    a crm:E74_Group ;
+    crm:P1_is_identified_by ga:PoznanEthnography_Name ;
+    crm:P107_has_current_or_former_member ga:MarekGawecki .
+
+ga:PoznanEthnography_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Poznań Ethnology Department" .
+
+# ======================================================
+# Collection Context
+# ======================================================
+
+ga:EWA76_Collection
+    a crm:E78_Curated_Holding ;
+    crm:P1_is_identified_by ga:EWA76_Collection_Name .
+
+ga:EWA76_Collection_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA76 Photo Collection" .
+
+# ======================================================
+# Places
+# ======================================================
+
+ga:Herat a crm:E53_Place ; crm:P1_is_identified_by ga:Herat_Name .
+ga:Herat_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Herat" .
+
+ga:Kandahar a crm:E53_Place ; crm:P1_is_identified_by ga:Kandahar_Name .
+ga:Kandahar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Kandahar" .
+
+ga:Ghazni a crm:E53_Place ; crm:P1_is_identified_by ga:Ghazni_Name .
+ga:Ghazni_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Ghazni" .
+
+ga:Kabul a crm:E53_Place ; crm:P1_is_identified_by ga:Kabul_Name .
+ga:Kabul_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Kabul" .
+
+ga:Nayak a crm:E53_Place ; crm:P1_is_identified_by ga:Nayak_Name .
+ga:Nayak_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Nayak" .
+
+ga:TalaOBarfak a crm:E53_Place ; crm:P1_is_identified_by ga:TalaOBarfak_Name .
+ga:TalaOBarfak_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Tala o Barfak" .
+
+ga:Dawlatabad a crm:E53_Place ; crm:P1_is_identified_by ga:Dawlatabad_Name .
+ga:Dawlatabad_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Dawlatabad" .
+
+ga:Qaysar a crm:E53_Place ; crm:P1_is_identified_by ga:Qaysar_Name .
+ga:Qaysar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Qaysar" .
+
+ga:MazarSharif a crm:E53_Place ; crm:P1_is_identified_by ga:MazarSharif_Name .
+ga:MazarSharif_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Mazar-e-Sharif" .
+
+ga:Jalalabad a crm:E53_Place ; crm:P1_is_identified_by ga:Jalalabad_Name .
+ga:Jalalabad_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Jalalabad" .
+
+ga:Almar a crm:E53_Place ; crm:P1_is_identified_by ga:Almar_Name .
+ga:Almar_Name a crm:E44_Place_Appellation ; crm:P190_has_symbolic_content "Almar" .
+
+# ======================================================
+# Time-Spans for Sub-Activities
+# ======================================================
+
+ga:TimeSpan_EWA76_Herat a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-03"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-03"^^xsd:date .
+
+ga:TimeSpan_EWA76_Herat_to_Kandahar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-04"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-04"^^xsd:date .
+
+ga:TimeSpan_EWA76_Kandahar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-05"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-05"^^xsd:date .
+
+ga:TimeSpan_EWA76_Ghazni a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-06"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-06"^^xsd:date .
+
+ga:TimeSpan_EWA76_Kabul a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-07"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-17"^^xsd:date .
+
+ga:TimeSpan_EWA76_Nayak a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-06-20"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-06-30"^^xsd:date .
+
+ga:TimeSpan_EWA76_TalaOBarfak a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-07-01"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-07-19"^^xsd:date .
+
+ga:TimeSpan_EWA76_Dawlatabad a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-07-22"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-06"^^xsd:date .
+
+ga:TimeSpan_EWA76_Qaysar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-21"^^xsd:date .
+
+ga:TimeSpan_EWA76_MazarSharif a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-08-22"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-22"^^xsd:date .
+
+ga:TimeSpan_EWA76_Jalalabad a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-09-03"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-09-03"^^xsd:date .
+
+ga:TimeSpan_EWA76_Almar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-08"^^xsd:date .
+
+# ======================================================
+# Expedition Sub-Activities
+# ======================================================
+
+ga:Expedition_EWA76_Herat_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Herat_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Herat ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Herat .
+
+ga:Expedition_EWA76_Herat_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Herat" .
+
+ga:Expedition_EWA76_Herat_to_Kandahar_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Herat_to_Kandahar_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Herat , ga:Kandahar ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Herat_to_Kandahar .
+
+ga:Expedition_EWA76_Herat_to_Kandahar_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 journey from Herat to Kandahar" .
+
+ga:Expedition_EWA76_Kandahar_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Kandahar_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Kandahar ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Kandahar .
+
+ga:Expedition_EWA76_Kandahar_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Kandahar" .
+
+ga:Expedition_EWA76_Ghazni_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Ghazni_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Ghazni ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Ghazni .
+
+ga:Expedition_EWA76_Ghazni_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Ghazni" .
+
+ga:Expedition_EWA76_Kabul_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Kabul_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Kabul ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Kabul .
+
+ga:Expedition_EWA76_Kabul_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Kabul" .
+
+ga:Expedition_EWA76_Nayak_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Nayak_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Nayak ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Nayak .
+
+ga:Expedition_EWA76_Nayak_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Nayak village" .
+
+ga:Expedition_EWA76_TalaOBarfak_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_TalaOBarfak_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:TalaOBarfak ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_TalaOBarfak .
+
+ga:Expedition_EWA76_TalaOBarfak_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Tala o Barfak villages" .
+
+ga:Expedition_EWA76_Dawlatabad_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Dawlatabad_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Dawlatabad ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Dawlatabad .
+
+ga:Expedition_EWA76_Dawlatabad_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Dawlatabad" .
+
+ga:Expedition_EWA76_Qaysar_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Qaysar_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Qaysar ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Qaysar .
+
+ga:Expedition_EWA76_Qaysar_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Qaysar" .
+
+ga:Expedition_EWA76_MazarSharif_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_MazarSharif_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:MazarSharif ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_MazarSharif .
+
+ga:Expedition_EWA76_MazarSharif_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Mazar-e-Sharif" .
+
+ga:Expedition_EWA76_Jalalabad_Visit
+    a crm:E7_Activity ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Jalalabad_Visit_Name ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Jalalabad ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Jalalabad .
+
+ga:Expedition_EWA76_Jalalabad_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Jalalabad" .
+
+# ======================================================
+# Production Context: Photo-taking
+# ======================================================
+
+ga:EWA76_Almar_Photography
+    a crm:E12_Production ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P9i_forms_part_of ga:Expedition_EWA76_Qaysar_Visit ;
+    crm:P7_took_place_at ga:Almar ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Almar .
+
+# ======================================================
+# Resulting Photograph Object
+# ======================================================
+
+ga:EWA76_MG69
+    a crm:E22_Human-Made_Object ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P102_has_title ga:EWA76_MG69_Title ;
+    crm:P3_has_note "MG69 Alter Basar in Almar" ;
+    crm:P46i_forms_part_of ga:EWA76_Collection ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG69_DigitalFile ;
+    crm:P43_has_dimension ga:EWA76_MG69_Quality ,
+                          ga:EWA76_MG69_Width ,
+                          ga:EWA76_MG69_Height .
+
+ga:EWA76_MG69_Title
+    a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Basar in Almar" .
+
+ga:EWA76_MG69_Quality
+    a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut" .
+
+ga:EWA76_MG69_Width
+    a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG69_Height
+    a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 120 ;
+    crm:P91_has_unit ga:Millimeters .
+
+# ======================================================
+# Digital File as Information Object
+# ======================================================
+
+ga:EWA76_MG69_DigitalFile
+    a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG69_DigitalFile_URI ;
+    crm:P3_has_note "Digital image file representing photograph EWA76_MG69." .
+
+ga:EWA76_MG69_DigitalFile_URI
+    a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "https://EWA76.org/images/IMG69.jpg" .
+
+# ======================================================
+# Description with Provenance
+# ======================================================
+
+ga:EWA76_MG69_Description_en
+    a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "In the old part of the Almar bazaar, the dukanha (shops) which are open to the street are still traditionally made of clay. Bast mats protect against the strong sunlight. In the foreground, a porter in typical padded and tattered working clothes sits in the shade of a pine tree on the street. He wraps the rope on his back around the load and guides it over his forehead, which is also padded, when he is leaning forward carrying a load of up to 100 kg." ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:Image_Description_Type
+    a crm:E55_Type ;
+    crm:P190_has_symbolic_content "image description" .
+
+ga:EWA76_MG69_Description_en_Creation
+    a crm:E65_Creation ;
+    crm:P94_has_created ga:EWA76_MG69_Description_en ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG69_Description_en_Confidence .
+
+ga:EWA76_MG69_Description_en_Confidence
+    a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+# ======================================================
+# AI Model and Classification as Attribute Assignment
+# ======================================================
+
+ga:Pytorch_classifier_v2
+    a crm:E39_Actor ;
+    crm:P2_has_type ga:Artificial_Intelligence_Model ;
+    crm:P1_is_identified_by ga:Pytorch_classifier_v2_Name .
+
+ga:Pytorch_classifier_v2_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "PyTorch ResNet-50 Classifier v2.0" .
+
+ga:EWA76_MG69_Classification
+    a crm:E13_Attribute_Assignment ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG69 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG69_Classification_Confidence .
+
+ga:EWA76_MG69_Classification_Confidence
+    a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 0.89 ;
+    crm:P91_has_unit ga:Probability_Unit .
