@@ -1,0 +1,253 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wdt: <http://www.wikidata.org/entity/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+@prefix ga: <http://www.graphAfghanica.org/data/> .
+@prefix : <http://www.graphAfghanica.org/ontology/> .
+
+# ==========================================
+# Classes
+# ==========================================
+
+:Image
+    a rdfs:Class ;
+    rdfs:subClassOf crm:E22_Human-Made_Object .
+:Person
+    a rdfs:Class ;
+    rdfs:subClassOf crm:E21_Person ;
+    owl:equivalentClass foaf:Person .
+
+:AI_Model
+    a rdfs:Class ;
+    rdfs:label "An AI model" .
+
+# ==========================================
+# Properties
+# ==========================================
+
+:classification
+    a rdf:Property ;
+    rdfs:domain :Image ;
+    rdfs:range skos:Concept .
+
+:legend
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P3_has_note ;
+    rdfs:domain :Image ;
+    rdfs:range xsd:string .
+
+:hasDigitalRepresentation
+    a rdf:Property ;
+    rdfs:domain :Image ;
+    rdfs:range xsd:anyURI .
+
+:format_width
+    a rdf:Property ;
+    rdfs:comment "Photo Width in mm" ;
+    rdfs:domain :Image ;
+    rdfs:range xsd:int .
+
+:format_height
+    a rdf:Property ;
+    rdfs:comment "Photo Height in mm" ;
+    rdfs:domain :Image ;
+    rdfs:range xsd:int .
+
+:quality
+    a rdf:Property ;
+    rdfs:domain :Image ;
+    rdfs:range rdfs:Literal .
+
+:belongsTo
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P46i_forms_part_of ;
+    rdfs:comment "Connects an image to its curated collection" ;
+    rdfs:domain :Image ;
+    rdfs:range crm:E78_Curated_Holding .
+
+:model
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range :AI_Model ;
+    rdfs:label "AI model used"@en .
+
+:confidence
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:range xsd:decimal .
+
+:creator
+    a rdf:Property ;
+    rdfs:domain rdf:Statement ;
+    rdfs:label "creator"@en ;
+    rdfs:comment "Annotates a statement with its creator" .
+
+:description
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P3_has_note ;
+    rdfs:domain :Image ;
+    rdfs:range rdfs:Literal .
+
+:references
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P3_has_note ;
+    rdfs:domain :Image ;
+    rdfs:range rdfs:Literal .
+
+
+# ==========================================
+# Resources & Instances
+# ==========================================
+
+ga:ImageTaxonomy
+    a skos:ConceptScheme ;
+    skos:hasTopConcept ga:People , ga:Landscape , ga:Urban .
+
+ga:People a skos:Concept ;
+    skos:inScheme ga:ImageTaxonomy ;
+    skos:prefLabel "People"@en ;
+    skos:narrower ga:Women .
+
+ga:Women a skos:Concept ;
+    skos:inScheme ga:ImageTaxonomy ;
+    skos:prefLabel "Women"@en ;
+    skos:broader ga:People .
+
+ga:Landscape a skos:Concept ;
+    skos:inScheme ga:ImageTaxonomy ;
+    skos:prefLabel "Landscape"@en .
+
+ga:Urban a skos:Concept ;
+    skos:inScheme ga:ImageTaxonomy ;
+    skos:prefLabel "Urban"@en .
+
+# --- Expedition Context ---
+
+ga:Expedition_EWA76_Afghanistan
+    a crm:E7_Activity ;
+    rdfs:label "Polish Ethnological Asian Expedition 1976 (EWA-76)" ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P7_took_place_at ga:Afghanistan ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76 ;
+    crm:P9_consists_of ga:Expedition_EWA76_Qaysar_Visit .
+
+ga:Afghanistan
+    a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Afghanistan_name ;
+    owl:sameAs wdt:Q889 .
+
+ga:Afghanistan_name
+    a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Afghanistan" .
+
+ga:TimeSpan_EWA76
+    a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-05-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-10-03"^^xsd:date .
+
+ga:MarekGawecki
+    a :Person ;
+    schema:givenName "Mark" ;
+    schema:familyName "Gawęcki" ;
+    schema:name "Mark Gawęcki" .
+
+ga:PoznanEthnography
+    a crm:E74_Group ;
+    rdfs:label "Poznan Ethnology Department" ;
+    crm:P107_has_current_or_former_member ga:MarekGawecki .
+
+# --- Collection Context ---
+
+ga:EWA76_Collection
+   a crm:E78_Curated_Holding ;
+   crm:P1_is_identified_by  ga:EWA76_Collection_Name .
+
+ga:EWA76_Collection_Name
+    a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA76 Photo Collection" .
+
+
+# --- Sub-Activity: The Qaysar Visit ---
+
+ga:Qaysar
+   a crm:E53_Place ;
+   crm:P1_is_identified_by ga:Qaysar_name ;
+   owl:sameAs wdt:Q3694278 .
+
+ga:Qaysar_name
+   a crm:E44_Place_Appellation ;
+   crm:P190_has_symbolic_content "Qaysar" .
+
+ga:TimeSpan_EWA76_Qaysar
+   a crm:E52_Time-Span ;
+   crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+   crm:P82b_end_of_the_end "1976-08-21"^^xsd:date .
+
+ga:Expedition_EWA76_Qaysar_Visit
+   a crm:E7_Activity ;
+   rdfs:label "EWA-76 visit to Qaysar" ;
+   crm:P14_carried_out_by ga:PoznanEthnography ;
+   crm:P7_took_place_at ga:Qaysar ;
+   crm:P4_has_time-span ga:TimeSpan_EWA76_Qaysar .
+
+# --- The Image Object ---
+
+ga:EWA76_MG69
+    a :Image ;
+    crm:P102_has_title ga:EWA76_MG69_title ;
+    crm:P3_has_note "Basar in Almar" ;
+    :classification ga:Women , ga:Urban ;
+    :hasDigitalRepresentation "https://EWA76.org/images/IMG69.jpg"^^xsd:anyURI ;
+    :belongsTo ga:EWA76_Collection ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_photography ;
+    :format_width "175"^^xsd:int ;
+    :format_height "120"^^xsd:int ;
+    :quality "sehr gut"@de ;
+    :description "Near the concrete pillars for the new bazaar, other farmers are offering their sheep's wool fleeces..."@en ;
+    :references "Tapper, R. and N. Lindisfarne-Tapper (2020): Afghan Village Voices: Stories from a Tribal Community, pp. 4, 115–116, 132, 222–224" .
+
+
+ga:EWA76_MG69_title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG69 Alter Basar in Almar" .
+
+
+ga:EWA76_Almar_photography
+   a crm:E12_Production ;
+   crm:P14_carried_out_by ga:MarekGawecki ;
+   crm:P9i_forms_part_of ga:Expedition_EWA76_Qaysar_Visit ;
+   crm:P7_took_place_at  ga:Almar ;
+   crm:P4_has_time-span ga:TimeSpan_EWA76_Almar .
+
+ga:Almar
+ a crm:E53_Place ;
+ crm:P1_is_identified_by ga:Almar_name ;
+ owl:sameAs wdt:Q3694490 .
+
+ga:Almar_name
+ a crm:E44_Place_Appellation ;
+ crm:P190_has_symbolic_content "Almar" .
+
+ga:TimeSpan_EWA76_Almar
+ a crm:E52_Time-Span ;
+ crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+ crm:P82b_end_of_the_end "1976-08-08"^^xsd:date .
+
+
+# --- AI & Provenance Meta-modeling via RDF-star ---
+
+ga:Pytorch_classifier_v2
+        a :AI_Model ;
+        crm:P1_is_identified_by "PyTorch ResNet-50 Classifier v2.0" .
+
+<< ga:EWA76_MG69 :description "Near the concrete pillars for the new bazaar, other farmers are offering their sheep's wool fleeces..."@en >>
+      :creator ga:MarekGawecki ;
+      :confidence "1.0"^^xsd:decimal .
+
+<< ga:EWA76_MG69 :classification ga:Women >>
+      :model ga:Pytorch_classifier_v2 ;
+      :confidence "0.89"^^xsd:decimal .
