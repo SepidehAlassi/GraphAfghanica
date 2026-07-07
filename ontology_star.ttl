@@ -93,13 +93,23 @@
     rdfs:domain :Image ;
     rdfs:range rdfs:Literal .
 
+:title
+    a rdf:Property ;
+    rdfs:subPropertyOf crm:P3_has_note ;
+    rdfs:domain :Image ;
+    rdfs:range rdfs:Literal .
+
 :references
     a rdf:Property ;
     rdfs:subPropertyOf crm:P3_has_note ;
     rdfs:domain :Image ;
     rdfs:range rdfs:Literal .
 
-
+:legend
+      a rdf:Property ;
+      rdfs:subPropertyOf crm:P3_has_note ;
+      rdfs:domain :Image ;
+      rdfs:range rdfs:Literal .
 # ==========================================
 # Resources & Instances
 # ==========================================
@@ -199,8 +209,8 @@ ga:Expedition_EWA76_Qaysar_Visit
 
 ga:EWA76_MG69
     a :Image ;
-    crm:P102_has_title ga:EWA76_MG69_title ;
-    crm:P3_has_note "Basar in Almar" ;
+    :title "MG69 Alter Basar in Almar" ;
+    :legend "Basar in Almar";
     :classification ga:Women , ga:Urban ;
     :hasDigitalRepresentation "https://EWA76.org/images/IMG69.jpg"^^xsd:anyURI ;
     :belongsTo ga:EWA76_Collection ;
@@ -210,10 +220,6 @@ ga:EWA76_MG69
     :quality "sehr gut"@de ;
     :description "Near the concrete pillars for the new bazaar, other farmers are offering their sheep's wool fleeces..."@en ;
     :references "Tapper, R. and N. Lindisfarne-Tapper (2020): Afghan Village Voices: Stories from a Tribal Community, pp. 4, 115–116, 132, 222–224" .
-
-
-ga:EWA76_MG69_title a crm:E35_Title ;
-    crm:P190_has_symbolic_content "MG69 Alter Basar in Almar" .
 
 
 ga:EWA76_Almar_photography
