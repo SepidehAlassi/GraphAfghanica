@@ -1,0 +1,3403 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ga: <http://www.graphAfghanica.org/data/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ga:EWA76_95_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_95_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_95_Description_de .
+
+ga:EWA76_95_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_95_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_95_Description_en .
+
+ga:EWA76_95_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_95_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_95_Description_pl .
+
+ga:EWA76_95_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_95 ;
+    crm:P190_has_symbolic_content "According to https://cyfrowearchiwum.amu.edu.pl/ photographs MG 94-97 were taken in Tala-o-Barfak." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_98_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_98 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_98_Classification_001_Confidence .
+
+ga:EWA76_98_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_98_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_98_Description_de .
+
+ga:EWA76_98_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_98_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_98_Description_en .
+
+ga:EWA76_98_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_98_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_98_Description_pl .
+
+ga:EWA76_98_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Pstrusińska, J. (2004): O tajnych językach Afganistanu i ich użytkownikach, Kraków, pp. 71–79: The author discusses the secret language of this ethno-occupational group" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_98_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1983): Haydarihā – endogamiczna społeczność kowali północnego Afganistanu w procesie przemian / Haydarihā – an Endogamous Community of Blacksmiths in Northern Afghanistan in the Process of Transformation. In: Z. Jasiewicz (red.), Kultura i życie społeczne Azji Środkowej: Z polskich badań dawnych i współczesnych / Culture and Social Life of Central Asia: From Polish Studies, Past and Present, Poznań, pp. 73–82: An English version of this article was published in 1978." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_98_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1978): The Haydarihā: An Afghanistan Community of Blacksmiths: An Attempt to Change the ethnic Situation and Social Position. In: J. Burszta (red.), Poland at the 10th International Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 35–42." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_98_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. S. 88: diese Aufnahme: “Fot. 8. Kowal Hajdar przy pracy na bazarza w Kajsar. Fot. M. Gawęcki.” [Hajdar, der Schmied, bei der Arbeit auf dem Basar in Kajsar.]" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG69_Classification a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG69 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG69_Classification_Confidence .
+
+ga:EWA76_MG69_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG69 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG69_Classification_001_Confidence .
+
+ga:EWA76_MG69_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG69_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG69_Description_de .
+
+ga:EWA76_MG69_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG69_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG69_Description_en .
+
+ga:EWA76_MG69_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG69_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG69_Description_pl .
+
+ga:EWA76_MG69_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "Tapper, R. and N. Lindisfarne-Tapper (2020): Afghan Village Voices: Stories from a Tribal Community, pp. 4, 115–116, 132, 222–224: on bazaar and nomads." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG69_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "Sakata, H.L. (2002): Music in the Mind: The Concepts of Music and Musician in Afghanistan, pp. 12–34: Although the monograph is dedicated to music, the author discusses in detail three urban types, including three models of bazaar activity." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG69_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "Bonine, M.E. (1989): Bazar. In: Encyclopaedia Iranica, IV(1), pp. 21–25." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG69_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "Adamec, L. (1979): Mazar-i-Sharif and North-Central Afghanistan, S. 59-60: Almar, a subdistrict of Maimana, lying west of the town of that name." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG70_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG70 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG70_Classification_001_Confidence .
+
+ga:EWA76_MG70_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG70_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG70_Description_de .
+
+ga:EWA76_MG70_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG70_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG70_Description_en .
+
+ga:EWA76_MG70_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG70_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG70_Description_pl .
+
+ga:EWA76_MG70_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "Ferdinand, K. (1969): Nomadism in Afghanistan: With an Appendix on Milk Products. In: L. Földes (ed.), Viehwirtschaft and Hirtenkultur: Ethnographische Studien, Budapest, pp. 127–160." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG70_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "Balland, D. (1991): Cheese. In: Encyclopædia Iranica, V(4), pp. 391–393." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG70_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "Balland, D. (1985): Fromages traditionnels et fromages industriels d’Afghanistan. In: P. Brunet (ed.), Histoire et géographie des fromages, Publications du Centre de recherches sur l’évolution de la vie rurale 11, Caen, pp. 259–268." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG70_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "Balland, D. (1985): Fromages traditionnels et fromages industriels d’Afghanistan. In: Production pastorale et société 17, pp. 13–25." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG71_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG71 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG71_Classification_001_Confidence .
+
+ga:EWA76_MG71_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG71_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG71_Description_de .
+
+ga:EWA76_MG71_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG71_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG71_Description_en .
+
+ga:EWA76_MG71_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG71_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG71_Description_pl .
+
+ga:EWA76_MG71_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG71 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Seite 152, Foto30: ist am selben Ort aufgenommen: “Stragany na bazarze w Almar. Fot. M. Gawęcki.” [Stände auf dem Basar in Almar]." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG72_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG72 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG72_Classification_001_Confidence .
+
+ga:EWA76_MG72_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG72_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG72_Description_de .
+
+ga:EWA76_MG72_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG72_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG72_Description_en .
+
+ga:EWA76_MG72_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG72_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG72_Description_pl .
+
+ga:EWA76_MG72_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG72 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Seite 152, Foto30: diese Aufnahme: “Stragany na bazarze w Almar. Fot. M. Gawęcki.” [Stände auf dem Basar in Almar]." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG73_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG73 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG73_Classification_001_Confidence .
+
+ga:EWA76_MG73_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG73_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG73_Description_de .
+
+ga:EWA76_MG73_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG73_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG73_Description_en .
+
+ga:EWA76_MG73_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG73_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG73_Description_pl .
+
+ga:EWA76_MG73_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "Pstrusińska, J. (2004): O tajnych językach Afganistanu i ich użytkownikach, Kraków, pp. 71–79: The author discusses the secret language of this ethno-occupational group." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG73_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1983): Haydarihā – endogamiczna społeczność kowali północnego Afganistanu w procesie przemian / Haydarihā – an Endogamous Community of Blacksmiths in Northern Afghanistan in the Process of Transformation. In: Z. Jasiewicz (red.), Kultura i życie społeczne Azji Środkowej: Z polskich badań dawnych i współczesnych / Culture and Social Life of Central Asia: From Polish Studies, Past and Present, Poznań, pp. 73–82: An English version of this article was published in 1978." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG73_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1978): The Haydarihā: An Afghanistan Community of Blacksmiths: An Attempt to Change the ethnic Situation and Social Position. In: J. Burszta (red.), Poland at the 10th International Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 35–42." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG74_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG74 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG74_Classification_001_Confidence .
+
+ga:EWA76_MG74_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG74_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG74_Description_de .
+
+ga:EWA76_MG74_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG74_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG74_Description_en .
+
+ga:EWA76_MG74_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG74_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG74_Description_pl .
+
+ga:EWA76_MG75_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG75 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG75_Classification_001_Confidence .
+
+ga:EWA76_MG75_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG75_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG75_Description_de .
+
+ga:EWA76_MG75_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG75_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG75_Description_en .
+
+ga:EWA76_MG75_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG75_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG75_Description_pl .
+
+ga:EWA76_MG76_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG76 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG76_Classification_001_Confidence .
+
+ga:EWA76_MG76_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG76_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG76_Description_de .
+
+ga:EWA76_MG76_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG76_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG76_Description_en .
+
+ga:EWA76_MG76_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG76_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG76_Description_pl .
+
+ga:EWA76_MG76_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Wiebe, D. (1979): Strukturwandlungen afghanischer Mittelpunktsiedlungen unter dem Einfluss ausländi-scher Infrastrukturprojekte. Erdkunde 33(3), pp. 204–215. - The author describes changes in the functioning of traditional tea houses driven by economic factors." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG76_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Wiebe, D. (1981): Probleme stadtgeographischer Forschung in Afghanistan: Wandel und Beharrung afghanischer Provinzstädte. In: C. Rathjens (ed.), Neue Forschungen in Afghanistan, Opladen, pp. 149–162. - The author describes changes in the functioning of traditional tea houses driven by economic factors." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG76_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Fischer, L. (1972): Ernährung und neuzeitlicher Ernährungswandel in Afghanistan. In: W. Kraus (ed.), Steigerung der landwirtschaftlichen Produktion und ihre Weiterverarbeitung in Afghanistan, Afghanische Studien 6, pp. 22–56." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG76_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Centlivres-Demont, M. (1976): Popular Art in Afghanistan, Graz: Examples of wall paintings in teahouses." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG76_Reference_005 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Balland, D. and M. Bazin (1990): Čāy. In: Encyclopaedia Iranica, V(1), pp. 103–107." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-1_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG77-1 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG77-1_Classification_001_Confidence .
+
+ga:EWA76_MG77-1_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-1_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-1_Description_de .
+
+ga:EWA76_MG77-1_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-1_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-1_Description_en .
+
+ga:EWA76_MG77-1_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-1_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-1_Description_pl .
+
+ga:EWA76_MG77-1_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "Leix, A. (1942): Trachten der Nomaden Turkestans. In: CIBA-Rundschau 54, pp. 1986–2001." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-1_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "Dupree, N.H. (1992): Clothing xiii. Clothing in Afghanistan. In: Encyclopaedia Iranica, V(8), pp. 811–815." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-1_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "Sammlung Luise von Segnitz, LvS 211 zeigt einen typischen Wasserträger mit Wassersack in Kabul, der jedoch anstelle eines Polsters eine Lederweste trägt." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-2_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG77-2 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG77-2_Classification_001_Confidence .
+
+ga:EWA76_MG77-2_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-2_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-2_Description_de .
+
+ga:EWA76_MG77-2_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-2_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-2_Description_en .
+
+ga:EWA76_MG77-2_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG77-2_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG77-2_Description_pl .
+
+ga:EWA76_MG77-2_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "Leix, A. (1942): Trachten der Nomaden Turkestans. In: CIBA-Rundschau 54, pp. 1986–2001." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-2_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "Dupree, N.H. (1992): Clothing xiii. Clothing in Afghanistan. In: Encyclopaedia Iranica, V(8), pp. 811–815." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG77-2_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "Sammlung Luise von Segnitz, LvS 211 zeigt einen typischen Wasserträger mit Wassersack in Kabul, der jedoch anstelle eines Polsters eine Lederweste trägt." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG78_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG78 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG78_Classification_001_Confidence .
+
+ga:EWA76_MG78_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG78_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG78_Description_de .
+
+ga:EWA76_MG78_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG78_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG78_Description_en .
+
+ga:EWA76_MG78_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG78_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG78_Description_pl .
+
+ga:EWA76_MG79_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG79 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG79_Classification_001_Confidence .
+
+ga:EWA76_MG79_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG79_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG79_Description_de .
+
+ga:EWA76_MG79_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG79_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG79_Description_en .
+
+ga:EWA76_MG79_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG79_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG79_Description_pl .
+
+ga:EWA76_MG79_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG79 ;
+    crm:P190_has_symbolic_content "Dupree, N.H. (1992): Clothing xiii. Clothing in Afghanistan. In: Encyclopaedia Iranica, V(8), pp. 811–812 – headgear" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG79_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG79 ;
+    crm:P190_has_symbolic_content "Hinz, W. (1955): Islamische Masse und Gewichte: Umgerechnet ins metrische System, Leiden-Köln." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG80_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG80 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG80_Classification_001_Confidence .
+
+ga:EWA76_MG80_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG80 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG80_Classification_002_Confidence .
+
+ga:EWA76_MG80_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG80_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG80_Description_de .
+
+ga:EWA76_MG80_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG80_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG80_Description_en .
+
+ga:EWA76_MG80_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG80_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG80_Description_pl .
+
+ga:EWA76_MG80_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG80 ;
+    crm:P190_has_symbolic_content "Dupree, N.H. (1992): Clothing xiii. Clothing in Afghanistan. In: Encyclopaedia Iranica, V(8), pp. 811–815." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG81_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG81 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG81_Classification_001_Confidence .
+
+ga:EWA76_MG81_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG81 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG81_Classification_002_Confidence .
+
+ga:EWA76_MG81_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG81_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG81_Description_de .
+
+ga:EWA76_MG81_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG81_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG81_Description_en .
+
+ga:EWA76_MG81_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG81_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG81_Description_pl .
+
+ga:EWA76_MG82_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG82 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG82_Classification_001_Confidence .
+
+ga:EWA76_MG82_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG82_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG82_Description_de .
+
+ga:EWA76_MG82_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG82_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG82_Description_en .
+
+ga:EWA76_MG82_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG82_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG82_Description_pl .
+
+ga:EWA76_MG83_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG83 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG83_Classification_001_Confidence .
+
+ga:EWA76_MG83_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG83_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG83_Description_de .
+
+ga:EWA76_MG83_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG83_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG83_Description_en .
+
+ga:EWA76_MG83_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG83_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG83_Description_pl .
+
+ga:EWA76_MG84_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG84 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG84_Classification_001_Confidence .
+
+ga:EWA76_MG84_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG84_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG84_Description_de .
+
+ga:EWA76_MG84_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG84_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG84_Description_en .
+
+ga:EWA76_MG84_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG84_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG84_Description_pl .
+
+ga:EWA76_MG84_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG84 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Seite 154: diese Aufnahme: “Rzemieslnik przerabiajacy stare opony samochodowe na obuwie na bazarze w Kajsar. Fot. M. Gawęcki.” [Ein Handwerker verarbeitet auf dem Basar von Kaysar alte Autoreifen zu Schuhen.]" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG85_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG85 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG85_Classification_001_Confidence .
+
+ga:EWA76_MG85_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG85_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG85_Description_de .
+
+ga:EWA76_MG85_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG85_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG85_Description_en .
+
+ga:EWA76_MG85_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG85_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG85_Description_pl .
+
+ga:EWA76_MG85_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG85 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Seite 154: diese Aufnahme: “Rzemieslnik przerabiajacy stare opony samochodowe na obuwie na bazarze w Kajsar. Fot. M. Gawęcki.” [Ein Handwerker verarbeitet auf dem Basar von Kaysar alte Autoreifen zu Schuhen.]" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG86_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG86 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG86_Classification_001_Confidence .
+
+ga:EWA76_MG86_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG86 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG86_Classification_002_Confidence .
+
+ga:EWA76_MG86_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG86_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG86_Description_de .
+
+ga:EWA76_MG86_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG86_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG86_Description_en .
+
+ga:EWA76_MG86_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG86_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG86_Description_pl .
+
+ga:EWA76_MG87_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG87 ;
+    crm:P141_assigned ga:Women ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG87_Classification_001_Confidence .
+
+ga:EWA76_MG87_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG87 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG87_Classification_002_Confidence .
+
+ga:EWA76_MG87_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG87_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG87_Description_de .
+
+ga:EWA76_MG87_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG87_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG87_Description_en .
+
+ga:EWA76_MG87_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG87_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG87_Description_pl .
+
+ga:EWA76_MG87_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Denny, W. (1990): Carpets xvi. Central Asian Carpets. In: Encyclopaedia Iranica, V(1), pp. 5–9." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG87_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1988): Medycyna tradycyjna ... / Traditional medicine in Afghanistan, S. 46: eine weitere Aufnahme derselben Gruppe: “7. Turkmenka uczaca dzieci z rodziny pasztunskiej wiazania dywanow. Qaysar. Fot. M. Gawęcki.”" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG87_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. S. 79: eine ähnliche Aufnahme derselben Gruppe: «Fot. 7. Turkmenka w rodzinie pasztunskiej uczaca dzieci sztuki wiazania dywanow. Kajsar. Fot. M. Gawęcki.» [Eine turkmenische Frau in einer paschtunischen Familie, die Kindern die Kunst des Teppichknüpfens beibringt.]" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG88_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG88 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG88_Classification_001_Confidence .
+
+ga:EWA76_MG88_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG88 ;
+    crm:P141_assigned ga:Women ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG88_Classification_002_Confidence .
+
+ga:EWA76_MG88_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG88_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG88_Description_de .
+
+ga:EWA76_MG88_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG88_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG88_Description_en .
+
+ga:EWA76_MG88_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG88_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG88_Description_pl .
+
+ga:EWA76_MG88_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG88 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies środkowego i północnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Tafel 31: diese Aufnahme." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG89_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG89 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG89_Classification_001_Confidence .
+
+ga:EWA76_MG89_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG89_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG89_Description_de .
+
+ga:EWA76_MG89_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG89_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG89_Description_en .
+
+ga:EWA76_MG89_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG89_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG89_Description_pl .
+
+ga:EWA76_MG90_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG90 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG90_Classification_001_Confidence .
+
+ga:EWA76_MG90_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG90 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG90_Classification_002_Confidence .
+
+ga:EWA76_MG90_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG90_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG90_Description_de .
+
+ga:EWA76_MG90_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG90_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG90_Description_en .
+
+ga:EWA76_MG90_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG90_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG90_Description_pl .
+
+ga:EWA76_MG90_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1988): Medical Pluralism in Afghanistan: Conflict between, Coexistence or Integration of Various Medical Systems? In: S. Szynkiewicz (ed.), Poland at the 12th Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 235–247." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1987): Transformations of Traditional Medicine in Afghanistan. In: Ethnologia Polona, 13, pp. 91–127" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1985): Two Types of Traditional Medicine in Afghanistan. In: Ethnologia Polona, 11, pp. 227–236." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1985): Rośliny lecznicze w tradycyjnej medycynie Afganistanu: Gatunki rodzin: Umbelliferae, Zygophyllaceae i Plantaginaceae / Medicinal Plants in Traditional Afghan Medicine: Species from the Families Umbelliferae, Zygophyllaceae, and Plantaginaceae. In: A. Paluch (red.), Etnobotanika: Materiały I Ogólnopolskiego Seminarium Etnobotanicznego / Ethnobotany: Materials from the First National Ethnobotanical Seminar, Wrocław, pp. 97–109." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_005 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1981): Społeczno-kulturowe uwarunkowania sytuacji zdrowotnej ludności wiejskiej we współczesnym Afganistanie / Socio-Cultural Determinants of the Health Situation of the Rural Population in Contemporary Afghanistan. In: Lud, 65, pp. 145–170." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_006 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1979): „Gorące” i „zimne” w tradycyjnej medycynie Afganistanu / “Hot” and “Cold” in Traditional Afghan Medicine. In: Etnografia Polska, 23(2), pp. 307–329." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG90_Reference_007 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Seite 151, diese Aufnahme: “Fot. 28. Stragan na centralnym placu bazarowym w Kajsar. Fot. M. Gawęcki.” [Ein Stand auf dem zentralen Basarplatz in Qaysar.]" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG91 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG91_Classification_001_Confidence .
+
+ga:EWA76_MG91_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG91_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG91_Description_de .
+
+ga:EWA76_MG91_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG91_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG91_Description_en .
+
+ga:EWA76_MG91_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG91_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG91_Description_pl .
+
+ga:EWA76_MG91_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1988): Medycyna tradycyjna w Afganistanie i jej przeobrażenia / Traditional Medicine in Afghanistan and Its Transformations, S. 206, diese Aufnahme: “30. Miejscowy protetyk na bazarze w Qaysār / A local prosthetist at a bazaar in Qaysar. Foto by M. Gawęcki.”" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1988): Medical Pluralism in Afghanistan: Conflict between, Coexistence or Integration of Various Medical Systems?. In: S. Szynkiewicz (ed.), Poland at the 12th Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 235–247." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1987): Transformations of Traditional Medicine in Afghanistan. In: Ethnologia Polona, 13, pp. 91–127; S. 123, diese Aufnahme: “5. Miejscowy protetyk na bazarze w Qaysār / A local prosthetist at a bazaar in Qaysar. Foto by M. Gawęcki.”" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_004 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala-Gawęcka, D. (1985): Two Types of Traditional Medicine in Afghanistan. In: Ethnologia Polona, 11, pp. 227–236." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_005 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1985): Rośliny lecznicze w tradycyjnej medycynie Afganistanu: Gatunki rodzin: Umbelliferae, Zygophyllaceae i Plantaginaceae / Medicinal Plants in Traditional Afghan Medicine: Species from the Families Umbelliferae, Zygophyllaceae, and Plantaginaceae. In: A. Paluch (red.), Etnobotanika: Materiały I Ogólnopolskiego Seminarium Etnobotanicznego / Ethnobotany: Materials from the First National Ethnobotanical Seminar, Wrocław, pp. 97–109." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_006 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1981): Społeczno-kulturowe uwarunkowania sytuacji zdrowotnej ludności wiejskiej we współczesnym Afganistanie / Socio-Cultural Determinants of the Health Situation of the Rural Population in Contemporary Afghanistan. In: Lud, 65, pp. 145–170." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG91_Reference_007 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Penkala, D. (1979): „Gorące” i „zimne” w tradycyjnej medycynie Afganistanu / “Hot” and “Cold” in Traditional Afghan Medicine. In: Etnografia Polska, 23(2), pp. 307–329." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG92_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG92 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG92_Classification_001_Confidence .
+
+ga:EWA76_MG92_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG92 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG92_Classification_002_Confidence .
+
+ga:EWA76_MG92_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG92_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG92_Description_de .
+
+ga:EWA76_MG92_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG92_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG92_Description_en .
+
+ga:EWA76_MG92_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG92_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG92_Description_pl .
+
+ga:EWA76_MG92_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG92 ;
+    crm:P190_has_symbolic_content "Gawęcki, M. (1983): Wies srodkowego i Polnocnego Afganistanu. / A village of Central and North Afghanistan. Tradition and attempts at modernization. Tafel 31: diese Aufnahme: “" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG93_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG93 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG93_Classification_001_Confidence .
+
+ga:EWA76_MG93_Classification_002 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG93 ;
+    crm:P141_assigned ga:Urban ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG93_Classification_002_Confidence .
+
+ga:EWA76_MG93_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG93_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG93_Description_de .
+
+ga:EWA76_MG93_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG93_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG93_Description_en .
+
+ga:EWA76_MG93_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG93_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG93_Description_pl .
+
+ga:EWA76_MG93_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "Pstrusińska, J. (2004): O tajnych językach Afganistanu i ich użytkownikach, Kraków, pp. 71–79: The author discusses the secret language of this ethno-occupational group" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG93_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1983): Haydarihā – endogamiczna społeczność kowali północnego Afganistanu w procesie przemian / Haydarihā – an Endogamous Community of Blacksmiths in Northern Afghanistan in the Process of Transformation. In: Z. Jasiewicz (red.), Kultura i życie społeczne Azji Środkowej: Z polskich badań dawnych i współczesnych / Culture and Social Life of Central Asia: From Polish Studies, Past and Present, Poznań, pp. 73–82: An English version of this article was published in 1978" ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG93_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1978): The Haydarihā: An Afghanistan Community of Blacksmiths: An Attempt to Change the ethnic Situation and Social Position. In: J. Burszta (red.), Poland at the 10th International Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 35–42." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG94_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG94_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG94_Description_de .
+
+ga:EWA76_MG94_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG94_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG94_Description_en .
+
+ga:EWA76_MG94_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG94_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG94_Description_pl .
+
+ga:EWA76_MG94_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG94 ;
+    crm:P190_has_symbolic_content "According to https://cyfrowearchiwum.amu.edu.pl/ photographs MG 94-97 were taken in Tala-o-Barfak." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG96_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG96_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG96_Description_de .
+
+ga:EWA76_MG96_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG96_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG96_Description_en .
+
+ga:EWA76_MG96_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG96_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG96_Description_pl .
+
+ga:EWA76_MG96_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG96 ;
+    crm:P190_has_symbolic_content "According to https://cyfrowearchiwum.amu.edu.pl/ photographs MG 94-97 were taken in Tala-o-Barfak." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG97_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG97_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG97_Description_de .
+
+ga:EWA76_MG97_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG97_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG97_Description_en .
+
+ga:EWA76_MG97_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG97_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG97_Description_pl .
+
+ga:EWA76_MG97_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG97 ;
+    crm:P190_has_symbolic_content "According to https://cyfrowearchiwum.amu.edu.pl/ photographs MG 94-97 were taken in Tala-o-Barfak." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG99_Classification_001 a crm:E13_Attribute_Assignment ;
+    crm:P140_assigned_attribute_to ga:EWA76_MG99 ;
+    crm:P141_assigned ga:People ;
+    crm:P14_carried_out_by ga:Pytorch_classifier_v2 ;
+    crm:P177_assigned_property_type crm:P2_has_type ;
+    crm:P43_has_dimension ga:EWA76_MG99_Classification_001_Confidence .
+
+ga:EWA76_MG99_Description_de_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG99_Description_de_Confidence ;
+    crm:P94_has_created ga:EWA76_MG99_Description_de .
+
+ga:EWA76_MG99_Description_en_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG99_Description_en_Confidence ;
+    crm:P94_has_created ga:EWA76_MG99_Description_en .
+
+ga:EWA76_MG99_Description_pl_Creation a crm:E65_Creation ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P43_has_dimension ga:EWA76_MG99_Description_pl_Confidence ;
+    crm:P94_has_created ga:EWA76_MG99_Description_pl .
+
+ga:EWA76_MG99_Reference_001 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Pstrusińska, J. (2004): O tajnych językach Afganistanu i ich użytkownikach, Kraków, pp. 71–79: The author discusses the secret language of this ethno-occupational group." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG99_Reference_002 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1983): Haydarihā – endogamiczna społeczność kowali północnego Afganistanu w procesie przemian / Haydarihā – an Endogamous Community of Blacksmiths in Northern Afghanistan in the Process of Transformation. In: Z. Jasiewicz (red.), Kultura i życie społeczne Azji Środkowej: Z polskich badań dawnych i współczesnych / Culture and Social Life of Central Asia: From Polish Studies, Past and Present, Poznań, pp. 73–82: An English version of this article was published in 1978." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:EWA76_MG99_Reference_003 a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Jasiewicz, Z. (1978): The Haydarihā: An Afghanistan Community of Blacksmiths: An Attempt to Change the ethnic Situation and Social Position. In: J. Burszta (red.), Poland at the 10th International Congress of Anthropological and Ethnological Sciences, Wrocław, pp. 35–42." ;
+    crm:P2_has_type ga:Bibliographic_Reference_Type .
+
+ga:Expedition_EWA76_Afghanistan a crm:E7_Activity ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Afghanistan_Name ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76 ;
+    crm:P7_took_place_at ga:Afghanistan ;
+    crm:P9_consists_of ga:Expedition_EWA76_Qaysar_Visit .
+
+ga:Landscape a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Landscape" .
+
+ga:Afghanistan a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Afghanistan_Name .
+
+ga:Afghanistan_Name a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Afghanistan" .
+
+ga:Almar a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Almar_Name .
+
+ga:Almar_Name a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Almar" .
+
+ga:Artificial_Intelligence_Model a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Artificial Intelligence Model" .
+
+ga:EWA76_95_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_95 ;
+    crm:P190_has_symbolic_content "Vier Aufnahmen von Werkzeugen und Geräten aus der Werkstatt eines Gold- und Silberschmieds aus Qaysar."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_95_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_95_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_95 ;
+    crm:P190_has_symbolic_content "Four photographs of tools and equipment from the workshop of a gold- and silversmith from Qaysar."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_95_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_95_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_95 ;
+    crm:P190_has_symbolic_content "Cztery fotografie narzędzi i wyposażenia z warsztatu złotnika i złotnika z Qaysar."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_95_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_95_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_95_DigitalFile_URI .
+
+ga:EWA76_95_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG95.png"^^xsd:anyURI .
+
+ga:EWA76_95_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_95_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_95_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG95 Gold- und Silberschmiede-Werkzeuge" .
+
+ga:EWA76_95_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_98_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_98_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Ein weiterer Schmied auf dem Wochenmarkt in Qaysar hat eine Tülle (rohrförmiges Teil eines Werkzeugs, in dem ein Stiel befestigt werden kann) hergestellt, die er nun mit Nieten an einem Schaufelblatt oder einer Pflugschar befestigt. Vor und neben ihm liegt sein Werkzeug und eine kleine Esse, in der durch den Knaben im Hintergrund mit zwei Blasebälgen die Holzkohle zum Glühen gebracht wird. Die beiden Kunden am rechten Bildrand sehen zu, wie Ihr Auftrag ausgeführt wird"@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_98_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_98_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Another blacksmith at the weekly market in Qaysar has made a grommet (tubular part of a tool in which a handle can be attached), which he now attaches to a shovel blade or ploughshare with rivets. In front of and next to him lie his tools and a small forge, in which the boy in the background makes the charcoal glow with two bellows. The two customers on the right side of the screen watch how their order is being executed."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_98_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_98_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_98 ;
+    crm:P190_has_symbolic_content "Inny kowal na cotygodniowym targu w Qaysar wykonał dzióbek (rurkowatą część narzędzia, do której można przymocować uchwyt), który teraz mocuje nitami do ostrza łopaty lub lemiesza. Przed nim i obok niego leżą jego narzędzia i mała kuźnia, w której chłopiec w tle dwoma miechami sprawia, że węgiel drzewny płonie. Dwaj klienci po prawej stronie ekranu obserwują, jak realizowane jest ich zamówienie"@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_98_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_98_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_98_DigitalFile_URI .
+
+ga:EWA76_98_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG98.png"^^xsd:anyURI .
+
+ga:EWA76_98_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 132 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_98_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, dunkel"^^xsd:string .
+
+ga:EWA76_98_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG98	Reparaturarbeiten" .
+
+ga:EWA76_98_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 179 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_Collection_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA76 Photo Collection" .
+
+ga:EWA76_MG69_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG69_Classification_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 0.89 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG69_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "Im alten Teil des Basars von Almar sind die zur Strasse offenen dukanha (Läden) noch traditionell aus Lehm erstellt. Bastmatten schützen vor der starken Sonneneinstrahlung. Im Vordergrund sitzt ein Lastenträger in typisch gepolsterter und zerschlissener Arbeitskleidung im Schatten einer Föhre auf der Strasse. Das Seil auf seinem Rücken schlingt er um die Last und führt es über seine ebenfalls gepolsterte Stirne, wenn er stark nach vorn gebeugt bis zu 100 kg trägt."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG69_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG69_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "In the old part of the Almar bazaar, the dukanha (shops) which are open to the street are still traditionally made of clay. Bast mats protect against the strong sunlight. In the foreground, a porter in typical padded and tattered working clothes sits in the shade of a pine tree on the street. He wraps the rope on his back around the load and guides it over his forehead, which is also padded, when he is leaning forward carrying a load of up to 100 kg.",
+        "In the old part of the Almar bazaar, the dukanha (shops) which are open to the street are still traditionally made of clay. Bast mats protect against the strong sunlight. In the foreground, a porter in typical padded and tattered working clothes sits in the shade of a pine tree on the street. He wraps the rope on his back around the load and guides it over his forehead, which is also padded, when he is leaning forward carrying a load of up to 100 kg."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG69_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG69_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG69 ;
+    crm:P190_has_symbolic_content "W starej części bazaru Almar dukanha (sklepy) otwarte na ulicę są nadal tradycyjnie wykonane z gliny. Maty łykowe chronią przed silnym nasłonecznieniem. Na pierwszym planie tragarz w typowym wyściełanym i podartym ubraniu roboczym siedzi w cieniu sosny na ulicy. Owija linę na plecach wokół ładunku i prowadzi ją po czole, które jest również wyściełane, gdy pochyla się do przodu i dźwiga do 100 kg."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG69_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG69_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG69_DigitalFile_URI ;
+    crm:P3_has_note "Digital image file representing photograph EWA76_MG69." .
+
+ga:EWA76_MG69_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG69.png"^^xsd:anyURI,
+        "https://EWA76.org/images/IMG69.jpg" .
+
+ga:EWA76_MG69_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 120 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG69_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut",
+        "sehr gut"^^xsd:string .
+
+ga:EWA76_MG69_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Basar in Almar",
+        "MG69 Alter Basar in Almar" .
+
+ga:EWA76_MG69_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG70_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG70_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "Im moderneren Teil des Basars von Almar sind die Läden und Werkstätten ebenerdig und können zur Strasse abgeschlossen werden. Die Waren werden häufig, wie bei diesem Töpfer und dem danebenliegenden Dieselöl-Händler, vor dem Laden aufgestellt. Auf der Strasse trägt ein Mann zwei mit Tüchern zugedeckte Eimer. Sie enthalten vermutlich mast (Yoghurt) oder Frischkäse (panir-e kham)."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG70_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG70_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "In the more modern part of the Almar bazaar, the shops and workshops are at ground level and can be closed off from the street. The goods are often placed in front of the shop, as in the case of this potter and the diesel oil merchant next door. On the street, a man carries two buckets covered with cloths. They probably contain mast (yoghurt) or cottage cheese (panir-e kham)."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG70_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG70_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG70 ;
+    crm:P190_has_symbolic_content "W nowocześniejszej części bazaru Almar sklepy i warsztaty znajdują się na parterze i można je odgrodzić od ulicy. Towar jest często umieszczany przed sklepem, jak w przypadku tego garncarza i sprzedawcy oleju napędowego obok. Na ulicy mężczyzna niesie dwa wiadra przykryte. Prawdopodobnie zawierają mast (jogurt) lub serek śmietankowy (panir-e kham)."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG70_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG70_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG70_DigitalFile_URI .
+
+ga:EWA76_MG70_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG70.png"^^xsd:anyURI .
+
+ga:EWA76_MG70_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 122 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG70_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, starker Kontrast"^^xsd:string .
+
+ga:EWA76_MG70_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG 70 Neuer Basar in Almar" .
+
+ga:EWA76_MG70_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 168 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG71_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG71_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG71 ;
+    crm:P190_has_symbolic_content "Der neue Basar wurde um den Verkehrs-Kreisel im Zentrum der alaqadari (Distrikthauptort) Almar angelegt. Die Händler/Handwerker, die am Strassenrand ihre Ware unter improvisierten Sonnenschirmen anbieten, kommen nur an den Markttagen aus der Umgebung in die Stadt."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG71_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG71_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG71 ;
+    crm:P190_has_symbolic_content "The new bazaar was built around the roundabout in the center of the alaqadari (district capital) Almar. The traders/craftsmen who offer their goods under improvised parasols on the roadside only come to the city from the surrounding area on market days."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG71_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG71_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG71 ;
+    crm:P190_has_symbolic_content "Nowy bazar został zbudowany wokół ronda w centrum alaqadari (stolicy dystryktu) Almar. Handlarze/rzemieślnicy, którzy oferują swoje towary pod zaimprowizowanymi parasolami na poboczu drogi, przyjeżdżają do miasta z okolic tylko w dni targowe."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG71_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG71_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG71_DigitalFile_URI .
+
+ga:EWA76_MG71_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG71.png"^^xsd:anyURI .
+
+ga:EWA76_MG71_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG71_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG71_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG 71 Markttag in Almar" .
+
+ga:EWA76_MG71_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG72_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG72_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG72 ;
+    crm:P190_has_symbolic_content "Dieses Bild ist nur wenige Schritte entfernt von MG 71 aufgenommen worden. Im Vordergrund dominieren die schwarzen Wassereimer, die aus defekten Schläuchen von Lastwagenrädern hergestellt worden sind. Wasserkannen, Mehlsiebe, Seilerwaren und vieles mehr wird hier von Händlern angeboten, die nur am Markttag anwesend sind und keinen eigenen Laden besitzen."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG72_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG72_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG72 ;
+    crm:P190_has_symbolic_content "This picture was taken just a few steps away from MG 71. In the foreground, the black water buckets, which have been made from defective hoses of truck wheels, dominate. Water jugs, flour sieves, rope goods and much more are offered here by traders who are only present on market day and do not have their own shop."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG72_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG72_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG72 ;
+    crm:P190_has_symbolic_content "To zdjęcie zostało zrobione zaledwie kilka kroków od MG 71. Na pierwszym planie dominują czarne wiadra na wodę, które zostały wykonane z uszkodzonych węży kół ciężarówek. Dzbanki na wodę, sita do mąki, wyroby linowe i wiele innych oferują tu handlarze, którzy są obecni tylko w dzień targowy i nie mają własnego sklepu."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG72_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG72_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG72_DigitalFile_URI .
+
+ga:EWA76_MG72_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG72.png"^^xsd:anyURI .
+
+ga:EWA76_MG72_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG72_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG72_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG 72 Markttag in Almar" .
+
+ga:EWA76_MG72_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG73_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG73_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "Am Strassenrand im modernen Basar, der um den zentralen Verkehrs-Kreisel erstellt wurde, sitzt ein Handwerker vor einem in die Erde gerammten kleinen Amboss, neben dem eine Heugabel und ein afghanisches Vorhängeschloss liegen. Daneben steht eine mit Rondellen verzierte Kanne. Zwischen seinen Füssen liegen grobe Werkzeuge im Staub. Er scheint für seinen neben ihm sitzenden Kunden etwas zu bearbeiten."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG73_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG73_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "On the side of the road in the modern bazaar built around the central roundabout, a craftsman sits in front of a small anvil rammed into the earth, next to which lie a pitchfork and an Afghan padlock. Next to it is a jug decorated with roundels. Between his feet lie coarse tools in the dust. He seems to be working on something for his client sitting next to him."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG73_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG73_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG73 ;
+    crm:P190_has_symbolic_content "Na poboczu drogi na nowoczesnym bazarze zbudowanym wokół centralnego ronda rzemieślnik siedzi przed małym kowadłem wbitym w ziemię, obok którego leżą widły i afgańska kłódka. Obok znajduje się dzbanek ozdobiony roundelami. Między jego stopami leżą w kurzu grube narzędzia. Wygląda na to, że pracuje nad czymś dla swojego klienta siedzącego obok."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG73_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG73_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG73_DigitalFile_URI .
+
+ga:EWA76_MG73_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG73.png"^^xsd:anyURI .
+
+ga:EWA76_MG73_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG73_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, starker Kontrast"^^xsd:string .
+
+ga:EWA76_MG73_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG73 Moderner Basar am Kreisel" .
+
+ga:EWA76_MG73_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG74_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG74_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG74 ;
+    crm:P190_has_symbolic_content "Eine weitere Aufnahme vom Markttag in Almar. Je nach Bedeutung einer Ortschaft finden ein oder zwei Markttage/Woche statt. Benachbarte Orte halten ihre Markttage an unterschiedlichen Wochentagen ab. Dadurch können Händler ihre Waren an verschiedenen Orten anbieten. Im Zentrum der Aufnahme stehen zwei Bettstellen (charpoi = Vierfuss). Dahinter ist ein teilweise überdeckter Abwasserkanal zu erkennen, der zwischen der Strasse und dem Fussgängerbereich vor den Läden verläuft."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG74_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG74_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG74 ;
+    crm:P190_has_symbolic_content "are one or two market days per week. Neighbouring towns hold their market days on different days of the week. This allows merchants to offer their goods in different locations. In the centre of the photograph are two bedsteads (charpoi = four-foot). Behind it, a partially covered sewer can be seen, which runs between the street and the pedestrian area in front of the shops."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG74_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG74_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG74 ;
+    crm:P190_has_symbolic_content "Kolejne ujęcie z dnia targowego w Almar. W zależności od znaczenia miejscowości, w tygodniu odbywa się jeden lub dwa dni targowe. W sąsiednich miastach dni targowe odbywają się w różne dni tygodnia. Dzięki temu sprzedawcy mogą oferować swoje towary w różnych lokalizacjach. W centrum nagrania znajdują się dwa łóżka (charpoi = czworonożne). Za nim widać częściowo zakryty kanał, który biegnie między ulicą a deptakiem przed sklepami."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG74_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG74_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG74_DigitalFile_URI .
+
+ga:EWA76_MG74_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG74.png"^^xsd:anyURI .
+
+ga:EWA76_MG74_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 120 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG74_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, leicht unscharf, dunkel, verblasst"^^xsd:string .
+
+ga:EWA76_MG74_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG 74 Markttag in Almar" .
+
+ga:EWA76_MG74_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG75_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG75_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG75 ;
+    crm:P190_has_symbolic_content "Auf diesem Bild von einem weniger belebten Teil des Basars hat ein Händler seine Ware längs des Abwasserkanals in kleinen Stapeln deponiert. Es scheint sich um zusammengefaltete Stoffe oder Kleidungsstücke zu handeln. Wie auf den vorangehenden Fotos sieht man auch hier, dass – ebenfalls längs des Abwasserkanals – Nadelbäume oder Tamarisken wachsen."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG75_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG75_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG75 ;
+    crm:P190_has_symbolic_content "In this picture of a less busy part of the bazaar, a vendor has deposited his goods in small piles along the sewer. They appear to be folded fabrics or garments. As in the previous photos, you can see that conifers or tamarisks are growing along the sewer."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG75_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG75_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG75 ;
+    crm:P190_has_symbolic_content "Na tym zdjęciu mniej ruchliwej części bazaru sprzedawca złożył swoje towary w małych stosach wzdłuż kanału. Wydają się być złożonymi tkaninami lub odzieżą. Podobnie jak na poprzednich zdjęciach, widać, że wzdłuż kanału rosną drzewa iglaste lub tamaryszki."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG75_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG75_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG75_DigitalFile_URI .
+
+ga:EWA76_MG75_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG75.png"^^xsd:anyURI .
+
+ga:EWA76_MG75_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG75_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG75_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG75 Seitenstrasse des Basars" .
+
+ga:EWA76_MG75_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG76_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG76_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Auf dem Dach einiger dukanha wurde ein bala khana (Oberhaus) errichtet. Da direkt von der Strasse eine steile Treppe hinaufführt, scheint es sich um ein Teehaus (chaikhana) zu handeln. Auch die Dekoration der Wandflächen deutet darauf hin. Durch die erhöhte Lage hofft man auf einen kühlenden Luftzug; auch bietet man den Gästen von der vorgelagerten offenen Terrasse einen Blick auf das Geschehen auf der Strasse."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG76_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG76_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "A bala khana (upper house) was erected on the roof of some dukanha. Since a steep staircase leads up directly from the street, it seems to be a tea house (chaikhana). The decoration of the wall surfaces also indicates this. Due to the elevated location, it is hoped that there will be a cooling draught; guests are also offered a view of the action on the street from the open terrace in front."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG76_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG76_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG76 ;
+    crm:P190_has_symbolic_content "Bala khana (górny dom) został wzniesiony na dachu niektórych dukanha. Ponieważ strome schody prowadzą bezpośrednio z ulicy, wydaje się, że jest to herbaciarnia (chaikhana). Wskazuje na to również dekoracja powierzchni ścian. Ze względu na położenie na wzniesieniu spodziewany jest przeciąg chłodzący; Goście mają również widok na ulicę z otwartego tarasu przed domem."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG76_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG76_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG76_DigitalFile_URI .
+
+ga:EWA76_MG76_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG76.png"^^xsd:anyURI .
+
+ga:EWA76_MG76_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 120 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG76_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG76_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG76 Ausschnitt: Die Terrasse mit Wandmalerei im Obergeschoss" .
+
+ga:EWA76_MG76_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG77-1_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-1_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "Mitten auf der Fahrbahn einer der Zufahrtsstrassen zum Verkehrskreisel im Zentrum der Stadt Almar stehen zwei Männer. Frontal zu sehen ist ein Wasserträger (saqqao), der zur Ethnie der Hazara gehört. Wenn es keine öffentliche Wasserversorgung gibt, bringt er gegen Bezahlung Wasser von der Quelle, einem Brunnen oder Reservoir in die Häuser. Um die Hüften liegt das typische Polster des saqqao, auf dem der feuchte, gefüllte Wassersack lastet, der aus einem Ziegenbalg gefertigt wird. Hier trägt er jedoch einen unglasierten Tonkrug mit durch Verdun-stung gekühltem Wasser auf der Schulter, aus dem er Trinkwasser an Passanten verkauft. Eigenartig sind seine Gamaschen aus Filz, die er über den Schuhen trägt. Neben ihm steht ein durstiger Kunde, vermutlich ein Paschtune. Sein Staub-Mantel und das herabhängende Turban-Ende lassen vermuten, dass er gerade mit dem Bus oder einem Auto in Almar eingetroffen ist."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-1_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-1_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "In the middle of the roadway of one of the access roads to the roundabout in the center of the city of Almar, two men are standing. Seen from the front is a water carrier (saqqao), who belongs to the Hazara ethnic group. If there is no public water supply, he brings water from the spring, a well or reservoir to the houses for a fee. Around the hips lies the typical cushion of the saqqao, on which the moist, filled water bag, which is made from a goat's bellows, rests. Here, however, he carries an unglazed clay jug with water cooled by evaporation on his shoulder, from which he sells drinking water to passers-by. His felt gaiters, which he wears over his shoes, are strange. Next to him is a thirsty customer, presumably a Pashtun. His dust coat and drooping turban end suggest that he has just arrived in Almar by bus or car."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-1_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-1_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-1 ;
+    crm:P190_has_symbolic_content "Na środku jezdni jednej z dróg dojazdowych do ronda w centrum miasta Almar stoi dwóch mężczyzn. Z przodu widać nosiciela wody (saqqao), który należy do grupy etnicznej Hazarów. Jeśli nie ma publicznego zaopatrzenia w wodę, za opłatą przynosi wodę ze źródła, studni lub zbiornika do domów. Wokół bioder znajduje się typowa poduszka saqqao, na której spoczywa wilgotny, wypełniony worek na wodę, wykonany z miecha kozy. Tutaj jednak niesie na ramieniu nieszkliwiony gliniany dzban z wodą schłodzoną przez parowanie, z której sprzedaje przechodniom wodę pitną. Jego filcowe getry, które nosi na butach, są dziwne. Obok niego stoi spragniony klient, prawdopodobnie Pasztun. Jego płaszcz i opadający turban sugerują, że właśnie przyjechał do Almar autobusem lub samochodem."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-1_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-1_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG77-1_DigitalFile_URI .
+
+ga:EWA76_MG77-1_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG77-1.png"^^xsd:anyURI .
+
+ga:EWA76_MG77-1_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG77-1_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG77_1	Ein Wasserträger" .
+
+ga:EWA76_MG77-2_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-2_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "Mitten auf der Fahrbahn einer der Zufahrtsstrassen zum Verkehrskreisel im Zentrum der Stadt Almar stehen zwei Männer. Frontal zu sehen ist ein Wasserträger (saqqao), der zur Ethnie der Hazara gehört. Wenn es keine öffentliche Wasserversorgung gibt, bringt er gegen Bezahlung Wasser von der Quelle, einem Brunnen oder Reservoir in die Häuser. Um die Hüften liegt das typische Polster des saqqao, auf dem der feuchte, gefüllte Wassersack lastet, der aus einem Ziegenbalg gefertigt wird. Hier trägt er jedoch einen unglasierten Tonkrug mit durch Verdun-stung gekühltem Wasser auf der Schulter, aus dem er Trinkwasser an Passanten verkauft. Eigenartig sind seine Gamaschen aus Filz, die er über den Schuhen trägt. Neben ihm steht ein durstiger Kunde, vermutlich ein Paschtune. Sein Staub-Mantel und das herabhängende Turban-Ende lassen vermuten, dass er gerade mit dem Bus oder einem Auto in Almar eingetroffen ist."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-2_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-2_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "In the middle of the roadway of one of the access roads to the roundabout in the center of the city of Almar, two men are standing. Seen from the front is a water carrier (saqqao), who belongs to the Hazara ethnic group. If there is no public water supply, he brings water from the spring, a well or reservoir to the houses for a fee. Around the hips lies the typical cushion of the saqqao, on which the moist, filled water bag, which is made from a goat's bellows, rests. Here, however, he carries an unglazed clay jug with water cooled by evaporation on his shoulder, from which he sells drinking water to passers-by. His felt gaiters, which he wears over his shoes, are strange. Next to him is a thirsty customer, presumably a Pashtun. His dust coat and drooping turban end suggest that he has just arrived in Almar by bus or car."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-2_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-2_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG77-2 ;
+    crm:P190_has_symbolic_content "Na środku jezdni jednej z dróg dojazdowych do ronda w centrum miasta Almar stoi dwóch mężczyzn. Z przodu widać nosiciela wody (saqqao), który należy do grupy etnicznej Hazarów. Jeśli nie ma publicznego zaopatrzenia w wodę, za opłatą przynosi wodę ze źródła, studni lub zbiornika do domów. Wokół bioder znajduje się typowa poduszka saqqao, na której spoczywa wilgotny, wypełniony worek na wodę, wykonany z miecha kozy. Tutaj jednak niesie na ramieniu nieszkliwiony gliniany dzban z wodą schłodzoną przez parowanie, z której sprzedaje przechodniom wodę pitną. Jego filcowe getry, które nosi na butach, są dziwne. Obok niego stoi spragniony klient, prawdopodobnie Pasztun. Jego płaszcz i opadający turban sugerują, że właśnie przyjechał do Almar autobusem lub samochodem."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG77-2_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG77-2_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG77-2_DigitalFile_URI .
+
+ga:EWA76_MG77-2_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG77-2.png"^^xsd:anyURI .
+
+ga:EWA76_MG77-2_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG77-2_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG77-2_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG77-2 Ein Wasserträger" .
+
+ga:EWA76_MG77-2_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG78_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG78_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG78 ;
+    crm:P190_has_symbolic_content "Vor seiner Werkstatt im Basar von Almar präsentiert ein Möbelschreiner zwei seiner Arbeiten: eine Truhe mit reich bemalter Frontpartie und einen ebenfalls bemalten Ständer für Petrol- oder Benzin-Lampen. Ob bei der Truhe der Deckel oder die Frontfelder geöffnet werden können, ist nicht ersichtlich. Ähnlich bemalte Truhen und andere Gegenstände sind auf MG 89 zu sehen. Der Mann trägt einen ungefütterten uzbekischen Sommer-chapan aus gestreifter Baumwolle."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG78_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG78_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG78 ;
+    crm:P190_has_symbolic_content "In front of his workshop in the bazaar of Almar, a cabinetmaker presents two of his works: a chest with a richly painted front and a stand for kerosen or petrol lamps, also painted. It is not clear whether the lid or the front panels of the chest can be opened. Similarly painted chests and other items can be seen on MG 89. The man wears an unlined Uzbek summer chapan made of striped cotton."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG78_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG78_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG78 ;
+    crm:P190_has_symbolic_content "Przed swoim warsztatem na bazarze w Almar stolarz prezentuje dwie swoje prace: skrzynię z bogato malowanym frontem oraz stojak na lampy Pertol lub benzynowe, również malowane. Nie jest jasne, czy pokrywę lub przednie panele skrzyni można otworzyć. Podobnie pomalowane skrzynie i inne przedmioty można zobaczyć na MG 89. Mężczyzna ma na sobie uzbecki letni czapan bez podszewki wykonany z bawełny w paski."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG78_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG78_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG78_DigitalFile_URI .
+
+ga:EWA76_MG78_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG78.png"^^xsd:anyURI .
+
+ga:EWA76_MG78_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG78_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG78_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG78 Ein Möbelschreiner" .
+
+ga:EWA76_MG78_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 120 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG79_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG79_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG79 ;
+    crm:P190_has_symbolic_content "Ein vermutlich uzbekischer Händler sitzt in seinem Gemischtwarenladen in Reichweite der wichtigsten Artikel. Im Gegensatz zu den ‘fliegenden’ Händlern, die nur an den Markttagen am Strassenrand Waren anbieten, besitzt er eine stabile Balkenwaage und geeichte Gewichtssteine. Er scheint ein gebildeter Mann zu sein, der lesen und schreiben kann, denn vor ihm liegt eine Zeitschrift."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG79_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG79_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG79 ;
+    crm:P190_has_symbolic_content "A presumably Uzbek merchant sits in his general store, within easy reach of the most important items. In contrast to the 'flying' traders, who only offer goods on the roadside on market days, it has a sturdy beam scale and calibrated weight stones. He seems to be an educated man who can read and write, because there is a magazine in front of him."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG79_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG79_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG79 ;
+    crm:P190_has_symbolic_content "Przypuszczalnie uzbecki kupiec siedzi w swoim sklepie wielobranżowym, w zasięgu najważniejszych artykułów. W przeciwieństwie do \"latających\" handlarzy, którzy oferują towary na poboczu drogi tylko w dni targowe, ma solidną wagę belkową i skalibrowane kamienie wagowe. Wydaje się być człowiekiem wykształconym, który umie czytać i pisać, ponieważ ma przed sobą czasopismo."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG79_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG79_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG79_DigitalFile_URI .
+
+ga:EWA76_MG79_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG79.png"^^xsd:anyURI .
+
+ga:EWA76_MG79_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG79_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, Hintergrund dunkel"^^xsd:string .
+
+ga:EWA76_MG79_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG 79 Gemischtwarenhändler 1" .
+
+ga:EWA76_MG79_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG80_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG80_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG80_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG80 ;
+    crm:P190_has_symbolic_content "Dieser Händler bewahrt einen gefährlich grossen Bestand von Zündhölzern in seinem dukan (Laden) auf. Von der Decke hängen weisse Baumwoll-‘Gürtel’, die in den Hohlsaum der weiten Pluderhosen eingezogen werden. Zwei schön bestickte taken (Schädelkappen) hat er von einer Frau in Kommission genommen. Hinter seinem Kopf hängen zwei Spiegel, die es ihm ermöglichen, seine Ware auch im Blick zu behalten, wenn er sich umdreht."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG80_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG80_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG80 ;
+    crm:P190_has_symbolic_content "This merchant keeps a dangerously large stock of matches in his dukan (shop). White cotton 'belts' hang from the ceiling, which are pulled into the hemstitch of the wide harem trousers. He took two beautifully embroidered skull caps (taken) from a woman on commission. Behind his head hang two mirrors that allow him to keep an eye on his goods even when he turns around."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG80_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG80_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG80 ;
+    crm:P190_has_symbolic_content "Kupiec ten trzyma w swoim dukan (sklepie) niebezpiecznie duży zapas zapałek. Z sufitu zwisają białe bawełniane \"paski\", które są wciągnięte w mereżkę szerokich spodni haremowych. Wziął dwie pięknie haftowane czapki z czaszką od kobiety na zlecenie. Za jego głową wiszą dwa lustra, które pozwalają mu mieć oko na swój towar nawet wtedy, gdy się odwróci"@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG80_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG80_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG80_DigitalFile_URI .
+
+ga:EWA76_MG80_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG80.png"^^xsd:anyURI .
+
+ga:EWA76_MG80_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG80_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG80_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG80 Gemischtwarenhändler 2" .
+
+ga:EWA76_MG80_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG81_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG81_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG81_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG81 ;
+    crm:P190_has_symbolic_content "Stoffhändler gehören zu einer angeseheneren Gruppe von Kaufleuten, denn diese Sparte setzt ein ansehnliches Eigenkapital voraus. Deshalb sind es zumeist Familien-Unternehmen, in denen Vater und Sohn zusammenarbeiten. Stoffläden haben oft auch einen rückwärtigen Raum, in dem Kundinnen unbeobachtet bedient werden können. Da es hier um grössere Beträge geht, erhalten die Kunden üblicherweise einen Tee angeboten."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG81_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG81_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG81 ;
+    crm:P190_has_symbolic_content "Cloth merchants belong to a more respectable group of merchants, because this branch requires a considerable amount of equity. That's why it's mostly family businesses in which father and son work together. Fabric shops often also have a room at the back where female customers can be served unobserved. Since larger amounts are involved, customers are usually offered a cup of tea."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG81_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG81_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG81 ;
+    crm:P190_has_symbolic_content "Kupcy sukna należą do bardziej szanowanej grupy kupców, ponieważ ta gałąź wymaga znacznego kapitału własnego. Dlatego to głównie firmy rodzinne, w których ojciec i syn pracują razem. Sklepy z tkaninami często mają również pomieszczenie na zapleczu, w którym klienci mogą być obsługiwani niezauważeni. Ponieważ w grę wchodzą większe kwoty, klientom zwykle oferuje się filiżankę herbaty."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG81_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG81_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG81_DigitalFile_URI .
+
+ga:EWA76_MG81_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG81.png"^^xsd:anyURI .
+
+ga:EWA76_MG81_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG81_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG81_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG81 Stoffhändler 1" .
+
+ga:EWA76_MG81_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG82_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG82_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG82 ;
+    crm:P190_has_symbolic_content "Auch dieser junge Stoffhändler führt bereits voller Stolz seinen Sohn ins traditionelle Familien-geschäft ein."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG82_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG82_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG82 ;
+    crm:P190_has_symbolic_content "This young fabric merchant is already proudly introducing his son to the traditional family business."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG82_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG82_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG82 ;
+    crm:P190_has_symbolic_content "Ten młody handlarz tkaninami już teraz z dumą wprowadza swojego syna do tradycyjnego rodzinnego biznesu."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG82_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG82_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG82_DigitalFile_URI .
+
+ga:EWA76_MG82_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG82.png"^^xsd:anyURI .
+
+ga:EWA76_MG82_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 174 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG82_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr, dunkel"^^xsd:string .
+
+ga:EWA76_MG82_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG82 Stoffhändler 2 mit Sohn" .
+
+ga:EWA76_MG82_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG83_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG83_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG83 ;
+    crm:P190_has_symbolic_content "Dieser turkmenische Stoffhändler verwendet einen traditionellen ‘Taschenrechner’, einen Abakus mit Holzperlen, die auf Metallstäben aufgereiht sind. Damit konnten afghanische Händler mit erstaunlicher Geschwindigkeit addieren und multiplizieren. Heute wird auch in den abgelegensten Dörfern mit dem Mobiltelefon gerechnet."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG83_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG83_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG83 ;
+    crm:P190_has_symbolic_content "This Turkmen cloth merchant uses a traditional 'calculator', an abacus with wooden beads strung on metal rods. This allowed Afghan traders to add and multiply with astonishing speed. Today, even in the most remote villages, mobile phones are used instead."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG83_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG83_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG83 ;
+    crm:P190_has_symbolic_content "Ten turkmeński handlarz suknem posługuje się tradycyjnym \"kalkulatorem\", liczydłem z drewnianymi paciorkami nawleczonymi na metalowe pręty. Pozwoliło to afgańskim handlarzom dodawać i mnożyć z zadziwiającą szybkością. Dziś nawet w najbardziej odległych wioskach używa się telefonów komórkowych."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG83_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG83_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG83_DigitalFile_URI .
+
+ga:EWA76_MG83_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG83.png"^^xsd:anyURI .
+
+ga:EWA76_MG83_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 174 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG83_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG83_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG83 Stoffhändler 3" .
+
+ga:EWA76_MG83_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG84_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG84_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG84 ;
+    crm:P190_has_symbolic_content "Aus alten Lastwagen-Reifen und Gummi-Schläuchen fertigt dieser Handwerker strapazierfähige Schuhe für die Feldarbeit. Aufwändiger gearbeitete Schuhe hängen an einer Stange über der Türe. An den Türflügeln hängen Gummi-‘Lassos’, die er als lange Spirale aus den Schläuchen geschnitten hat. Zur Unterhaltung hört er Musik-Kassetten auf seinem Transistor-Radio."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG84_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG84_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG84 ;
+    crm:P190_has_symbolic_content "From old truck tires and rubber tubes, this craftsman makes durable shoes for field work. More elaborately crafted shoes hang on a pole above the door. Rubber 'lassos' hang from the door leaves, which he has cut out of the hoses in a long spiral. For entertainment, he listens to music cassettes on his transistor radio."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG84_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG84_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG84 ;
+    crm:P190_has_symbolic_content "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe \"lassa\", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG84_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG84_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG84_DigitalFile_URI .
+
+ga:EWA76_MG84_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG84.png"^^xsd:anyURI .
+
+ga:EWA76_MG84_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 147 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG84_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG84_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG84 Schuhmacher und Händler" .
+
+ga:EWA76_MG84_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG85_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG85_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG85 ;
+    crm:P190_has_symbolic_content "Aus alten Lastwagen-Reifen und Gummi-Schläuchen fertigt dieser Handwerker strapazierfähige Schuhe für die Feldarbeit. Aufwändiger gearbeitete Schuhe hängen an einer Stange über der Türe. An den Türflügeln hängen Gummi-‘Lassos’, die er als lange Spirale aus den Schläuchen geschnitten hat. Zur Unterhaltung hört er Musik-Kassetten auf seinem Transistor-Radio"@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG85_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG85_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG85 ;
+    crm:P190_has_symbolic_content "From old truck tires and rubber tubes, this craftsman makes durable shoes for field work. More elaborately crafted shoes hang on a pole above the door. Rubber 'lassos' hang from the door leaves, which he has cut out of the hoses in a long spiral. For entertainment, he listens to music cassettes on his transistor radio."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG85_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG85_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG85 ;
+    crm:P190_has_symbolic_content "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe \"lassa\", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG85_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG85_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG85_DigitalFile_URI .
+
+ga:EWA76_MG85_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG85.png"^^xsd:anyURI .
+
+ga:EWA76_MG85_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 147 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG85_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG85_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG85 Schuhmacher und -Händler" .
+
+ga:EWA76_MG85_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG86_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG86_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG86_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG86 ;
+    crm:P190_has_symbolic_content "Dieser Händler bietet Schaufeln, Seile, Schnur, Handsägen und verschiedene Bänder an. Er hat seine Ware vor einem leerstehenden dukan ausgebreitet."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG86_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG86_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG86 ;
+    crm:P190_has_symbolic_content "This dealer offers shovels, ropes, cord, hand saws, and various tapes. He has spread out his goods in front of an empty dukan."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG86_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG86_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG86 ;
+    crm:P190_has_symbolic_content "Ten sprzedawca oferuje łopaty, liny, sznurki, piły ręczne i różne taśmy. Rozłożył swój towar przed pustym dukanem."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG86_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG86_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG86_DigitalFile_URI .
+
+ga:EWA76_MG86_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG86.png"^^xsd:anyURI .
+
+ga:EWA76_MG86_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 174 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG86_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG86_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG86 Werkzeug-Händler" .
+
+ga:EWA76_MG86_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG87_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG87_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG87_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Auf einem breiten, horizontalen Teppichknüpfstuhl kauern vier Personen nebeneinander. Ganz rechts eine Turkmenin mit der typischen hohen Haube; neben ihr ein Knabe und zwei Mädchen, die laut der Beschreibung von Marek Gawęcki Pashtunen sind und von der Turkmenin angelernt werden. Die Aufnahme entstand möglicherweise im Haus von Khoja Mahomat Amin am 14.8."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG87_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG87_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Four people huddle next to each other on a wide, horizontal carpet knotting chair. On the far right, a Turkmen woman with the typical high hood; next to her is a boy and two girls, who, according to Marek Gawęcki's description, are Pashtuns and are trained by the Turkmen. It is possible that this photo was taken in Khoja Mahomat Amin’s house on August 14."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG87_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG87_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG87 ;
+    crm:P190_has_symbolic_content "Cztery osoby tłoczą się obok siebie na szerokim, poziomym krześle do wiązania dywanów. Po prawej turkmeńska kobieta z typowym wysokim kapturem; Obok niej znajduje się chłopiec i dwie dziewczynki, którzy według opisu Marka Gawęckiego są Pasztunami i są szkoleni przez Turkmenów."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG87_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG87_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG87_DigitalFile_URI .
+
+ga:EWA76_MG87_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG87.png"^^xsd:anyURI .
+
+ga:EWA76_MG87_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG87_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG87_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG87 Turkmenische Teppichknüpferin" .
+
+ga:EWA76_MG87_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 172 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG88_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG88_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG88_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG88 ;
+    crm:P190_has_symbolic_content "Zwei junge Frauen kauern auf einem schmalen, horizontalen Teppich-Webstuhl. Daneben steht ein Knabe in gestreifter Kleidung, der ihnen bei der Arbeit zusieht."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG88_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG88_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG88 ;
+    crm:P190_has_symbolic_content "Two young women crouch on a narrow, horizontal carpet loom. Next to them stands a boy in striped clothes, watching them at work."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG88_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG88_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG88 ;
+    crm:P190_has_symbolic_content "Dwie młode kobiety kucają na wąskim, poziomym krośnie dywanowym. Obok nich stoi chłopiec w pasiakach, obserwując ich przy pracy"@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG88_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG88_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG88_DigitalFile_URI .
+
+ga:EWA76_MG88_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG88.png"^^xsd:anyURI .
+
+ga:EWA76_MG88_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 159 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG88_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG88_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG88 Moderne Knüpferinnen" .
+
+ga:EWA76_MG88_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG89_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG89_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG89 ;
+    crm:P190_has_symbolic_content "Am Rand einer teils überfluteten Strasse haben Händler am Markttag ihre Ware ausgestellt. Das Angebot reicht von Mandeln im Zuckerguss bis zu Schuhen und Schaufelstielen. Ein Blickfang sind die bemalten Truhen, Wand-Etageren, Lampenständer und eine Kinderwiege."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG89_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG89_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG89 ;
+    crm:P190_has_symbolic_content "On the edge of a partially flooded street, traders exhibited their wares on market day. The offer ranges from almonds in icing to shoes and shovel handles. An eye-catcher are the painted chests, wall stands, lamp stands and a cradle."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG89_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG89_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG89 ;
+    crm:P190_has_symbolic_content "Na skraju częściowo zalanej ulicy kupcy wystawiali swoje towary w dzień targowy. Oferta obejmuje zarówno migdały w lukrze, jak i trzonki do butów i łopat. Wzrok przyciągają malowane skrzynie, stojaki ścienne, stojaki na lampy i kołyska."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG89_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG89_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG89_DigitalFile_URI .
+
+ga:EWA76_MG89_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG89.png"^^xsd:anyURI .
+
+ga:EWA76_MG89_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG89_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, starker Kontrast"^^xsd:string .
+
+ga:EWA76_MG89_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG89 Angebote am Markttag" .
+
+ga:EWA76_MG89_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG90_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG90_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG90_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Ein dunkel gekleideter Mann mit schwarzem Turban hat auf einem Tuch sein Angebot ausgebreitet. Zentral ist ein aufklappbares Holzgestell mit Toilettenartikeln. Davor stehen kleine Fläschchen. Im Vordergrund sind geöffnete kleine Säcke aufgereiht. Vermutlich handelt er mit traditioneller Medizin und Heilkräutern."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG90_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG90_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "A dark-dressed man with black turban has spread out his offer on a cloth. Central is a hinged wooden rack with toiletries. In front of it are small bottles. In the foreground, small open bags are lined up. Presumably, he deals in traditional medicine and medicinal herbs."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG90_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG90_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG90 ;
+    crm:P190_has_symbolic_content "Ciemno ubrany mężczyzna w czarnym turbanie rozłożył swoją ofertę na płótnie. Centralnym elementem jest drewniany stojak na z zestawem kosmetyków. Przed nim znajdują się małe butelki. Na pierwszym planie ustawione są małe otwarte torby. Przypuszczalnie zajmuje się tradycyjną medycyną i ziołami leczniczymi."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG90_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG90_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG90_DigitalFile_URI .
+
+ga:EWA76_MG90_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG90.png"^^xsd:anyURI .
+
+ga:EWA76_MG90_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG90_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG90_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG90	Ein Apotheker" .
+
+ga:EWA76_MG90_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 169 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG91_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG91_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Ein Zahnarzt hat seine Praxis am Strassenrand eingerichtet. Neben dem Zähneziehen scheint er auch Gebiss-Prothesen anzupassen. Auf der Abdeckung des Abwasser-Kanals im Hintergrund liegen Stapel von Altkleidern und gefaltete Baumwoll-chapane, in der Art, wie der Patient des Zahnarztes einen über seinen Schultern hängen hat. Die Ärmel sind viel zu lang; manchmal werden sie auf dem Rücken fixiert oder man kann sie auch als Taschen verwenden."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG91_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG91_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "A dentist has set up his practice on the side of the road. In addition to extracting teeth, he also seems to be adapting dentures. On the cover of the sewer in the background are piles of old clothes and folded cotton chapans, like the one the dentist's patient has hanging over his shoulders. The sleeves are way too long; sometimes they are fixed on the back or you can also use them as bags."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG91_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG91_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG91 ;
+    crm:P190_has_symbolic_content "Dentysta założył swój gabinet na poboczu drogi. Wydaje się, że oprócz wyrywania zębów zajmuje się również adaptacją protez. Na pokrywie kanału w tle leżą sterty starych ubrań i złożony bawełniany chapan, tak jak pacjent dentysty ma go zawieszonego na ramionach. Rękawy są zdecydowanie za długie; Czasami są mocowane z tyłu lub można ich również używać jako toreb."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG91_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG91_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG91_DigitalFile_URI .
+
+ga:EWA76_MG91_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG91.png"^^xsd:anyURI .
+
+ga:EWA76_MG91_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG91_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG91_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG91 Der Zahnarzt" .
+
+ga:EWA76_MG91_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG92_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG92_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG92_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG92 ;
+    crm:P190_has_symbolic_content "Ein älterer Paschtune schärft eine Schere an einem Schleifstein. Mit einem Pedal wird ein grosses Schwungrad angetrieben, das über einen Riemen den Schleifstein in Drehung versetzt. Besonders scharfe Scheren werden für das Scheren des Flors von frisch geknüpften Teppichen benötigt (siehe MG 87 und 88)."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG92_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG92_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG92 ;
+    crm:P190_has_symbolic_content "An elderly Pashtun sharpens a pair of scissors on a whetstone. A large flywheel is driven by a pedal, which rotates the grindstone via a belt. Particularly sharp scissors are needed for shearing the pile of freshly knotted carpets (see MG 87 and 88)."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG92_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG92_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG92 ;
+    crm:P190_has_symbolic_content "Starszy Pasztun ostrzy nożyczki na osełce. Duże koło zamachowe jest napędzane pedałem, który obraca kamień szlifierski za pomocą paska. Szczególnie ostre nożyczki są potrzebne do strzyżenia stosu świeżo zawiązanych dywanów (patrz MG 87 i 88)."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG92_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG92_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG92_DigitalFile_URI .
+
+ga:EWA76_MG92_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG92.png"^^xsd:anyURI .
+
+ga:EWA76_MG92_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 175 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG92_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, sehr starker Kontrast"^^xsd:string .
+
+ga:EWA76_MG92_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG92	Ein Scherenschleifer" .
+
+ga:EWA76_MG92_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG93_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG93_Classification_002_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG93_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "Ein Schmied hat seinen Arbeitsplatz auf dem Wochenmarkt in Qaysar eingerichtet. Vor ihm steckt ein kleiner Amboss in der Erde. Daneben liegen seine Werkzeuge und am unteren Bildrand ist die Esse zu sehen, in der Holzkohle zwischen zwei senkrecht gestellten Steinplatten mit zwei Blasebälgen zum Glühen gebracht wird. Dieser Schmied scheint hauptsächlich Sicheln und Hufeisen herzustellen."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG93_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG93_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "A blacksmith has set up his workplace at the weekly market in Qaysar. In front of him is a small anvil stuck in the earth. Next to it are his tools and at the bottom of the picture you can see the forge in which charcoal is made to glow with two bellows. He seems to be making mainly sickles and horseshoes."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG93_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG93_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG93 ;
+    crm:P190_has_symbolic_content "Kowal urządził sobie miejsce pracy na cotygodniowym targu w Qaysar. Przed nim znajduje się małe kowadło wbite w ziemię. Obok znajdują się jego narzędzia, a na dole obrazka widać kuźnię, w której węgiel drzewny żarzy się dwoma miechami. Wydaje się, że wyrabia głównie sierpy i podkowy."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG93_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG93_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG93_DigitalFile_URI .
+
+ga:EWA76_MG93_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG93.png"^^xsd:anyURI .
+
+ga:EWA76_MG93_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG93_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut, dunkel"^^xsd:string .
+
+ga:EWA76_MG93_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG93 Ein Hufschmied" .
+
+ga:EWA76_MG93_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 157 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG94_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG94 ;
+    crm:P190_has_symbolic_content "Vier Aufnahmen von Werkzeugen und Geräten aus der Werkstatt eines Gold- und Silberschmieds aus Qaysar."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG94_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG94_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG94 ;
+    crm:P190_has_symbolic_content "Four photographs of tools and equipment from the workshop of a gold- and silversmith from Qaysar."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG94_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG94_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG94 ;
+    crm:P190_has_symbolic_content "Cztery fotografie narzędzi i wyposażenia z warsztatu złotnika i złotnika z Qaysar."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG94_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG94_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG94_DigitalFile_URI .
+
+ga:EWA76_MG94_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG94.png"^^xsd:anyURI .
+
+ga:EWA76_MG94_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG94_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG94_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG94 Gold- und Silberschmiede-Werkzeuge" .
+
+ga:EWA76_MG94_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG96_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG96 ;
+    crm:P190_has_symbolic_content "Vier Aufnahmen von Werkzeugen und Geräten aus der Werkstatt eines Gold- und Silberschmieds aus Qaysar."@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG96_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG96_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG96 ;
+    crm:P190_has_symbolic_content "Four photographs of tools and equipment from the workshop of a gold- and silversmith from Qaysar."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG96_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG96_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG96 ;
+    crm:P190_has_symbolic_content "Cztery fotografie narzędzi i wyposażenia z warsztatu złotnika i złotnika z Qaysar."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG96_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG96_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG96_DigitalFile_URI .
+
+ga:EWA76_MG96_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG96.png"^^xsd:anyURI .
+
+ga:EWA76_MG96_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG96_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG96_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG96	Gold- und Silberschmiede-Werkzeuge" .
+
+ga:EWA76_MG96_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG97_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG97 ;
+    crm:P190_has_symbolic_content "Vier Aufnahmen von Werkzeugen und Geräten aus der Werkstatt eines Gold- und Silberschmieds aus Qaysar"@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG97_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG97_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG97 ;
+    crm:P190_has_symbolic_content "Four photographs of tools and equipment from the workshop of a gold- and silversmith from Qaysar."@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG97_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG97_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG97 ;
+    crm:P190_has_symbolic_content "Cztery fotografie narzędzi i wyposażenia z warsztatu złotnika i złotnika z Qaysar."@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG97_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG97_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG97_DigitalFile_URI .
+
+ga:EWA76_MG97_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG97.png"^^xsd:anyURI .
+
+ga:EWA76_MG97_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 118 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG97_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG97_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG97	Gold- und Silberschmiede-Werkzeuge" .
+
+ga:EWA76_MG97_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 173 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG99_Classification_001_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG99_Description_de a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Another blacksmith – with numerous spectators in the background. He, too, has rammed a small anvil into the ground and scattered his tools around him, ready to hand. However, it is not clear what he is currently working on. Between his feet, he holds something as if in a vice. Maybe he's forging nails to fix a wooden handle in the grommet of the four-pronged pitchfork in front of him?"@de ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG99_Description_de_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG99_Description_en a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Another blacksmith – with numerous spectators in the background. He, too, has rammed a small anvil into the ground and scattered his tools around him, ready to hand. However, it is not clear what he is currently working on. Between his feet, he holds something as if in a vice. Maybe he's forging nails to fix a wooden handle in the grommet of the four-pronged pitchfork in front of him?"@en ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG99_Description_en_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG99_Description_pl a crm:E33_Linguistic_Object ;
+    crm:P129_is_about ga:EWA76_MG99 ;
+    crm:P190_has_symbolic_content "Kolejny kowal – z licznymi widzami w tle. On również wbił w ziemię małe kowadło i rozrzucił wokół siebie narzędzia, gotowe do ręki. Nie jest jednak jasne, nad czym obecnie pracuje. Między stopami trzyma coś jakby w imadle. Może wykuwa gwoździe, żeby zamocować drewnianą rączkę w dziobku czterozębnych wideł przed sobą?"@pl ;
+    crm:P2_has_type ga:Image_Description_Type .
+
+ga:EWA76_MG99_Description_pl_Confidence a crm:E54_Dimension ;
+    crm:P2_has_type ga:Confidence ;
+    crm:P90_has_value 1.0 ;
+    crm:P91_has_unit ga:Probability_Unit .
+
+ga:EWA76_MG99_DigitalFile a crm:E73_Information_Object ;
+    crm:P1_is_identified_by ga:EWA76_MG99_DigitalFile_URI .
+
+ga:EWA76_MG99_DigitalFile_URI a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "http://localhost:8080/MG99.png"^^xsd:anyURI .
+
+ga:EWA76_MG99_Height a crm:E54_Dimension ;
+    crm:P2_has_type ga:Height ;
+    crm:P90_has_value 180 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:EWA76_MG99_Quality a crm:E54_Dimension ;
+    crm:P2_has_type ga:Image_Quality ;
+    crm:P90_has_value "sehr gut"^^xsd:string .
+
+ga:EWA76_MG99_Title a crm:E35_Title ;
+    crm:P190_has_symbolic_content "MG99	Volle Konzentration" .
+
+ga:EWA76_MG99_Width a crm:E54_Dimension ;
+    crm:P2_has_type ga:Width ;
+    crm:P90_has_value 134 ;
+    crm:P91_has_unit ga:Millimeters .
+
+ga:Expedition_EWA76_Afghanistan_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Polish Ethnological Asian Expedition 1976 (EWA-76)" .
+
+ga:Expedition_EWA76_Qaysar_Visit_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "EWA-76 visit to Qaysar" .
+
+ga:MarekGawecki_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Marek Gawęcki" .
+
+ga:PoznanEthnography_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "Poznań Ethnology Department" .
+
+ga:Pytorch_classifier_v2_Name a crm:E41_Appellation ;
+    crm:P190_has_symbolic_content "PyTorch ResNet-50 Classifier v2.0" .
+
+ga:Qaysar a crm:E53_Place ;
+    crm:P1_is_identified_by ga:Qaysar_Name .
+
+ga:Qaysar_Name a crm:E44_Place_Appellation ;
+    crm:P190_has_symbolic_content "Qaysar" .
+
+ga:TimeSpan_EWA76 a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-05-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-10-03"^^xsd:date .
+
+ga:TimeSpan_EWA76_Almar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-08"^^xsd:date .
+
+ga:TimeSpan_EWA76_Qaysar a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-08-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-08-21"^^xsd:date .
+
+ga:Expedition_EWA76_Qaysar_Visit a crm:E7_Activity ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P1_is_identified_by ga:Expedition_EWA76_Qaysar_Visit_Name ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Qaysar ;
+    crm:P7_took_place_at ga:Qaysar .
+
+ga:PoznanEthnography a crm:E74_Group ;
+    crm:P107_has_current_or_former_member ga:MarekGawecki ;
+    crm:P1_is_identified_by ga:PoznanEthnography_Name .
+
+ga:Women a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Women" .
+
+ga:EWA76_95 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_95_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_95_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Goldschmiedegeräte aus Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_95_Height,
+        ga:EWA76_95_Quality,
+        ga:EWA76_95_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG74 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG74_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG74_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Basar in Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG74_Height,
+        ga:EWA76_MG74_Quality,
+        ga:EWA76_MG74_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG75 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG75_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG75_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG75_Height,
+        ga:EWA76_MG75_Quality,
+        ga:EWA76_MG75_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG78 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG78_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG78_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Basar in Almar, 1976" ;
+    crm:P43_has_dimension ga:EWA76_MG78_Height,
+        ga:EWA76_MG78_Quality,
+        ga:EWA76_MG78_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG82 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG82_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG82_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG82_Height,
+        ga:EWA76_MG82_Quality,
+        ga:EWA76_MG82_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG83 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG83_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG83_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG83_Height,
+        ga:EWA76_MG83_Quality,
+        ga:EWA76_MG83_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG89 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG89_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG89_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_MG89_Height,
+        ga:EWA76_MG89_Quality,
+        ga:EWA76_MG89_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG94 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG94_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG94_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Goldschmiedegeräte aus Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG94_Height,
+        ga:EWA76_MG94_Quality,
+        ga:EWA76_MG94_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG96 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG96_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG96_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Goldschmiedegeräte aus Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG96_Height,
+        ga:EWA76_MG96_Quality,
+        ga:EWA76_MG96_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG97 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG97_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG97_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Goldschmiedegeräte aus Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_MG97_Height,
+        ga:EWA76_MG97_Quality,
+        ga:EWA76_MG97_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG71 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG71_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG71_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG71_Height,
+        ga:EWA76_MG71_Quality,
+        ga:EWA76_MG71_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG72 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG72_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG72_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG72_Height,
+        ga:EWA76_MG72_Quality,
+        ga:EWA76_MG72_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG81 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG81_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG81_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_MG81_Height,
+        ga:EWA76_MG81_Quality,
+        ga:EWA76_MG81_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG84 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG84_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG84_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P43_has_dimension ga:EWA76_MG84_Height,
+        ga:EWA76_MG84_Quality,
+        ga:EWA76_MG84_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG85 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG85_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG85_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG85_Height,
+        ga:EWA76_MG85_Quality,
+        ga:EWA76_MG85_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG86 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG86_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG86_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG86_Height,
+        ga:EWA76_MG86_Quality,
+        ga:EWA76_MG86_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG79 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG79_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG79_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_MG79_Height,
+        ga:EWA76_MG79_Quality,
+        ga:EWA76_MG79_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG80 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG80_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG80_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG80_Height,
+        ga:EWA76_MG80_Quality,
+        ga:EWA76_MG80_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG88 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG88_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG88_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar" ;
+    crm:P43_has_dimension ga:EWA76_MG88_Height,
+        ga:EWA76_MG88_Quality,
+        ga:EWA76_MG88_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG92 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG92_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG92_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG92_Height,
+        ga:EWA76_MG92_Quality,
+        ga:EWA76_MG92_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG73 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG73_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG73_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Heqdera [Haydariha?] in Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG73_Height,
+        ga:EWA76_MG73_Quality,
+        ga:EWA76_MG73_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG77-1 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG77-1_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG77-1_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Hazara Wasserträger, Almar." ;
+    crm:P43_has_dimension ga:EWA76_MG77-1_Quality ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG77-2 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG77-2_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG77-2_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Hazara Wasserträger, Almar." ;
+    crm:P43_has_dimension ga:EWA76_MG77-2_Height,
+        ga:EWA76_MG77-2_Quality,
+        ga:EWA76_MG77-2_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG99 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG99_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG99_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Haydara [Haydariha ?] aus Kajsar / fot. M. Gawęcki" ;
+    crm:P43_has_dimension ga:EWA76_MG99_Height,
+        ga:EWA76_MG99_Quality,
+        ga:EWA76_MG99_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_98 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_98_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_98_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Heqdare [Haydariha ?] in Qaysar, VIII 76." ;
+    crm:P43_has_dimension ga:EWA76_98_Height,
+        ga:EWA76_98_Quality,
+        ga:EWA76_98_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG70 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG70_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG70_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Basar in Almar, 76" ;
+    crm:P43_has_dimension ga:EWA76_MG70_Height,
+        ga:EWA76_MG70_Quality,
+        ga:EWA76_MG70_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG87 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG87_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG87_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG87_Height,
+        ga:EWA76_MG87_Quality,
+        ga:EWA76_MG87_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG93 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG93_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG93_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Heqdare [Haydariha ?] in Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG93_Height,
+        ga:EWA76_MG93_Quality,
+        ga:EWA76_MG93_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG69 a crm:E22_Human-Made_Object,
+        crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG69_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
+    crm:P128_carries ga:EWA76_MG69_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Basar in Almar",
+        "MG69 Alter Basar in Almar" ;
+    crm:P43_has_dimension ga:EWA76_MG69_Height,
+        ga:EWA76_MG69_Quality,
+        ga:EWA76_MG69_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG76 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG76_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG76_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Basar in Almar, 1976. Ausschnitt: Die Terrasse mit Wandmalerei im Obergeschoss" ;
+    crm:P43_has_dimension ga:EWA76_MG76_Height,
+        ga:EWA76_MG76_Quality,
+        ga:EWA76_MG76_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_Almar_Photography a crm:E12_Production ;
+    crm:P14_carried_out_by ga:MarekGawecki ;
+    crm:P4_has_time-span ga:TimeSpan_EWA76_Almar ;
+    crm:P7_took_place_at ga:Almar ;
+    crm:P9i_forms_part_of ga:Expedition_EWA76_Qaysar_Visit .
+
+ga:EWA76_MG91 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG91_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG91_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "«Zahnarzt» in Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG91_Height,
+        ga:EWA76_MG91_Quality,
+        ga:EWA76_MG91_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:EWA76_MG90 a crm:E22_Human_Made_Object ;
+    crm:P102_has_title ga:EWA76_MG90_Title ;
+    crm:P108i_was_produced_by ga:EWA76_Qaysar_photography ;
+    crm:P128_carries ga:EWA76_MG90_DigitalFile ;
+    crm:P2_has_type ga:Photograph_Type ;
+    crm:P3_has_note "Qaysar." ;
+    crm:P43_has_dimension ga:EWA76_MG90_Height,
+        ga:EWA76_MG90_Quality,
+        ga:EWA76_MG90_Width ;
+    crm:P46i_forms_part_of ga:EWA76_Collection .
+
+ga:People a crm:E55_Type ;
+    crm:P190_has_symbolic_content "People" .
+
+ga:Urban a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Urban" .
+
+ga:Height a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Height" .
+
+ga:Width a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Width" .
+
+ga:EWA76_Collection a crm:E78_Curated_Holding ;
+    crm:P1_is_identified_by ga:EWA76_Collection_Name .
+
+ga:Image_Quality a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Image quality" .
+
+ga:Photograph_Type a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Photograph" .
+
+ga:Pytorch_classifier_v2 a crm:E39_Actor ;
+    crm:P1_is_identified_by ga:Pytorch_classifier_v2_Name ;
+    crm:P2_has_type ga:Artificial_Intelligence_Model .
+
+ga:Bibliographic_Reference_Type a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Bibliographic Reference" .
+
+ga:Millimeters a crm:E58_Measurement_Unit ;
+    crm:P190_has_symbolic_content "Millimeters" .
+
+ga:Image_Description_Type a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Image Description" .
+
+ga:MarekGawecki a crm:E21_Person ;
+    crm:P1_is_identified_by ga:MarekGawecki_Name .
+
+ga:Confidence a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Confidence Score" .
+
+ga:Probability_Unit a crm:E58_Measurement_Unit ;
+    crm:P190_has_symbolic_content "Probability value between 0 and 1" .
+

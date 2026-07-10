@@ -13,7 +13,7 @@
 
 ga:Photograph_Type
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "photograph" .
+    crm:P190_has_symbolic_content "Photograph" .
 
 ga:Urban
     a crm:E55_Type ;
@@ -23,13 +23,19 @@ ga:Women
     a crm:E55_Type ;
     crm:P190_has_symbolic_content "Women" .
 
+ga:People a crm:E55_Type ;
+    crm:P190_has_symbolic_content "People" .
+
+ga:Landscape a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Landscape" .
+
 ga:Artificial_Intelligence_Model
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "Artificial intelligence model" .
+    crm:P190_has_symbolic_content "Artificial Intelligence Model" .
 
 ga:Confidence
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "Confidence score" .
+    crm:P190_has_symbolic_content "Confidence Score" .
 
 ga:Image_Quality
     a crm:E55_Type ;
@@ -37,19 +43,22 @@ ga:Image_Quality
 
 ga:Width
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "width" .
+    crm:P190_has_symbolic_content "Width" .
 
 ga:Height
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "height" .
+    crm:P190_has_symbolic_content "Height" .
 
 ga:Millimeters
     a crm:E58_Measurement_Unit ;
-    crm:P190_has_symbolic_content "millimeters" .
+    crm:P190_has_symbolic_content "Millimeters" .
 
 ga:Probability_Unit
     a crm:E58_Measurement_Unit ;
-    crm:P190_has_symbolic_content "probability value between 0 and 1" .
+    crm:P190_has_symbolic_content "Probability value between 0 and 1" .
+
+ga:Bibliographic_Reference_Type a crm:E55_Type ;
+    crm:P190_has_symbolic_content "Bibliographic Reference" .
 
 # ======================================================
 # Expedition Context
@@ -222,7 +231,7 @@ ga:EWA76_MG69_Description_en
 
 ga:Image_Description_Type
     a crm:E55_Type ;
-    crm:P190_has_symbolic_content "image description" .
+    crm:P190_has_symbolic_content "Image Description" .
 
 ga:EWA76_MG69_Description_en_Creation
     a crm:E65_Creation ;
