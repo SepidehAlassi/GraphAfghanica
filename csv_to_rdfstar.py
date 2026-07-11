@@ -9,7 +9,7 @@ Mapping rules:
 
 Example:
     python csv_to_graphafghanica.py data.csv output.ttl \
-        --ontology ontology_cidocCRM.ttl
+        --ontology ontology_star_noannotation.ttl
 """
 
 from __future__ import annotations
