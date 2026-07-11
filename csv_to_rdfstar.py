@@ -31,9 +31,9 @@ GAO = Namespace("http://www.graphAfghanica.org/ontology/")
 
 # Accept both the actual CSV headers and the colon-prefixed variants.
 DESCRIPTION_COLUMNS = {
-    "pl": (":description (pl)"),
-    "de": (":description (de)"),
-    "en": (":description (en)"),
+    "pl": (":description (pl)",),
+    "de": (":description (de)",),
+    "en": (":description (en)",)
 }
 
 
@@ -218,7 +218,22 @@ def build_graph(csv_path: Path, ontology_path: Path | None = None) -> Graph:
 
     return graph
 
+def add_rdfstar_annotations(csv_path: Path):
+    star_triples = ""
+    for collection_id, rows in group_rows(csv_path).items():
+        image = collection_id
+        for language, columns in DESCRIPTION_COLUMNS.items():
+            description = first_nonempty(rows, *columns)
+            if description:
+                star_triples += ('<< ga' + image + ' :description "' + description + '"@' +language+ ' >> \n' +
+                                 "\t :creator ga:MarekGawecki ; \n" +
+                                 '\t :confidence "1.0"^^xsd:decimal .\n\n')
+        for classification in unique_nonempty(rows, ":classification"):
 
+            star_triples += ("<< ga" + image + " :classification ga" + classification + " >>\n" +
+                             "\t :model ga:Pytorch_classifier_v2 ; \n" +
+                             '\t :confidence "0.89"^^xsd:decimal .\n\n')
+    return star_triples
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -257,8 +272,12 @@ def main() -> int:
         f"Wrote {len(graph):,} triples for "
         f"{len(group_rows(args.input_csv)):,} images to {args.output_turtle}"
     )
+
+    star_triples = add_rdfstar_annotations(args.input_csv)
+    with open(args.output_turtle, "a") as f:
+        f.write(star_triples)
     return 0
-  
+
 
 if __name__ == "__main__":
     raise SystemExit(main())
