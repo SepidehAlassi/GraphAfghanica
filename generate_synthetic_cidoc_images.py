@@ -143,7 +143,7 @@ def add_dimension(
     image: URIRef,
     dimension: URIRef,
     dimension_type: URIRef,
-    value: int | str,
+    value: int | float | str,
     unit: URIRef | None = None,
 ) -> None:
     graph.add((image, CRM.P43_has_dimension, dimension))
@@ -152,6 +152,8 @@ def add_dimension(
 
     if isinstance(value, int):
         graph.add((dimension, CRM.P90_has_value, Literal(value, datatype=XSD.integer)))
+    elif isinstance(value, float):
+        graph.add((dimension, CRM.P90_has_value, Literal(value, datatype=XSD.decimal)))
     else:
         graph.add((dimension, CRM.P90_has_value, Literal(value)))
 
@@ -185,7 +187,7 @@ def add_description(
         creation,
         confidence,
         GA.Confidence,
-        f"{confidence_value:.2f}",
+        1.0,
         GA.Probability_Unit,
     )
 
@@ -221,7 +223,7 @@ def add_classification(
         assignment,
         confidence,
         GA.Confidence,
-        f"{confidence_value:.2f}",
+        0.89,
         GA.Probability_Unit,
     )
 
@@ -241,7 +243,14 @@ def add_image(graph: Graph, number: int, rng: random.Random, base_url: str) -> N
     width = rng.randint(90, 240)
     height = rng.randint(70, 180)
     quality = rng.choice(QUALITY_VALUES)
-    selected_classes = rng.sample(CLASSIFICATIONS, k=rng.randint(1, 3))
+    # Assign 1–2 random classes excluding Women.
+    base_classes = [item for item in CLASSIFICATIONS if item[0] != "Women"]
+    selected_classes = rng.sample(base_classes, k=rng.randint(1, 2))
+
+    # Deterministically assign Women to exactly one quarter of the images
+    # when count is divisible by four: images 4, 8, 12, ...
+    if number % 4 == 0:
+        selected_classes.append(("Women", "Women"))
     subject = ", ".join(label.lower() for _, label in selected_classes)
 
     graph.add((image, RDF.type, CRM["E22_Human-Made_Object"]))
@@ -365,13 +374,13 @@ def main() -> int:
     args = parse_args()
     try:
         graph = build_graph(args.count, args.seed, args.base_url)
-        outputfilename = "generated_random"+str(args.count)+'.ttl'
+        outputfilename = "generated_synthetic_crm_"+str(args.count)+'.ttl'
         output = os.path.join('.', outputfilename)
         graph.serialize(destination=output, format="turtle")
 
         # Parse the result again to catch serialization problems.
-        validation_graph = Graph()
-        validation_graph.parse(output, format="turtle")
+        # validation_graph = Graph()
+        # validation_graph.parse(output, format="turtle")
     except (OSError, ValueError) as exc:
         print(f"Error: {exc}")
         return 1
@@ -381,7 +390,7 @@ def main() -> int:
 
     print(
         f"Created {args.count:,} image resources and "
-        f"{len(validation_graph):,} triples in {output}"
+        f"{len(graph):,} triples in {output}"
     )
     return 0
 

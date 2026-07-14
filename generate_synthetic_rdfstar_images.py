@@ -120,7 +120,21 @@ def add_synthetic_image(graph: Graph, index: int, rng: random.Random, base_url: 
     height = rng.randint(90, 240)
     quality = rng.choice(QUALITIES)
     legend = rng.choice(LEGENDS)
-    selected_classifications = rng.sample(CLASSIFICATIONS, k=rng.randint(1, 3))
+    # Assign 1–2 random classes excluding Women.
+    base_classifications = [
+        classification
+        for classification in CLASSIFICATIONS
+        if classification != "Women"
+    ]
+    selected_classifications = rng.sample(
+        base_classifications,
+        k=rng.randint(1, 2),
+    )
+
+    # Assign Women deterministically to exactly one quarter of the images
+    # when image_count is divisible by four: images 4, 8, 12, ...
+    if index % 4 == 0:
+        selected_classifications.append("Women")
     descriptions = {language: rng.choice(values) for language, values in DESCRIPTIONS.items()}
     title = f"Synthetic historical image {index:05d}"
     image_url = f"{base_url.rstrip('/')}/{image_id}.jpg"
@@ -198,7 +212,6 @@ def build_graph(image_count: int, ontology_path: Path | None, seed: int, base_ur
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate synthetic GraphAfghanica image data as Turtle.")
     parser.add_argument("image_count", type=int, help="Number of synthetic image resources to generate")
-    parser.add_argument("output_turtle", type=Path, help="Output Turtle/Turtle-star file")
     parser.add_argument("--ontology", type=Path, default=None, help="Optional ontology Turtle file to include")
     parser.add_argument("--seed", type=int, default=76, help="Random seed for reproducible output")
     parser.add_argument("--base-url", default="http://localhost:8080/images", help="Base URL for image files")
@@ -211,11 +224,11 @@ def main() -> int:
 
     try:
         graph, generated_images = build_graph(args.image_count, args.ontology, args.seed, args.base_url)
-        args.output_turtle.parent.mkdir(parents=True, exist_ok=True)
-        graph.serialize(destination=args.output_turtle, format="turtle", encoding="utf-8")
+        outputfilename = "generated_synthetic_star_" + str(args.image_count) + '.ttl'
+        graph.serialize(destination=outputfilename, format="turtle", encoding="utf-8")
 
         if not args.without_rdfstar:
-            with args.output_turtle.open("a", encoding="utf-8") as handle:
+            with open(outputfilename, "a", encoding="utf-8") as handle:
                 handle.write(create_rdfstar_annotations(generated_images))
 
         # Validate the standard Turtle graph. RDFLib versions without Turtle-star
@@ -230,7 +243,7 @@ def main() -> int:
         print(f"RDF generation failed: {exc}", file=sys.stderr)
         return 2
 
-    print(f"Wrote {len(graph):,} standard RDF triples for {args.image_count:,} synthetic images to {args.output_turtle}")
+    print(f"Wrote {len(graph):,} standard RDF triples for {args.image_count:,} synthetic images to {outputfilename}")
     if not args.without_rdfstar:
         print("RDF-star annotations were appended as Turtle-star text.")
     return 0
