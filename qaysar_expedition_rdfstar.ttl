@@ -856,7 +856,7 @@ ga:EWA76_Collection a crm:E78_Curated_Holding ;
 	 :model ga:Pytorch_classifier_v2 ; 
 	 :confidence "0.89"^^xsd:decimal .
 
-<< ga:EWA76_MG79 :description "Przypuszczalnie uzbecki kupiec siedzi w swoim sklepie wielobranżowym, w zasięgu najważniejszych artykułów. W przeciwieństwie do "latających" handlarzy, którzy oferują towary na poboczu drogi tylko w dni targowe, ma solidną wagę belkową i skalibrowane kamienie wagowe. Wydaje się być człowiekiem wykształconym, który umie czytać i pisać, ponieważ ma przed sobą czasopismo."@pl >> 
+<< ga:EWA76_MG79 :description "Przypuszczalnie uzbecki kupiec siedzi w swoim sklepie wielobranżowym, w zasięgu najważniejszych artykułów. W przeciwieństwie do \"latających\" handlarzy, którzy oferują towary na poboczu drogi tylko w dni targowe, ma solidną wagę belkową i skalibrowane kamienie wagowe. Wydaje się być człowiekiem wykształconym, który umie czytać i pisać, ponieważ ma przed sobą czasopismo."@pl >> 
 	 :creator ga:MarekGawecki ; 
 	 :confidence "1.0"^^xsd:decimal .
 
@@ -872,7 +872,7 @@ ga:EWA76_Collection a crm:E78_Curated_Holding ;
 	 :model ga:Pytorch_classifier_v2 ; 
 	 :confidence "0.89"^^xsd:decimal .
 
-<< ga:EWA76_MG80 :description "Kupiec ten trzyma w swoim dukan (sklepie) niebezpiecznie duży zapas zapałek. Z sufitu zwisają białe bawełniane "paski", które są wciągnięte w mereżkę szerokich spodni haremowych. Wziął dwie pięknie haftowane czapki z czaszką od kobiety na zlecenie. Za jego głową wiszą dwa lustra, które pozwalają mu mieć oko na swój towar nawet wtedy, gdy się odwróci"@pl >> 
+<< ga:EWA76_MG80 :description "Kupiec ten trzyma w swoim dukan (sklepie) niebezpiecznie duży zapas zapałek. Z sufitu zwisają białe bawełniane \"paski\", które są wciągnięte w mereżkę szerokich spodni haremowych. Wziął dwie pięknie haftowane czapki z czaszką od kobiety na zlecenie. Za jego głową wiszą dwa lustra, które pozwalają mu mieć oko na swój towar nawet wtedy, gdy się odwróci"@pl >> 
 	 :creator ga:MarekGawecki ; 
 	 :confidence "1.0"^^xsd:decimal .
 
@@ -928,7 +928,7 @@ ga:EWA76_Collection a crm:E78_Curated_Holding ;
 	 :model ga:Pytorch_classifier_v2 ; 
 	 :confidence "0.89"^^xsd:decimal .
 
-<< ga:EWA76_MG83 :description "Ten turkmeński handlarz suknem posługuje się tradycyjnym "kalkulatorem", liczydłem z drewnianymi paciorkami nawleczonymi na metalowe pręty. Pozwoliło to afgańskim handlarzom dodawać i mnożyć z zadziwiającą szybkością. Dziś nawet w najbardziej odległych wioskach używa się telefonów komórkowych."@pl >> 
+<< ga:EWA76_MG83 :description "Ten turkmeński handlarz suknem posługuje się tradycyjnym \"kalkulatorem\", liczydłem z drewnianymi paciorkami nawleczonymi na metalowe pręty. Pozwoliło to afgańskim handlarzom dodawać i mnożyć z zadziwiającą szybkością. Dziś nawet w najbardziej odległych wioskach używa się telefonów komórkowych."@pl >> 
 	 :creator ga:MarekGawecki ; 
 	 :confidence "1.0"^^xsd:decimal .
 
@@ -944,7 +944,7 @@ ga:EWA76_Collection a crm:E78_Curated_Holding ;
 	 :model ga:Pytorch_classifier_v2 ; 
 	 :confidence "0.89"^^xsd:decimal .
 
-<< ga:EWA76_MG84 :description "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe "lassa", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl >> 
+<< ga:EWA76_MG84 :description "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe \"lassa\", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl >> 
 	 :creator ga:MarekGawecki ; 
 	 :confidence "1.0"^^xsd:decimal .
 
@@ -960,7 +960,7 @@ ga:EWA76_Collection a crm:E78_Curated_Holding ;
 	 :model ga:Pytorch_classifier_v2 ; 
 	 :confidence "0.89"^^xsd:decimal .
 
-<< ga:EWA76_MG85 :description "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe "lassa", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl >> 
+<< ga:EWA76_MG85 :description "Ze starych opon ciężarowych i gumowych dętek ten rzemieślnik tworzy wytrzymałe buty do pracy w terenie. Bardziej misternie wykonane buty wiszą na słupie nad drzwiami. Ze skrzydeł drzwi zwisają gumowe \"lassa\", które wyciął z węży w długiej spirali. Dla rozrywki słucha kaset muzycznych w radiu tranzystorowym."@pl >> 
 	 :creator ga:MarekGawecki ; 
 	 :confidence "1.0"^^xsd:decimal .
 

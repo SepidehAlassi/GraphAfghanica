@@ -223,7 +223,8 @@ def add_rdfstar_annotations(csv_path: Path):
     for collection_id, rows in group_rows(csv_path).items():
         image = collection_id
         for language, columns in DESCRIPTION_COLUMNS.items():
-            description = first_nonempty(rows, *columns)
+            description = first_nonempty(rows, *columns).replace('"', r'\"')
+
             if description:
                 star_triples += ('<< ga' + image + ' :description "' + description + '"@' +language+ ' >> \n' +
                                  "\t :creator ga:MarekGawecki ; \n" +
