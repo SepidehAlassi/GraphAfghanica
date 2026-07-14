@@ -18,7 +18,7 @@ def get_image_id(image_id):
           <%s> a :Image ;
             ?property ?value .
       }
-      """ % image_iri
+      """ % image_iri,
 
     try:
         response = requests.post(
