@@ -38,6 +38,31 @@ def collection(collection_id):
         collection=collection_data
     )
 
+@app.route("/events")
+def events():
+    symposium = {
+        "title": "Digital Futures for Afghan Photographic Heritage",
+        "date": "23 October 2026",
+        "time": "14:00–18:00 CEST",
+        "format": "Online via Zoom",
+        "organizers": "Dr. Sepideh Alassi and Joël László, Digital Humanities Lab and University Library, University of Basel.",
+        "description": (
+            "This symposium explores digital approaches to the "
+            "preservation, curation, interconnection, and scholarly "
+            "exploration of historical Afghan photographic collections. "
+            "It introduces the GraphAfghanica project and brings together "
+            "researchers working on Afghan photographic heritage, "
+            "digital archives, and computational approaches to cultural heritage."
+        ),
+        "flyers": [
+            "images/GraphAfghanica_flyer1.png",
+            "images/GraphAfghanica_flyer2.png"
+        ],
+        "register": 'https://forms.gle/g3hFg4RyczUfcA6d8'
+    }
+
+    return render_template("events.html", symposium=symposium)
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3000, debug=True)
