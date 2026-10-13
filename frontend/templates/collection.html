@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>GraphAfghanica - Collection</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+<main>
+
+    <a href="/">← Back to Home</a>
+
+    <h2>Collection: {{ collection.collection_id }}</h2>
+
+    <p>
+        <strong>Collection IRI:</strong>
+        {{ collection.collection_iri }}
+    </p>
+
+    <p>
+        <strong>Number of images:</strong>
+        {{ collection.image_count }}
+    </p>
+
+    {% if collection.images %}
+
+    <table class="image-table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Image ID</th>
+                <th>RDF Resource</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for image in collection.images %}
+            <tr>
+                <td>{{ loop.index }}</td>
+
+                <td>{{ image.id }}</td>
+
+                <td>
+                    <a href="{{ image.uri }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        {{ image.uri }}
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+
+    <p>No images found in this collection.</p>
+
+    {% endif %}
+
+</main>
+
+</body>
+</html>

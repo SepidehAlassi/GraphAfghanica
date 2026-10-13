@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Events | GraphAfghanica</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+<main class="events-page">
+
+    <h1>Events</h1>
+
+    <article class="event-card">
+
+        <h2>{{ symposium.title }}</h2>
+
+        <div class="event-layout">
+
+          <div class="event-flyers">
+            {% for flyer in symposium.flyers %}
+                <img src="{{ url_for('static', filename=flyer) }}"
+                     alt="Symposium flyer {{ loop.index }}">
+            {% endfor %}
+        </div>
+
+            <div class="event-details">
+
+                <h3>Symposium Information</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    {{ symposium.date }}
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    {{ symposium.time }}
+                </p>
+
+                <p>
+                    <strong>Format:</strong>
+                    {{ symposium.format }}
+                </p>
+
+                <p>
+                    <strong>Organizers:</strong>
+                    {{ symposium.organizers }}
+                </p>
+
+                <h3>About the Symposium</h3>
+
+                <p>{{ symposium.description }}</p>
+
+                {% if symposium.zoom_url %}
+                    <a class="event-button"
+                       href="{{ symposium.zoom_url }}"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Join the Symposium
+                    </a>
+                {% endif %}
+
+            </div>
+        </div>
+
+    </article>
+
+</main>
+
+</body>
+</html>

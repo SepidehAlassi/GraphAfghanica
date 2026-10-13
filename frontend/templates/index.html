@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GraphAfghanica</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+{% include 'header.html' %}
+
+    <main>
+        <h2>Photographic Collections</h2>
+
+
+
+        <a href="{{ url_for('collection', collection_id='EWA76_Collection') }}">
+        Explore EWA76 Collection
+        </a>
+    </main>
+</body>
+</html>
