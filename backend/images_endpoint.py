@@ -2,8 +2,12 @@ from flask_restful import Resource, Api
 import requests
 
 
-GRAPHDB_ENDPOINT = "http://localhost:7200/repositories/GraphAfghanica"
+import os
 
+GRAPHDB_ENDPOINT = os.getenv(
+    "GRAPHDB_ENDPOINT",
+    "http://localhost:7200/repositories/GraphAfghanica"
+)
 IMAGE_NAMESPACE = "http://www.graphAfghanica.org/data/"
 
 
@@ -18,7 +22,7 @@ def get_image_id(image_id):
           <%s> a :Image ;
             ?property ?value .
       }
-      """ % image_iri,
+      """ % image_iri
 
     try:
         response = requests.post(
@@ -85,7 +89,5 @@ def get_image_id(image_id):
 class Images(Resource):
     def get(self, image_id=None):
         if image_id is not None:
-
-            return {'image_id': get_image_id(image_id)}, 200
-        else:
-            return {'GraphAfghanica': 'All images of GraphAfghnica'}, 200
+            return get_image_id(image_id)
+        return {"GraphAfghanica": "All images"}, 200

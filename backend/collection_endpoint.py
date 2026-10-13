@@ -1,8 +1,12 @@
 from flask_restful import Resource
 import requests
 
-GRAPHDB_ENDPOINT = "http://localhost:7200/repositories/GraphAfghanica"
+import os
 
+GRAPHDB_ENDPOINT = os.getenv(
+    "GRAPHDB_ENDPOINT",
+    "http://localhost:7200/repositories/GraphAfghanica"
+)
 DATA_NAMESPACE = "http://www.graphAfghanica.org/data/"
 
 
@@ -100,4 +104,4 @@ def get_images_by_collection(collection_id):
 
 class Collection(Resource):
     def get(self, collection_id):
-        return get_images_by_collection(collection_id), 200
+        return get_images_by_collection(collection_id)

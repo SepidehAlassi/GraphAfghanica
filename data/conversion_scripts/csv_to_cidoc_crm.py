@@ -354,9 +354,9 @@ def build_graph(
 
 
 def main() -> int:
-    input_csv = Path('qaysar_expedition_data.csv')
-    output_turtle = Path('qaysar_expedition_crm.ttl')
-    ontology_turtle = Path('./ontology_cidocCRM.ttl')
+    input_csv = Path('../qaysar_expedition_data.csv')
+    output_turtle = Path('../qaysar_expedition_crm.ttl')
+    ontology_turtle = Path('../ontology_cidocCRM.ttl')
     classification_confidence = '1.0'
     try:
         graph = build_graph(

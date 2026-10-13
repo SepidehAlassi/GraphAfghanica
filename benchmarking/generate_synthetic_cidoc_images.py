@@ -375,7 +375,7 @@ def main() -> int:
     try:
         graph = build_graph(args.count, args.seed, args.base_url)
         outputfilename = "generated_synthetic_crm_"+str(args.count)+'.ttl'
-        output = os.path.join('.', outputfilename)
+        output = os.path.join('..', outputfilename)
         graph.serialize(destination=output, format="turtle")
 
         # Parse the result again to catch serialization problems.
