@@ -18,4 +18,7 @@ class GraphAfghanica(Resource):
 
 api.add_resource(GraphAfghanica, "/")
 api.add_resource(Images, "/images/", "/images/<string:image_id>")
-api.add_resource(Collection, "/collections/<string:collection_id>")
+api.add_resource(
+    Collection,
+    "/collections/<string:collection_id>"
+)
