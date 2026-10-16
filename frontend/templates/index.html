@@ -21,7 +21,7 @@
         <h1 id="hero-title">Connecting images.<br><em>Revealing histories.</em></h1>
         <p class="ga-lead">GraphAfghanica brings Afghanistan’s photographic heritage into conversation — connecting historical images, collections, places, and stories through semantic technologies.</p>
         <div class="ga-actions">
-          <a class="ga-btn ga-btn-primary" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">Explore the collection <span aria-hidden="true">↗</span></a>
+          <a class="ga-btn ga-btn-primary" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">Explore the collections <span aria-hidden="true">↗</span></a>
           <a class="ga-text-link" href="#about">Discover the project <span aria-hidden="true">↓</span></a>
         </div>
       </div>
@@ -29,7 +29,7 @@
         <div class="ga-art-frame">
           <img src="http://localhost:8080/MG88.png" alt="Historical photograph from Afghanistan" class="ga-hero-image">
         </div>
-        <div class="ga-art-label"><span class="ga-label-dot"></span> A CONNECTED VISUAL ARCHIVE <span>01 / 03</span></div>
+        <div class="ga-art-label"><span class="ga-label-dot"></span> A CONNECTED VISUAL ARCHIVE </div>
       </div>
     </section>
 
@@ -43,6 +43,12 @@
       <a class="ga-collection-card" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">
         <div class="ga-collection-visual"><span class="ga-collection-number">01</span><img src="http://localhost:8080/MG87.png" alt="Photograph from the EWA-76 collection" class="ga-collection-image"></div>
         <div class="ga-collection-info"><p class="ga-overline">FEATURED COLLECTION</p><h3>EWA-76</h3><p>Explore historical photographs from the EWA-76 collection and discover their associated metadata.</p><span class="ga-card-link">View collection <span aria-hidden="true">↗</span></span></div>
+        <span class="ga-collection-arrow" aria-hidden="true">↗</span>
+      </a>
+      <br/>
+      <a class="ga-collection-card" href="{{ url_for('collection', collection_id='BA_Collection') }}">
+        <div class="ga-collection-visual"><span class="ga-collection-number">02</span><img src="http://localhost:8080/BA_6414189.jpeg" alt="Photograph from the EWA-76 collection" class="ga-collection-image"></div>
+        <div class="ga-collection-info"><p class="ga-overline">FEATURED COLLECTION</p><h3>Bibliotheca Afghanica</h3><p>Explore historical photographs from the Bibliotheca Afghanica collection and discover their associated metadata.</p><span class="ga-card-link">View collection <span aria-hidden="true">↗</span></span></div>
         <span class="ga-collection-arrow" aria-hidden="true">↗</span>
       </a>
     </section>

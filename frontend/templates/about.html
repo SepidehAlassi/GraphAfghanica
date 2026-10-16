@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About GraphAfghanica: research, people, and support behind a connected photographic heritage initiative.">
+  <title>About | GraphAfghanica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='graphafghanica-home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='graphafghanica-about.css') }}">
+</head>
+<body class="ga-home ga-about-page">
+  {% include 'header.html' %}
+  <main id="main-content">
+    <section class="ga-about-hero">
+      <div class="ga-about-hero-copy">
+        <p class="ga-section-kicker">ABOUT / GRAPHAFGHANICA</p>
+        <h1>Images hold stories.<br><em>Connections reveal them.</em></h1>
+        <p class="ga-lead">GraphAfghanica is a Digital Humanities initiative connecting historical photographic collections from Afghanistan through interoperable, provenance-aware knowledge graphs.</p>
+        <a class="ga-btn ga-btn-primary" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">Explore the collection <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="ga-about-photo">
+        <img src="http://localhost:8080/MG73.png" alt="Historical photograph from the GraphAfghanica archive">
+        <p>HISTORICAL PHOTOGRAPHIC HERITAGE · A CONNECTED APPROACH</p>
+      </div>
+    </section>
+
+    <section class="ga-about-section ga-about-overview" id="project">
+      <div class="ga-about-heading"><p class="ga-section-kicker">01 / THE PROJECT</p><h2>Beyond the <em>archive.</em></h2></div>
+      <div class="ga-about-prose">
+        <p>Historical photographs offer invaluable perspectives on Afghanistan’s social, cultural, and urban histories. Yet images are often dispersed across institutions and described in different formats, making them difficult to discover and study together.</p>
+        <p>GraphAfghanica develops a federated research infrastructure that connects photographic collections without erasing their distinct identities or custodianship. Using Linked Open Data, semantic models, and knowledge graphs, the project links photographs to places, periods, subjects, and sources.</p>
+        <p>AI-assisted methods can enrich image descriptions and support discovery, while provenance and confidence information help researchers distinguish source metadata from computational interpretations.</p>
+      </div>
+    </section>
+
+    <section class="ga-about-section ga-about-goals">
+      <p class="ga-section-kicker">02 / RESEARCH OBJECTIVES</p>
+      <h2>What we aim to <em>enable.</em></h2>
+      <div class="ga-about-goal-grid">
+        <article><span>01</span><h3>Connect collections</h3><p>Make dispersed photographic holdings discoverable through shared semantic descriptions and links.</p></article>
+        <article><span>02</span><h3>Preserve provenance</h3><p>Keep source attribution, collection context, and uncertainty visible alongside the images.</p></article>
+        <article><span>03</span><h3>Explore new questions</h3><p>Support cross-collection exploration of places, people, themes, and historical change.</p></article>
+      </div>
+    </section>
+
+    <section class="ga-about-section ga-about-team" id="team">
+      <div class="ga-about-heading"><p class="ga-section-kicker">03 / THE PEOPLE</p><h2>Project <em>team.</em></h2></div>
+      <div class="ga-about-team-grid">
+        <article class="ga-person"><p class="ga-person-role">Project Lead</p><h3>Dr. Sepideh Alassi</h3><p>Digital Humanities Lab, University of Basel</p><p>Project direction, semantic data modelling, knowledge graphs, and research infrastructure.</p></article>
+                <article class="ga-person"><p class="ga-person-role">Project Lead</p><h3>Dr. Joël László</h3><p>Collaborative research and contextual review.</p></article>
+                <article class="ga-person"><p class="ga-person-role">Research Assistant</p><h3>Pema Frick</h3><p>GraphAfghanica project</p><p>Data modelling.</p></article>
+        <article class="ga-person"><p class="ga-person-role">Student Assistant</p><h3>Niloofar Jokar</h3><p>GraphAfghanica project</p><p>Data import and annotation.</p></article>
+        <article class="ga-person"><p class="ga-person-role">Research Collaborator</p><h3>Prof. Shah Mahmoud Hanifi</h3><p>Collaborative research and historical contextualization.</p></article>
+      </div>
+      <p class="ga-about-note">The project also envisages contributions from Afghan community volunteers for contextual review and verification. Update names, affiliations, and roles as the team is confirmed.</p>
+    </section>
+
+    <section class="ga-about-section ga-about-funding" id="funding">
+      <div class="ga-about-heading"><p class="ga-section-kicker">04 / SUPPORT</p><h2>Funding &amp; <em>support.</em></h2></div>
+      <div class="ga-about-prose">
+        <p>GraphAfghanica is developed in the research environment of the Digital Humanities Lab at the University of Basel, in collaboration with researchers and collection stakeholders.</p>
+        <p class="ga-funding-placeholder"><strong>Funding acknowledgement:</strong> This project is partially funded by EPICUR. </p>
+      </div>
+    </section>
+
+    <section class="ga-about-cta">
+      <div><p class="ga-section-kicker">DISCOVER THE COLLECTION</p><h2>Explore the photographs<br><em>and their connections.</em></h2></div>
+      <a class="ga-btn ga-btn-primary" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">Browse EWA-76 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="ga-footer"><span>GraphAfghanica</span><span>Digital Humanities · Afghan Photographic Heritage</span><a href="#main-content">Back to top ↑</a></footer>
+</body>
+</html>
