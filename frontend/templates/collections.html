@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore photographic collections connected through the GraphAfghanica project.">
+  <title>Collections | GraphAfghanica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='graphafghanica-home.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='graphafghanica-collections.css') }}">
+</head>
+<body class="ga-home ga-collections-page">
+  {% include 'header.html' %}
+  <main id="main-content">
+    <section class="ga-collections-hero" aria-labelledby="collections-title">
+      <p class="ga-section-kicker">EXPLORE THE COLLECTIONS</p>
+      <h1 id="collections-title">Photographic <em>collections.</em></h1>
+      <p>Discover historical photographs from Afghanistan, their archival contexts, and the connections between them.</p>
+    </section>
+
+    <section class="ga-collections ga-collections-directory" aria-label="Available collections">
+      <div class="ga-section-head">
+        <div>
+          <p class="ga-section-kicker">COLLECTION DIRECTORY</p>
+          <h2>Explore the <em>collections</em></h2>
+        </div>
+        <p>Browse collections and their associated image metadata.</p>
+      </div>
+
+      <div class="ga-collections-grid">
+        <a class="ga-collection-card" href="{{ url_for('collection', collection_id='EWA76_Collection') }}">
+        <div class="ga-collection-visual"><span class="ga-collection-number">01</span><img src="http://localhost:8080/MG87.png" alt="Photograph from the EWA-76 collection" class="ga-collection-image"></div>
+        <div class="ga-collection-info"><p class="ga-overline">FEATURED COLLECTION</p><h3>EWA-76</h3><p>Explore historical photographs from the EWA-76 collection and discover their associated metadata.</p><span class="ga-card-link">View collection <span aria-hidden="true">↗</span></span></div>
+        <span class="ga-collection-arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="ga-collection-card" href="{{ url_for('collection', collection_id='BA_Collection') }}">
+        <div class="ga-collection-visual"><span class="ga-collection-number">02</span><img src="http://localhost:8080/BA_6414189.jpeg" alt="Photograph from the EWA-76 collection" class="ga-collection-image"></div>
+        <div class="ga-collection-info"><p class="ga-overline">FEATURED COLLECTION</p><h3>Bibliotheca Afghanica</h3><p>Explore historical photographs from the Bibliotheca Afghanica collection and discover their associated metadata.</p><span class="ga-card-link">View collection <span aria-hidden="true">↗</span></span></div>
+        <span class="ga-collection-arrow" aria-hidden="true">↗</span>
+      </a>
+      </div>
+    </section>
+
+    <section class="ga-collections-note" aria-label="About the collections">
+      <div>
+        <p class="ga-section-kicker">A GROWING RESOURCE</p>
+        <h2>Connecting collections, <em>preserving context.</em></h2>
+      </div>
+      <p>GraphAfghanica is developing a federated approach to photographic heritage. Additional collections and connections can be added as their metadata becomes available.</p>
+    </section>
+  </main>
+  <footer class="ga-footer"><span>GraphAfghanica</span><span>Digital Humanities · Afghan Photographic Heritage</span><a href="#main-content">Back to top ↑</a></footer>
+</body>
+</html>

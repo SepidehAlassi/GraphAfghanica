@@ -15,12 +15,14 @@
 
 <body>
     {% include 'header.html' %}
-
-    <main class="ga-collection-page">
-
-        <a href="{{ url_for('collections') }}" class="ga-back-link">
-            &larr; Back to Collections
+    <div class="ga-back-navigation">
+        <a href="{{ url_for('collections') }}"
+           class="ga-back-button">
+            <span aria-hidden="true">←</span>
+            Back to collections
         </a>
+    </div>
+    <main class="ga-collection-page">
 
         <header class="ga-collection-header">
             <h1>{{ collection.collection_name or collection.collection_id }}</h1>

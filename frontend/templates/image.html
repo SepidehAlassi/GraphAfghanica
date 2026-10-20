@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ image.title }} | GraphAfghanica</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+{% include 'header.html' %}
+
+ {% set collection_id = image.collection.rsplit('/', 1)[-1] %}
+
+    <div class="ga-back-navigation">
+        <a href="{{ url_for('collection', collection_id=collection_id) }}"
+           class="ga-back-button">
+            <span aria-hidden="true">←</span>
+            Back to collection
+        </a>
+    </div>
+
+<main class="image-detail-page">
+
+    <header class="image-detail-header">
+        <h1>{{ image.title }}</h1>
+
+        {% if image.legend %}
+            <p class="image-subtitle">{{ image.legend }}</p>
+        {% endif %}
+    </header>
+
+    <!-- Photograph -->
+    <section class="image-viewer">
+
+        <div class="image-viewport" id="imageViewport">
+            <img
+                id="detailImage"
+                src="{{ image.image_url }}"
+                alt="{{ image.legend or image.title }}"
+                draggable="false"
+            >
+        </div>
+
+        <div class="image-zoom-controls">
+            <button type="button" id="zoomOut" aria-label="Zoom out">−</button>
+            <button type="button" id="zoomReset">Reset</button>
+            <button type="button" id="zoomIn" aria-label="Zoom in">+</button>
+        </div>
+
+    </section>
+
+    <!-- Metadata -->
+    <section class="image-metadata">
+
+        <h2>Image metadata</h2>
+
+        <div class="metadata-grid">
+            <div>
+                <strong>Photographer</strong>
+                <p>{{ image.photographer_name or "Unknown" }}</p>
+            </div>
+
+            <div>
+                <strong>Location</strong>
+                <p>
+                    {% if image.location_wiki_iri %}
+                        <a href="{{ image.location_wiki_iri }}"
+                           target="_blank" rel="noopener noreferrer">
+                            {{ image.location_name }}
+                        </a>
+                    {% else %}
+                        {{ image.location_name or "Unknown" }}
+                    {% endif %}
+                </p>
+            </div>
+
+            <div>
+                <strong>Date</strong>
+                <p>
+                    {{ image.time_span_begin or "Unknown" }}
+                    {% if image.time_span_end
+                          and image.time_span_end != image.time_span_begin %}
+                        – {{ image.time_span_end }}
+                    {% endif %}
+                </p>
+            </div>
+
+            <div>
+                <strong>Dimensions</strong>
+                <p>{{ image.width }} × {{ image.height }}</p>
+            </div>
+
+            <div>
+                <strong>Quality</strong>
+                <p>{{ image.quality or "Not specified" }}</p>
+            </div>
+
+            <div>
+                <strong>Image ID</strong>
+                <p>{{ image.id }}</p>
+            </div>
+        </div>
+
+        <!-- Classifications -->
+        {% if image.classifications %}
+        <section class="metadata-section">
+            <h3>Classifications</h3>
+
+            <div class="classification-list">
+                {% for classification in image.classifications %}
+                    <div class="classification-item">
+                        <strong>{{ classification.name }}</strong>
+
+                        {% if classification.model %}
+                            <p>Model: {{ classification.model }}</p>
+                        {% endif %}
+
+                        {% if classification.confidence %}
+                            <p>Confidence: {{ classification.confidence }}</p>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- Multilingual descriptions -->
+        {% if image.descriptions %}
+        <section class="metadata-section">
+            <h3>Descriptions</h3>
+
+            {% for description in image.descriptions %}
+                <article class="description-item"
+                         lang="{{ description.language or 'und' }}">
+
+                    <div class="description-header">
+                        <strong>
+                            {{ {
+                                'en': 'English',
+                                'de': 'Deutsch',
+                                'pl': 'Polski',
+                                'fa': 'فارسی'
+                            }.get(
+                                description.language,
+                                description.language or 'Unknown language'
+                            ) }}
+                        </strong>
+                    </div>
+
+                    <p>{{ description.text }}</p>
+
+                    {% if description.creator or description.confidence %}
+                        <div class="description-provenance">
+                            {% if description.creator %}
+                                <span>Creator: {{ description.creator }}</span>
+                            {% endif %}
+
+                            {% if description.confidence %}
+                                <span>Confidence: {{ description.confidence }}</span>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+                </article>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        <!-- References -->
+        {% if image.references %}
+        <section class="metadata-section">
+            <h3>References</h3>
+            <ul class="reference-list">
+                {% for reference in image.references %}
+                    <li>{{ reference }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
+
+        <!-- RDF resource -->
+        <section class="metadata-section">
+            <h3>Linked Data</h3>
+            <p>
+                <strong>Image IRI:</strong>
+                <a href="{{ image.iri }}" target="_blank"
+                   rel="noopener noreferrer">{{ image.iri }}</a>
+            </p>
+            <p>
+                <strong>Collection:</strong> {{ image.collection }}
+            </p>
+        </section>
+
+    </section>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/image_zoom.js') }}"></script>
+
+</body>
+</html>

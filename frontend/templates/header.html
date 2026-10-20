@@ -7,20 +7,28 @@
         </div>
 
         <nav class="site-nav" aria-label="Main navigation">
-            <a href="{{ url_for('index') }}" class="active">
-                Home
-            </a>
 
-            <a href="{{ url_for('collections') }}">
-                Collections
-            </a>
+    <a href="{{ url_for('index') }}"
+       class="{% if request.endpoint == 'index' %}active{% endif %}">
+        Home
+    </a>
 
-            <a href="{{ url_for('events') }}"
-               class="{% if request.endpoint == 'events' %}active{% endif %}">
-                Events
-            </a>
-            <a href="{{ url_for('about') }}">About</a>
-        </nav>
+    <a href="{{ url_for('collections') }}"
+       class="{% if request.endpoint in ['collections', 'collection', 'image'] %}active{% endif %}">
+        Collections
+    </a>
+
+    <a href="{{ url_for('events') }}"
+       class="{% if request.endpoint == 'events' %}active{% endif %}">
+        Events
+    </a>
+
+    <a href="{{ url_for('about') }}"
+       class="{% if request.endpoint == 'about' %}active{% endif %}">
+        About
+    </a>
+
+</nav>
 
     </div>
 </header>

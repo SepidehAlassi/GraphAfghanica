@@ -270,7 +270,35 @@ body {
         grid-template-columns: 1fr;
     }
 }
+.ga-back-navigation {
+    max-width: 1100px;
+    margin: 28px auto 0;
+    padding: 0 24px;
+}
 
+.ga-back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border: 1px solid #d6d0c7;
+    border-radius: 6px;
+    background: transparent;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.ga-back-button:hover {
+    background: #f5f1ea;
+    border-color: #aaa;
+}
+
+.ga-back-button span {
+    font-size: 1.2rem;
+}
 /* Main content */
 
 main {
