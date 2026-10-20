@@ -622,7 +622,7 @@ ga:Almar a crm:E53_Place ;
 ga:Almar_name a crm:E44_Place_Appellation ;
     crm:P190_has_symbolic_content "Almar" .
 
-ga:EWA76_Almar_photography a crm:E12_Production ;
+ga:EWA76_Almar_Photography a crm:E12_Production ;
     crm:P14_carried_out_by ga:MarekGawecki ;
     crm:P4_has_time-span ga:TimeSpan_EWA76_Almar ;
     crm:P7_took_place_at ga:Almar ;
@@ -690,7 +690,9 @@ ga:Urban a skos:Concept ;
     skos:inScheme ga:ImageTaxonomy ;
     skos:prefLabel "Urban"@en .
 
-ga:EWA76_Qaysar_photography a crm:E12_Production .
+
+ga:EWA76_Qaysar_photography a crm:E12_Production ;
+                        crm:P9i_forms_part_of ga:Expedition_EWA76_Qaysar_Visit .
 
 ga:EWA76_Collection a crm:E78_Curated_Holding ;
     crm:P1_is_identified_by ga:EWA76_Collection_Name .

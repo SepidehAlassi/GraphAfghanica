@@ -41,6 +41,51 @@ def collection(collection_id):
         collection=collection_data
     )
 
+@app.route("/images/<string:image_id>")
+def image(image_id):
+    try:
+        response = requests.get(
+            f"{API_URL}/images/{image_id}",
+            timeout=30
+        )
+        response.raise_for_status()
+        image = response.json()
+
+    except requests.exceptions.RequestException:
+        app.logger.exception("Failed to retrieve image %s", image_id)
+        return "Unable to retrieve image metadata.", 502
+
+    return render_template(
+        "image.html",
+        image=image
+    )
+
+@app.route("/expeditions/<string:expedition_id>")
+def expedition(expedition_id):
+    try:
+        response = requests.get(
+            f"{API_URL}/expeditions/{expedition_id}",
+            timeout=30
+        )
+        response.raise_for_status()
+
+        expedition_data = response.json()
+
+    except requests.exceptions.RequestException:
+        app.logger.exception(
+            "Failed to retrieve expedition %s",
+            expedition_id
+        )
+        return "Unable to retrieve expedition metadata.", 502
+
+    return render_template(
+        "expedition.html",
+        expedition=expedition_data
+    )
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route("/events")
 def events():
     symposium = {
@@ -65,27 +110,6 @@ def events():
     }
 
     return render_template("events.html", symposium=symposium)
-@app.route("/images/<string:image_id>")
-def image(image_id):
-    try:
-        response = requests.get(
-            f"{API_URL}/images/{image_id}",
-            timeout=30
-        )
-        response.raise_for_status()
-        image = response.json()
-
-    except requests.exceptions.RequestException:
-        app.logger.exception("Failed to retrieve image %s", image_id)
-        return "Unable to retrieve image metadata.", 502
-
-    return render_template(
-        "image.html",
-        image=image
-    )
-@app.route('/about')
-def about():
-    return render_template('about.html')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=3030, debug=True)

@@ -1,4 +1,3 @@
-
 from flask_restful import Resource
 import requests
 import re

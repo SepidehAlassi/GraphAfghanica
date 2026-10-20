@@ -3,6 +3,7 @@ from flask_restful import Api, Resource
 from image_endpoint import Image
 from images_endpoint import Images
 from collection_endpoint import Collection
+from expedition_endpoint import Expedition
 
 app = Flask(__name__)
 api = Api(app)
@@ -23,3 +24,4 @@ api.add_resource(
     "/collections/<string:collection_id>"
 )
 api.add_resource(Image,  "/images/<string:image_id>")
+api.add_resource(Expedition, "/expeditions/<string:expedition_id>/")

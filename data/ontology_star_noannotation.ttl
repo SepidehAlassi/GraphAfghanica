@@ -189,7 +189,8 @@ ga:EWA76_Curation
     a crm:E87_Curation_Activity ;
     crm:P14_carried_out_by ga:PoznanEthnography ;
     crm:P4_has_time-span ga:EWA76_Curation_TimeSpan ;
-    crm:P147_curated ga:EWA76_Collection .
+    crm:P147_curated ga:EWA76_Collection ;
+    crm:P9_consists_of ga:Expedition_EWA76_Qaysar_Visit .
 
 ga:EWA76_Curation_TimeSpan
     a crm:E52_Time-Span ;
@@ -214,9 +215,9 @@ ga:TimeSpan_EWA76_Qaysar
 
 ga:Expedition_EWA76_Qaysar_Visit
    a crm:E7_Activity ;
-   rdfs:label "EWA-76 visit to Qaysar" ;
+   rdfs:label "EWA-76 Expedition to Qaysar and Almar" ;
    crm:P14_carried_out_by ga:PoznanEthnography ;
-   crm:P7_took_place_at ga:Qaysar ;
+   crm:P7_took_place_at ga:Qaysar , ga:Almar ;
    crm:P4_has_time-span ga:TimeSpan_EWA76_Qaysar .
 
 # --- The Image Object ---
@@ -228,7 +229,7 @@ ga:EWA76_MG69
     :classification ga:Women , ga:Urban ;
     :hasDigitalRepresentation "https://EWA76.org/images/IMG69.jpg"^^xsd:anyURI ;
     :belongsTo ga:EWA76_Collection ;
-    crm:P108i_was_produced_by ga:EWA76_Almar_photography ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
     :format_width "175"^^xsd:int ;
     :format_height "120"^^xsd:int ;
     :quality "sehr gut"@de ;
@@ -236,7 +237,7 @@ ga:EWA76_MG69
     :references "Tapper, R. and N. Lindisfarne-Tapper (2020): Afghan Village Voices: Stories from a Tribal Community, pp. 4, 115–116, 132, 222–224" .
 
 
-ga:EWA76_Almar_photography
+ga:EWA76_Almar_Photography
    a crm:E12_Production ;
    crm:P14_carried_out_by ga:MarekGawecki ;
    crm:P9i_forms_part_of ga:Expedition_EWA76_Qaysar_Visit ;

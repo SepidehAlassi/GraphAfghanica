@@ -170,7 +170,22 @@
 .ga-collection-header p {
     color: #667085;
 }
+/* Expedition locations */
 
+.ga-expedition-location-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ga-expedition-location-list li {
+    padding: 2px 0;
+    line-height: 1.6;
+}
+
+.ga-collection-meta-item:has(.ga-expedition-location-list) {
+    gap: 2px;
+}
 /* Image gallery */
 
 .ga-image-grid {
