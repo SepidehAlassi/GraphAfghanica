@@ -3,6 +3,7 @@ from flask_restful import Resource
 import requests
 import re
 import os
+from helpers import get_value
 
 GRAPHDB_ENDPOINT = os.getenv(
     "GRAPHDB_ENDPOINT",
@@ -21,18 +22,28 @@ def get_collection_metadata(collection_id):
     collection_iri = f"{DATA_NAMESPACE}{collection_id}"
 
     sparql_query = f"""
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+        PREFIX ga: <http://www.graphAfghanica.org/data/>
+        PREFIX schema: <http://schema.org/> 
+        PREFIX : <http://www.graphAfghanica.org/ontology/>
 
-        SELECT DISTINCT ?collection_name
+        SELECT DISTINCT ?collection_name ?collection_description ?curation_begin ?curation_end ?group_label ?member_name
         WHERE {{
-            <{collection_iri}>
-                a crm:E78_Curated_Holding ;
-                crm:P1_is_identified_by ?name_crm .
-
-            ?name_crm
-                crm:P190_has_symbolic_content ?collection_name .
-        }}
-        LIMIT 1
+            BIND (<{collection_iri}> AS ?collection_iri )
+            ?collection_iri crm:P1_is_identified_by ?collection_name_res .
+            ?collection_name_res crm:P190_has_symbolic_content ?collection_name .
+            ?collection_iri crm:P3_has_note ?collection_description .
+            ?collection_iri crm:P147i_was_curated_by ?curation_activity .
+            ?curation_activity crm:P14_carried_out_by ?group .
+            ?curation_activity crm:P4_has_time-span ?time_span .
+            ?time_span crm:P82a_begin_of_the_begin ?curation_begin .
+            ?time_span crm:P82b_end_of_the_end ?curation_end .
+            ?group rdfs:label ?group_label .
+            ?group crm:P107_has_current_or_former_member ?group_member .
+            ?group_member schema:name ?member_name .
+    
+        }} LIMIT 1
     """
 
     try:
@@ -67,10 +78,26 @@ def get_collection_metadata(collection_id):
             "collection_name": None
         }, 200
 
-    return {
-        "collection_id": collection_id,
-        "collection_name": bindings[0]["collection_name"]["value"]
-    }, 200
+    first = bindings[0]
+    collection_metadata = {
+        "id": collection_id,
+        "iri": collection_iri,
+        "collection_name": get_value(first, "collection_name"),
+        "description": get_value(first, "collection_description"),
+        "curation_begin": get_value(first, "curation_begin"),
+        "curation_end": get_value(first, "curation_end"),
+        "group_label": get_value(first, "group_label"),
+        "members": []
+    }
+    seen_members = set()
+    for binding in bindings:
+        member = get_value(binding, "member_name")
+
+        if member and member not in seen_members:
+            collection_metadata["members"].append(member)
+            seen_members.add(member)
+
+    return collection_metadata, 200
 
 
 def get_images_by_collection(collection_id):

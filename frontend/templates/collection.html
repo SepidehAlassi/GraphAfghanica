@@ -24,12 +24,95 @@
     </div>
     <main class="ga-collection-page">
 
-        <header class="ga-collection-header">
-            <h1>{{ collection.collection_name or collection.collection_id }}</h1>
-            <p>{{ collection.image_count }} photographs</p>
-        </header>
 
-        {% if collection.images %}
+<!-- Collection overview -->
+<section class="ga-collection-overview">
+
+    <div class="ga-collection-heading">
+        <p class="ga-section-kicker">PHOTOGRAPHIC COLLECTION</p>
+
+        <h1>{{ collection.collection_name }}</h1>
+
+        {% if collection.description %}
+        <p class="ga-collection-description">
+            {{ collection.description }}
+        </p>
+        {% endif %}
+    </div>
+
+    <div class="ga-collection-metadata">
+
+        {% if collection.group_label %}
+        <div class="ga-collection-meta-item">
+            <span class="ga-meta-label">CURATED BY</span>
+            <span class="ga-meta-value">
+                {{ collection.group_label }}
+            </span>
+        </div>
+        {% endif %}
+
+        {% if collection.members %}
+<div class="ga-collection-meta-item">
+    <span class="ga-meta-label">GROUP MEMBERS</span>
+
+    <ul class="ga-collection-member-list">
+        {% for member in collection.members %}
+        <li>
+            <span class="ga-meta-value">{{ member }}</span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+        {% if collection.curation_begin or collection.curation_end %}
+        <div class="ga-collection-meta-item">
+            <span class="ga-meta-label">CURATION PERIOD</span>
+            <span class="ga-meta-value">
+                {{ collection.curation_begin or "Unknown" }}
+                {% if collection.curation_end %}
+                    – {{ collection.curation_end }}
+                {% endif %}
+            </span>
+        </div>
+        {% endif %}
+
+        <div class="ga-collection-meta-item">
+            <span class="ga-meta-label">COLLECTION ID</span>
+            <span class="ga-meta-value">{{ collection.id }}</span>
+        </div>
+
+<!--        {% if collection.iri %}-->
+<!--        <div class="ga-collection-meta-item">-->
+<!--            <span class="ga-meta-label">LINKED DATA</span>-->
+<!--            <a href="{{ collection.iri }}"-->
+<!--               class="ga-meta-link"-->
+<!--               target="_blank"-->
+<!--               rel="noopener noreferrer">-->
+<!--                View RDF resource ↗-->
+<!--            </a>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+
+    </div>
+</section>
+
+<!-- Collection images -->
+<section class="ga-collection-images">
+
+    <div class="ga-section-head">
+        <div>
+            <h2>Collection's <em>images.</em></h2>
+        </div>
+
+        <p>
+            Browse the photographs and explore their
+            historical and descriptive metadata.
+        </p>
+    </div>
+
+    <!-- Keep your existing image gallery here -->
+    {% if collection.images %}
 
         <div class="ga-image-grid">
 
@@ -67,6 +150,10 @@
         {% else %}
         <p>No images found in this collection.</p>
         {% endif %}
+
+</section>
+
+
 
     </main>
 </body>

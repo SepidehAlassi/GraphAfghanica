@@ -21,8 +21,7 @@
     owl:equivalentClass foaf:Person .
 
 ga:EWA76_MG69 a :Image ;
-    crm:P108i_was_produced_by ga:EWA76_Almar_Photography,
-        ga:EWA76_Almar_photography ;
+    crm:P108i_was_produced_by ga:EWA76_Almar_Photography ;
     :belongsTo ga:EWA76_Collection ;
     :classification ga:Urban,
         ga:Women ;

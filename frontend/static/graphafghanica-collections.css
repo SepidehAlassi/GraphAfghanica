@@ -14,6 +14,143 @@
 .ga-collections-page .ga-collections-note h2{font-size:clamp(32px,3.5vw,48px);letter-spacing:-.035em;margin:14px 0 0}
 .ga-collections-page .ga-collections-note p:last-child{font-size:15px;color:#526158;line-height:1.9;margin:0}
 
+/* ========================================
+   COLLECTION OVERVIEW
+   ======================================== */
+
+.ga-collection-overview {
+    max-width: 1150px;
+    margin: 55px auto 70px;
+    padding: 0 30px;
+}
+
+.ga-collection-heading {
+    max-width: 850px;
+    margin-bottom: 38px;
+}
+
+.ga-collection-heading h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 12px 0 24px;
+}
+
+.ga-collection-description {
+    font-size: 1.1rem;
+    line-height: 1.85;
+    color: #555;
+    max-width: 800px;
+}
+
+/* Metadata panel */
+
+.ga-collection-metadata {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 40px;
+    padding: 30px 35px;
+    background: #f7f5f0;
+    border: 1px solid #e8e3d9;
+    border-radius: 10px;
+}
+
+.ga-collection-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+.ga-collection-meta-item:has(.ga-collection-member-list) {
+    gap: 0.5px;
+}
+.ga-meta-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #8a7762;
+}
+
+.ga-meta-value {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.ga-meta-link {
+    font-size: 0.95rem;
+    color: #755c40;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.ga-meta-link:hover {
+    text-decoration: underline;
+}
+
+/* ========================================
+   COLLECTION IMAGE SECTION
+   ======================================== */
+
+.ga-collection-images {
+    max-width: 1150px;
+    margin: 0 auto 80px;
+    padding: 0 30px;
+}
+
+.ga-collection-images .ga-section-head {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e3d9;
+}
+
+.ga-collection-images .ga-section-head h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 8px 0 0;
+}
+
+/* Responsive layout */
+
+@media (max-width: 700px) {
+    .ga-collection-overview,
+    .ga-collection-images {
+        padding: 0 18px;
+    }
+
+    .ga-collection-overview {
+        margin-top: 35px;
+        margin-bottom: 45px;
+    }
+
+    .ga-collection-metadata {
+        grid-template-columns: 1fr;
+        padding: 24px;
+        gap: 22px;
+    }
+
+    .ga-collection-description {
+        font-size: 1rem;
+    }
+    .ga-collection-member-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ga-collection-member-list li {
+    padding: 0 0;
+}
+
+.ga-member-role {
+    font-size: 0.9rem;
+    color: #777;
+}
+}
+
 /* Collection page */
 
 .ga-collection-page {

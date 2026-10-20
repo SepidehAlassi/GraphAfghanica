@@ -3,6 +3,7 @@ from flask_restful import Resource
 import requests
 import re
 import os
+from helpers import get_value, get_language
 
 GRAPHDB_ENDPOINT = os.getenv(
     "GRAPHDB_ENDPOINT",
@@ -12,13 +13,6 @@ GRAPHDB_ENDPOINT = os.getenv(
 DATA_NAMESPACE = "http://www.graphAfghanica.org/data/"
 ONTOLOGY_NAMESPACE = "http://www.graphAfghanica.org/ontology/"
 
-
-def get_value(binding, variable):
-    return binding.get(variable, {}).get("value")
-
-
-def get_language(binding, variable):
-    return binding.get(variable, {}).get("xml:lang")
 
 
 def get_image(image_id):
