@@ -217,7 +217,7 @@ ga:Expedition_EWA76_Qaysar_Visit
    a crm:E7_Activity ;
    rdfs:label "EWA-76 visit to Qaysar" ;
    crm:P14_carried_out_by ga:PoznanEthnography ;
-   crm:P7_took_place_at ga:Qaysar ;
+   crm:P7_took_place_at ga:Qaysar , ga:Almar;
    crm:P4_has_time-span ga:TimeSpan_EWA76_Qaysar .
 
 # --- The Image Object ---
