@@ -175,12 +175,26 @@ ga:PoznanEthnography
 
 ga:EWA76_Collection
    a crm:E78_Curated_Holding ;
-   crm:P1_is_identified_by  ga:EWA76_Collection_Name .
+   crm:P1_is_identified_by  ga:EWA76_Collection_Name ;
+   crm:P3_has_note
+        "A collection of historical photographs documenting Afghanistan, including photographs taken during the Ethnological Asian Expedition (EWA–76), organized in the summer of 1976 by a team of researchers from Adam Mickiewicz University in Poznań (Poland)."@en ;
+   crm:P147i_was_curated_by  ga:EWA76_Curation .
 
 ga:EWA76_Collection_Name
     a crm:E41_Appellation ;
     crm:P190_has_symbolic_content "EWA76 Photo Collection" .
 
+# ----- Curation activity ----
+ga:EWA76_Curation
+    a crm:E87_Curation_Activity ;
+    crm:P14_carried_out_by ga:PoznanEthnography ;
+    crm:P4_has_time-span ga:EWA76_Curation_TimeSpan ;
+    crm:P147_curated ga:EWA76_Collection .
+
+ga:EWA76_Curation_TimeSpan
+    a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1976-05-08"^^xsd:date ;
+    crm:P82b_end_of_the_end "1976-10-03"^^xsd:date .
 
 # --- Sub-Activity: The Qaysar Visit ---
 
