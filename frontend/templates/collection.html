@@ -97,6 +97,52 @@
     </div>
 </section>
 
+<!-- Expeditions associated with this collection -->
+{% if collection.expeditions %}
+<section class="ga-collection-expeditions">
+
+    <div class="ga-section-head">
+        <div>
+            <h2>Associated <em>expeditions.</em></h2>
+        </div>
+
+        <p>
+            Explore the expeditions associated with this
+            photographic collection.
+        </p>
+    </div>
+
+    <div class="ga-expeditions-grid">
+
+        {% for expedition in collection.expeditions %}
+
+            {% set expedition_id = expedition.iri.rsplit('/', 1)[-1] %}
+
+            <a href="{{ url_for('expedition', expedition_id=expedition_id) }}"
+               class="ga-expedition-card">
+
+                <span class="ga-expedition-card-kicker">
+                    EXPEDITION
+                </span>
+
+                <h3>
+                    {{ expedition.label}}
+                </h3>
+
+                <span class="ga-expedition-card-link">
+                    Explore expedition
+                    <span aria-hidden="true">↗</span>
+                </span>
+
+            </a>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+{% endif %}
+
 <!-- Collection images -->
 <section class="ga-collection-images">
 

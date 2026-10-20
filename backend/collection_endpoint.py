@@ -165,6 +165,59 @@ def get_images_by_collection(collection_id):
     }, 200
 
 
+def get_expeditions_by_collection(collection_id):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", collection_id):
+        return {"error": "Invalid collection ID"}, 400
+    collection_iri = f"{DATA_NAMESPACE}{collection_id}"
+    sparql_query = f"""
+        PREFIX : <{ONTOLOGY_NAMESPACE}>
+        PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+        select ?expedition_iri ?expedition_label
+        where {{
+            <{collection_iri}> crm:P147i_was_curated_by ?curation .
+            ?curation crm:P9_consists_of ?expedition_iri .
+            ?expedition_iri rdfs:label ?expedition_label .
+        }} limit 100
+    """
+    try:
+        response = requests.post(
+            GRAPHDB_ENDPOINT,
+            data={"query": sparql_query},
+            headers={
+                "Accept": "application/sparql-results+json"
+            },
+            timeout=30
+        )
+
+        response.raise_for_status()
+        results = response.json()
+
+    except requests.exceptions.Timeout:
+        return {"error": "GraphDB request timed out"}, 504
+
+    except requests.exceptions.RequestException as error:
+        return {
+            "error": "Failed to retrieve collection images",
+            "details": str(error)
+        }, 502
+
+    except ValueError:
+        return {"error": "Invalid response from GraphDB"}, 502
+
+    expeditions = []
+    for binding in results.get("results", {}).get("bindings", []):
+        expedition_iri = binding["expedition_iri"]["value"]
+        expedition_label = binding["expedition_label"]["value"]
+        expeditions.append({
+            "iri": expedition_iri,
+            "label": expedition_label
+        })
+    return {
+        "expedition_count": len(expeditions),
+        "expeditions": expeditions
+    }, 200
+
+
 class Collection(Resource):
 
     def get(self, collection_id):
@@ -174,6 +227,10 @@ class Collection(Resource):
             if status != 200:
                 return collection_info, 200
             else:
-                return {**collection_info, **images}, 200
+                expeditions, status = get_expeditions_by_collection(collection_id)
+                if status != 200:
+                    return {**collection_info, **images}, 200
+                else:
+                    return {**collection_info, **images, **expeditions}, 200
         else:
             return None

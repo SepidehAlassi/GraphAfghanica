@@ -186,6 +186,7 @@
 .ga-collection-meta-item:has(.ga-expedition-location-list) {
     gap: 2px;
 }
+
 /* Image gallery */
 
 .ga-image-grid {
@@ -288,3 +289,85 @@
 }
 
 @media(max-width:650px){.ga-collections-page .ga-collections-hero{padding:65px 22px}.ga-collections-page .ga-collections-directory{padding:60px 22px}.ga-collections-page .ga-collection-visual{height:230px}.ga-collections-page .ga-collection-info{padding:26px}.ga-collections-page .ga-collections-note{grid-template-columns:1fr;padding:60px 22px;gap:22px}}
+
+
+/* Expedition cards */
+.ga-collection-expeditions  {
+    max-width: 1150px;
+    margin: 0 auto 80px;
+    padding: 0 30px;
+}
+.ga-collection-expeditions .ga-expeditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+}
+
+.ga-collection-expeditions .ga-section-head {
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e8e3d9;
+}
+
+.ga-collection-expeditions a.ga-expedition-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 28px 32px;
+    min-height: 190px;
+
+    background-color: #f7f5f0;
+    border: 1px solid #e8e3d9;
+    border-radius: 10px;
+
+    color: #333;
+    text-decoration: none;
+    box-shadow: none;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.ga-collection-expeditions a.ga-expedition-card:hover {
+    transform: translateY(-3px);
+    border-color: #b9a58b;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+}
+
+.ga-collection-expeditions .ga-expedition-card-kicker {
+    display: block;
+    color: #8a7762;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+}
+
+.ga-collection-expeditions .ga-expedition-card h3 {
+    margin: 0;
+    color: #283749;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+}
+
+.ga-collection-expeditions .ga-expedition-card-link {
+    display: block;
+    margin-top: auto;
+    color: #755c40;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ga-collection-expeditions .ga-section-head h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 8px 0 0;
+}

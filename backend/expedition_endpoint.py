@@ -25,7 +25,7 @@ def get_expedition(expedition_id):
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX ga: <{DATA_NAMESPACE}>
         PREFIX schema: <http://schema.org/> 
-        select DISTINCT ?label ?group_label ?location_name ?location_wiki_iri ?expedition_begin ?expedition_end ?member_name
+        select DISTINCT ?label ?group_label ?location_name ?location_wiki_iri ?expedition_begin ?expedition_end ?member_name ?collection_iri
         where {{
             BIND(<{expdition_iri}> AS ?expedition_iri)
     
@@ -41,6 +41,8 @@ def get_expedition(expedition_id):
             ?location_name_resource crm:P190_has_symbolic_content ?location_name .
             ?group crm:P107_has_current_or_former_member ?group_member .
             ?group_member schema:name ?member_name .
+            ?curation crm:P9_consists_of ?expedition_iri .
+            ?collection_iri crm:P147i_was_curated_by ?curation .
     
         }} limit 100
     """
@@ -106,6 +108,7 @@ def get_expedition(expedition_id):
             seen_members.add(member_name)
         expedition_metadata['expedition_begin'] = get_value(binding, "expedition_begin")
         expedition_metadata['expedition_end'] = get_value(binding, "expedition_end")
+        expedition_metadata['collection_iri'] = get_value(binding, "collection_iri")
     return expedition_metadata, 200
 
 

@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+          content="Explore historical expeditions documented in GraphAfghanica.">
+
+    <title>{{ expedition.label }} | GraphAfghanica</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='graphafghanica-home.css') }}">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='graphafghanica-collections.css') }}">
+</head>
+
+<body class="ga-home ga-collections-page">
+
+    {% include 'header.html' %}
+    {% set collection_id = expedition.collection_iri.rsplit('/', 1)[-1] %}
+
+    <div class="ga-back-navigation">
+        <a href="{{ url_for('collection', collection_id=collection_id) }}"
+           class="ga-back-button">
+            <span aria-hidden="true">←</span>
+            Back to collection
+        </a>
+    </div>
+    <main id="main-content">
+
+        <section class="ga-collection-overview">
+
+            <div class="ga-collection-heading">
+
+                <p class="ga-section-kicker">
+                    HISTORICAL EXPEDITION
+                </p>
+
+                <h1>{{ expedition.label }}</h1>
+
+            </div>
+
+            <!-- Expedition metadata -->
+            <div class="ga-collection-metadata">
+
+                <!-- Organizing group -->
+                {% if expedition.group_label %}
+                <div class="ga-collection-meta-item">
+
+                    <span class="ga-meta-label">
+                        ORGANIZING GROUP
+                    </span>
+
+                    <span class="ga-meta-value">
+                        {{ expedition.group_label }}
+                    </span>
+
+                </div>
+                {% endif %}
+                {% if expedition.members %}
+                  <div class="ga-collection-meta-item">
+                    <span class="ga-meta-label">GROUP MEMBERS</span>
+
+                    <ul class="ga-collection-member-list">
+                      {% for member in expedition.members %}
+                      <li>
+                          <span class="ga-meta-value">{{ member }}</span>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                {% endif %}
+
+                <!-- Expedition period -->
+                {% if expedition.expedition_begin or expedition.expedition_end %}
+                <div class="ga-collection-meta-item">
+
+                    <span class="ga-meta-label">
+                        EXPEDITION PERIOD
+                    </span>
+
+                    <span class="ga-meta-value">
+                        {{ expedition.expedition_begin or "Unknown" }}
+
+                        {% if expedition.expedition_end
+                              and expedition.expedition_end != expedition.expedition_begin %}
+                            – {{ expedition.expedition_end }}
+                        {% endif %}
+                    </span>
+
+                </div>
+                {% endif %}
+
+                <!-- Locations -->
+                {% if expedition.location %}
+                <div class="ga-collection-meta-item">
+
+                    <span class="ga-meta-label">
+                        LOCATIONS VISITED
+                    </span>
+
+                    <ul class="ga-expedition-location-list">
+
+                        {% for location in expedition.location %}
+                        <li>
+                            {% if location.wiki_iri %}
+                            <a href="{{ location.wiki_iri }}"
+                               class="ga-meta-link"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                {{ location.name }}
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            {% else %}
+                            <span class="ga-meta-value">
+                                {{ location.name }}
+                            </span>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+
+                    </ul>
+
+                </div>
+                {% endif %}
+
+            </div>
+
+        </section>
+<!-- Expedition images -->
+<section class="ga-collection-images">
+
+    <div class="ga-section-head">
+        <div>
+            <h2>Expedition's <em>images.</em></h2>
+        </div>
+
+        <p>
+            Browse the photographs taken during this expedition and explore their
+            historical and descriptive metadata.
+        </p>
+    </div>
+
+    <!-- Keep your existing image gallery here -->
+    {% if expedition.images %}
+
+        <div class="ga-image-grid">
+
+            {% for image in expedition.images %}
+
+            {% set image_iri = image.iri or image.uri %}
+            {% set image_id = image.id or image_iri.rsplit('/', 1)[-1] %}
+
+            <a href="{{ url_for('image', image_id=image_id) }}"
+               class="ga-image-card"
+               title="{{ image_iri }}">
+
+                <div class="ga-image-preview">
+                    {% if image.url %}
+                    <img src="{{ image.url }}"
+                         alt="{{ image.title or image_id }}"
+                         loading="lazy">
+                    {% else %}
+                    <div class="ga-image-placeholder">
+                        No preview available
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="ga-image-info">
+                    <h3>{{ image.title or image_id }}</h3>
+                </div>
+
+            </a>
+
+            {% endfor %}
+
+        </div>
+
+        {% else %}
+        <p>No images found in this collection.</p>
+        {% endif %}
+
+</section>
+    </main>
+
+    <footer class="ga-footer">
+        <span>GraphAfghanica</span>
+        <span>Digital Humanities · Afghan Photographic Heritage</span>
+        <a href="#main-content">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
