@@ -13,4 +13,126 @@
 .ga-collections-page .ga-collections-note{background:#eaece5;padding:75px clamp(24px,7vw,110px);display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
 .ga-collections-page .ga-collections-note h2{font-size:clamp(32px,3.5vw,48px);letter-spacing:-.035em;margin:14px 0 0}
 .ga-collections-page .ga-collections-note p:last-child{font-size:15px;color:#526158;line-height:1.9;margin:0}
+
+/* Collection page */
+
+.ga-collection-page {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+}
+
+.ga-collection-header {
+    margin: 28px 0 32px;
+}
+
+.ga-collection-header h1 {
+    margin-bottom: 8px;
+}
+
+.ga-collection-header p {
+    color: #667085;
+}
+
+/* Image gallery */
+
+.ga-image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Individual image cards */
+
+.ga-image-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background: #fff;
+    border: 1px solid #e4e7ec;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ga-image-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+}
+
+.ga-image-card:focus-visible {
+    outline: 3px solid #346b78;
+    outline-offset: 3px;
+}
+
+/* Photograph */
+
+.ga-image-preview {
+    height: 230px;
+    background: #f3f4f6;
+    overflow: hidden;
+}
+
+.ga-image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ga-image-placeholder {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #667085;
+}
+
+/* Metadata */
+
+.ga-image-info {
+    padding: 18px;
+    min-width: 0;
+}
+
+.ga-image-info h3 {
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+}
+
+.ga-image-url,
+.ga-image-iri {
+    display: block;
+    margin-top: 8px;
+
+    font-size: 0.82rem;
+    color: #667085;
+
+    overflow-wrap: anywhere;
+}
+
+.ga-image-iri {
+    font-size: 0.75rem;
+    color: #98a2b3;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .ga-image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .ga-image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media(max-width:650px){.ga-collections-page .ga-collections-hero{padding:65px 22px}.ga-collections-page .ga-collections-directory{padding:60px 22px}.ga-collections-page .ga-collection-visual{height:230px}.ga-collections-page .ga-collection-info{padding:26px}.ga-collections-page .ga-collections-note{grid-template-columns:1fr;padding:60px 22px;gap:22px}}

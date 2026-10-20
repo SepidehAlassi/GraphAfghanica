@@ -1,6 +1,6 @@
 # Readme
 
-- To run the Caddy server:
+- To run all containers:
 `docker-compose up -d`
 
 - To access the images on Caddy server:
@@ -8,3 +8,5 @@
 
 **Note:** For the architecture to work, GraphDB should be running on the same machine on port 7200.
 
+- After changing the api code, rebuild the api container:
+`docker compose up -d --build api`

@@ -65,7 +65,19 @@ def events():
     }
 
     return render_template("events.html", symposium=symposium)
+@app.route("/images/<image_id>")
+def image(image_id):
 
+    image_iri = (
+        "http://www.graphAfghanica.org/data/"
+        + image_id
+    )
+
+    return render_template(
+        "image.html",
+        image_id=image_id,
+        image_iri=image_iri
+    )
 @app.route('/about')
 def about():
     return render_template('about.html')

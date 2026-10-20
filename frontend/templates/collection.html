@@ -3,72 +3,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>GraphAfghanica - Collection</title>
+    <title>{{ collection.collection_name }} | GraphAfghanica</title>
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='graphafghanica-collections.css') }}">
 </head>
 
 <body>
+    {% include 'header.html' %}
 
-{% include 'header.html' %}
+    <main class="ga-collection-page">
 
-<main>
+        <a href="{{ url_for('collections') }}" class="ga-back-link">
+            &larr; Back to Collections
+        </a>
 
-    <a href="/">← Back to Home</a>
+        <header class="ga-collection-header">
+            <h1>{{ collection.collection_name or collection.collection_id }}</h1>
+            <p>{{ collection.image_count }} photographs</p>
+        </header>
 
-    <h2>Collection: {{ collection.collection_id }}</h2>
+        {% if collection.images %}
 
-    <p>
-        <strong>Collection IRI:</strong>
-        {{ collection.collection_iri }}
-    </p>
+        <div class="ga-image-grid">
 
-    <p>
-        <strong>Number of images:</strong>
-        {{ collection.image_count }}
-    </p>
-
-    {% if collection.images %}
-
-    <table class="image-table">
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th>Image ID</th>
-                <th>RDF Resource</th>
-            </tr>
-        </thead>
-
-        <tbody>
             {% for image in collection.images %}
-            <tr>
-                <td>{{ loop.index }}</td>
 
-                <td>{{ image.id }}</td>
+            {% set image_iri = image.iri or image.uri %}
+            {% set image_id = image.id or image_iri.rsplit('/', 1)[-1] %}
 
-                <td>
-                    <a href="{{ image.uri }}"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        {{ image.uri }}
-                    </a>
-                </td>
-            </tr>
+            <a href="{{ url_for('image', image_id=image_id) }}"
+               class="ga-image-card"
+               title="{{ image_iri }}">
+
+                <div class="ga-image-preview">
+                    {% if image.url %}
+                    <img src="{{ image.url }}"
+                         alt="{{ image.title or image_id }}"
+                         loading="lazy">
+                    {% else %}
+                    <div class="ga-image-placeholder">
+                        No preview available
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="ga-image-info">
+                    <h3>{{ image.title or image_id }}</h3>
+                </div>
+
+            </a>
+
             {% endfor %}
-        </tbody>
-    </table>
 
-    {% else %}
+        </div>
 
-    <p>No images found in this collection.</p>
+        {% else %}
+        <p>No images found in this collection.</p>
+        {% endif %}
 
-    {% endif %}
-
-</main>
-
+    </main>
 </body>
 </html>
