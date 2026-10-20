@@ -12,6 +12,9 @@ API_URL = os.getenv("API_URL", "http://localhost:4000")
 def index():
     return render_template("index.html")
 
+@app.route('/collections')
+def collections():
+    return render_template('collections.html')
 
 @app.route("/collections/<string:collection_id>")
 def collection(collection_id):

@@ -1,0 +1,16 @@
+/* Collections directory — extends the existing homepage visual system */
+.ga-collections-page .ga-collections-hero{background:#eaece5;padding:88px clamp(24px,7vw,110px) 80px}
+.ga-collections-page .ga-collections-hero h1{font-size:clamp(48px,6vw,80px);letter-spacing:-.045em;margin:18px 0 22px}
+.ga-collections-page .ga-collections-hero>p:last-child{max-width:650px;color:#526158;font-size:17px;line-height:1.8;margin-bottom:0}
+.ga-collections-page .ga-collections-directory{padding-top:75px;padding-bottom:95px}
+.ga-collections-page .ga-collections-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:25px}
+.ga-collections-page .ga-collection-card{display:flex;flex-direction:column;min-height:0;height:100%}
+.ga-collections-page .ga-collection-visual{height:290px;flex:none}
+.ga-collections-page .ga-collection-info{padding:32px 36px 36px;flex:1}
+.ga-collections-page .ga-collection-info h3{font-size:36px}
+.ga-collections-page .ga-collection-arrow{display:none}
+.ga-collections-page .ga-collection-card:focus-visible{outline:3px solid #b99160;outline-offset:4px}
+.ga-collections-page .ga-collections-note{background:#eaece5;padding:75px clamp(24px,7vw,110px);display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center}
+.ga-collections-page .ga-collections-note h2{font-size:clamp(32px,3.5vw,48px);letter-spacing:-.035em;margin:14px 0 0}
+.ga-collections-page .ga-collections-note p:last-child{font-size:15px;color:#526158;line-height:1.9;margin:0}
+@media(max-width:650px){.ga-collections-page .ga-collections-hero{padding:65px 22px}.ga-collections-page .ga-collections-directory{padding:60px 22px}.ga-collections-page .ga-collection-visual{height:230px}.ga-collections-page .ga-collection-info{padding:26px}.ga-collections-page .ga-collections-note{grid-template-columns:1fr;padding:60px 22px;gap:22px}}
