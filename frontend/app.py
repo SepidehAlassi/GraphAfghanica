@@ -65,18 +65,23 @@ def events():
     }
 
     return render_template("events.html", symposium=symposium)
-@app.route("/images/<image_id>")
+@app.route("/images/<string:image_id>")
 def image(image_id):
+    try:
+        response = requests.get(
+            f"{API_URL}/images/{image_id}",
+            timeout=30
+        )
+        response.raise_for_status()
+        image = response.json()
 
-    image_iri = (
-        "http://www.graphAfghanica.org/data/"
-        + image_id
-    )
+    except requests.exceptions.RequestException:
+        app.logger.exception("Failed to retrieve image %s", image_id)
+        return "Unable to retrieve image metadata.", 502
 
     return render_template(
         "image.html",
-        image_id=image_id,
-        image_iri=image_iri
+        image=image
     )
 @app.route('/about')
 def about():

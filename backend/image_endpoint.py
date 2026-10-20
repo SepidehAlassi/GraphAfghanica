@@ -12,17 +12,29 @@ GRAPHDB_ENDPOINT = os.getenv(
 DATA_NAMESPACE = "http://www.graphAfghanica.org/data/"
 ONTOLOGY_NAMESPACE = "http://www.graphAfghanica.org/ontology/"
 
+
+def get_value(binding, variable):
+    return binding.get(variable, {}).get("value")
+
+
+def get_language(binding, variable):
+    return binding.get(variable, {}).get("xml:lang")
+
+
 def get_image(image_id):
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", image_id):
+        return {"error": "Invalid image ID"}, 400
+
     image_iri = f"{DATA_NAMESPACE}{image_id}"
     sparql_query = f"""
         PREFIX : <{ONTOLOGY_NAMESPACE}>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
         PREFIX owl: <http://www.w3.org/2002/07/owl#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         PREFIX schema: <http://schema.org/>
         PREFIX ga: <http://www.graphAfghanica.org/data/>
-        PREFIX : <http://www.graphAfghanica.org/ontology/>
-        select DISTINCT ?collection ?image_url ?title ?legend ?classification  ?classification_model ?classification_confidence ?width ?height ?quality ?description_creator_name ?description_confidence ?references ?photographer_name ?location_name ?location_wiki_iri ?time_span_begin ?time_span_end
+        select DISTINCT ?collection ?image_url ?title ?legend ?class_name  ?model_name ?classification_confidence ?width ?height ?quality ?description ?description_creator_name ?description_confidence ?references ?photographer_name ?location_name ?location_wiki_iri ?time_span_begin ?time_span_end
         where {{
             <{image_iri}>  a :Image ;
             :belongsTo ?collection ;
@@ -33,6 +45,7 @@ def get_image(image_id):
             }}
             Optional {{
                 <{image_iri}> :classification ?classification .
+                ?classification skos:prefLabel ?class_name .
             }}
             Optional {{
                 <{image_iri}> :format_width ?width .
@@ -103,57 +116,156 @@ def get_image(image_id):
     except requests.exceptions.Timeout:
         return {"error": "GraphDB request timed out"}, 504
 
-    except requests.exceptions.RequestException as error:
+
+    except requests.exceptions.HTTPError as error:
+
         return {
-            "error": "Failed to retrieve the image metadata:",
+
+            "error": "GraphDB rejected the SPARQL query",
+
+            "status_code": error.response.status_code,
+
+            "details": error.response.text
+
+        }, 502
+
+
+    except requests.exceptions.RequestException as error:
+
+        return {
+
+            "error": "Failed to retrieve the image metadata",
+
             "details": str(error)
+
         }, 502
 
     except ValueError:
         return {"error": "Invalid response from GraphDB"}, 502
 
-    image_metadata = {'references': [], 'description': [], 'classification': []}
-    for binding in results.get("results", {}).get("bindings", []):
-        image_metadata['iri'] = image_iri
-        image_metadata['collection'] = binding["collection"]["value"]
-        image_metadata['image_url'] = binding["image_url"]["value"]
-        image_metadata['title'] = binding["title"]["value"]
-        image_metadata['legend'] = binding["legend"]["value"]
-        if binding["classification"]["value"] is not None:
-            classification_info = set()
-            classification_info.add(binding["classification"]["value"])
-            if binding["classification_model"]["value"] is not None:
-                classification_info.add(binding["classification_model"]["value"])
-            if binding["classification_confidence"]["value"] is not None:
-                classification_info.add(binding["classification_confidence"]["value"])
-            image_metadata['classification'].append(classification_info)
 
-        image_metadata['width'] = binding["width"]["value"]
-        image_metadata['height'] = binding["height"]["value"]
-        image_metadata['quality'] = binding["quality"]["value"]
-        if binding["description"]["value"] is not None:
-            description_info = set()
-            description_info.add(binding["description"]["value"])
-            if binding["description_creator_name"]["value"] is not None:
-                description_info.add(binding["description_creator_name"]["value"])
-            if binding["description_confidence"]["value"] is not None:
-                description_info.add(binding["description_confidence"]["value"])
-            image_metadata['description'].append(description_info)
-        if binding["references"]["value"] is not None:
-            image_metadata['references'].append(binding["references"]["value"])
-        image_metadata['photographer_name'] = binding["photographer_name"]["value"]
-        image_metadata['location_name'] = binding["location_name"]["value"]
-        image_metadata['location_wiki_iri'] = binding["location_wiki_iri"]["value"]
-        image_metadata['time_span_begin'] = binding["time_span_begin"]["value"]
-        image_metadata['time_span_end'] = binding["time_span_end"]["value"]
+    bindings = results.get("results", {}).get("bindings", [])
+
+    if not bindings:
+        return {"error": "Image not found"}, 404
+
+    first = bindings[0]
+
+    # General image metadata
+    image_metadata = {
+        "id": image_id,
+        "iri": image_iri,
+        "collection": get_value(first, "collection"),
+        "image_url": get_value(first, "image_url"),
+        "title": get_value(first, "title"),
+        "legend": get_value(first, "legend"),
+        "width": get_value(first, "width"),
+        "height": get_value(first, "height"),
+        "quality": get_value(first, "quality"),
+        "photographer_name": get_value(first, "photographer_name"),
+        "location_name": get_value(first, "location_name"),
+        "location_wiki_iri": get_value(first, "location_wiki_iri"),
+        "time_span_begin": get_value(first, "time_span_begin"),
+        "time_span_end": get_value(first, "time_span_end"),
+        "classifications": [],
+        "descriptions": [],
+        "references": []
+    }
+
+    # Track already processed values
+    classifications_by_name = {}
+    seen_descriptions = set()
+    seen_references = set()
+
+    for binding in bindings:
+
+        # Classifications and RDF-star annotations
+        # Classifications and RDF-star annotations
+        class_name = get_value(binding, "class_name")
+
+        if class_name:
+            model_name = get_value(binding, "model_name")
+            confidence = get_value(
+                binding, "classification_confidence"
+            )
+
+            if class_name not in classifications_by_name:
+                classifications_by_name[class_name] = {
+                    "name": class_name,
+                    "model": None,
+                    "confidence": None
+                }
+
+            classification_info = classifications_by_name[class_name]
+
+            # Prefer a readable model name over an IRI.
+            if model_name:
+                is_iri = model_name.startswith(
+                    ("http://", "https://")
+                )
+
+                current_model = classification_info["model"]
+
+                if current_model is None or (
+                        current_model.startswith(("http://", "https://"))
+                        and not is_iri
+                ):
+                    classification_info["model"] = model_name
+
+            # Preserve an available confidence score.
+            if confidence is not None:
+                classification_info["confidence"] = confidence
+
+        # -----------------------------------
+        # Descriptions and RDF-star metadata
+        # -----------------------------------
+
+
+        # Descriptions and RDF-star metadata
+        description = get_value(binding, "description")
+
+        if description:
+            description_info = {
+                "text": description,
+                "language": get_language(binding, "description"),
+                "creator": get_value(
+                    binding, "description_creator_name"
+                ),
+                "confidence": get_value(
+                    binding, "description_confidence"
+                )
+            }
+
+            key = (
+                description_info["text"],
+                description_info["language"],
+                description_info["creator"],
+                description_info["confidence"]
+            )
+
+            if key not in seen_descriptions:
+                image_metadata["descriptions"].append(
+                    description_info
+                )
+                seen_descriptions.add(key)
+
+        # -----------------------------------
+        # References
+        # -----------------------------------
+
+        reference = get_value(binding, "references")
+
+        if reference and reference not in seen_references:
+            image_metadata["references"].append(reference)
+            seen_references.add(reference)
+    image_metadata["classifications"] = list(
+        classifications_by_name.values()
+    )
     return image_metadata, 200
+
 
 
 class Image(Resource):
 
     def get(self, image_id):
-        image_info, status = get_image(image_id)
-        if status == 200:
-            return image_info, 200
-        else:
-            return None
+        return get_image(image_id)

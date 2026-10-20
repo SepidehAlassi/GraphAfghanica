@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api, Resource
-
+from image_endpoint import Image
 from images_endpoint import Images
 from collection_endpoint import Collection
 
@@ -17,8 +17,9 @@ class GraphAfghanica(Resource):
 
 
 api.add_resource(GraphAfghanica, "/")
-api.add_resource(Images, "/images/", "/images/<string:image_id>")
+api.add_resource(Images, "/images/")
 api.add_resource(
     Collection,
     "/collections/<string:collection_id>"
 )
+api.add_resource(Image,  "/images/<string:image_id>")
